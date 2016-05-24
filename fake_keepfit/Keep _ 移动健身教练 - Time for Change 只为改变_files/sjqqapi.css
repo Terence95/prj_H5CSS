@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS Document */
+#qqappextcontainer{ position:absolute; height:1px; overflow:hidden;}
+.sjqqapi_popwin{
+    margin:0;
+    padding:0;
+	width:440px;
+	color:#666;
+	position:absolute;
+	z-index:9999;
+	left:50%;
+	margin-left:-220px;
+	font-size:12px;
+	display:none;
+	text-align:left;
+	
+}
+.sjqqapi_popwin .innner{
+	overflow:hidden;
+    width:428px;
+    margin:6px;
+	position:relative;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+	border:1px solid #d2d4d6\9;
+}
+.sjqqapi_popwin .sjqqapi_head{
+	color:#333;
+	font-weight:bold;
+	line-height:35px;
+	overflow:hidden;
+	width:100%;
+	height:35px;
+    background:transparent url(http://img2.sj.qq.com/api/images/head_bg.jpg) repeat-x;
+}
+.sjqqapi_popwin .sjqqapi_close{
+    margin:0;
+    padding:0;
+    background:url(http://img2.sj.qq.com/api/images/head_close.png) no-repeat;
+	display:block;
+	width:9px;
+	height:9px;
+	border:none;
+	position:absolute;
+	right:12px;
+	top:13px;
+	cursor:pointer;
+	z-index:9999;
+	font-size:0;
+}
+.sjqqapi_popwin .sjqqapi_close_hover{
+    margin:0;
+    padding:0;
+    background:url(http://img2.sj.qq.com/api/images/head_close.png) -9px 0 no-repeat;
+	display:block;
+	width:9px;
+	height:9px;
+	border:none;
+	position:absolute;
+	right:12px;
+	top:13px;
+	cursor:pointer;
+	z-index:9999;
+	font-size:0;
+}
+.sjqqapi_popwin .sjqqapi_close_click{
+    margin:0;
+    padding:0;
+    background:url(http://img2.sj.qq.com/api/images/head_close.png) -18px 0 no-repeat;
+	display:block;
+	width:9px;
+	height:9px;
+	border:none;
+	position:absolute;
+	right:12px;
+	top:13px;
+	cursor:pointer;
+	z-index:9999;
+	font-size:0;
+}
+.sjqqapi_popwin .sjqqapi_content{ 
+	width:100%;
+	background:#ffffff;
+	border-bottom:1px solid #d2d4d6;
+	position:relative;
+	overflow:hidden;
+	height:225px;
+}
+.sjqqapi_popwin .clear{ clear:both;}
+.sjqqapi_popwin .content_bottom_arrow{
+	background:url(http://img2.sj.qq.com/api/images/arrow.png) no-repeat transparent;
+	width:12px;
+	height:11px;
+	position:absolute;
+	left:208px;
+	bottom:36px;
+	_bottom:31px;
+}
+.sjqqapi_popwin .sjqqapi_content .sjqqapi_con{
+	position:relative;
+    background:url(http://img2.sj.qq.com/api/images/sjqq_sprite.png) 15px 0 no-repeat;
+    height:84px;
+    margin:0px 0px 0px 30px;
+    float:left;
+	_display:inline;
+}
+.sjqqapi_popwin .sjqqapi_em{
+    margin:0;
+    padding:0;
+    color:#333333;
+    font-style:normal;
+    font-size:14px;
+    display:block;
+    width:16em;
+    margin-left:180px;
+    line-height:22px;
+    overflow:hidden;
+ }
+.sjqqapi_popwin .siqqapi_em_color{
+   color:#527e3e;
+   font-weight:bold;
+ }
+.sjqqapi_popwin .sjqqapi_downloadapp{
+    margin:0;
+    padding:0;
+	width:161px;
+	height:35px;
+	background:url(http://img2.sj.qq.com/api/images/download_btn.png) no-repeat transparent;
+	font-size:14px;
+	border:none;
+	cursor:pointer;
+	position:absolute;
+	left:137px;
+	bottom:22px;
+    color:#666;
+ }
+.sjqqapi_popwin .sjqqapi_downloadapphover{
+    margin:0;
+    padding:0;
+	width:161px;
+	height:35px;
+	background:url(http://img2.sj.qq.com/api/images/download_btn.png) 0 -35px no-repeat transparent;
+	font-size:14px;
+	border:none;
+	cursor:pointer;
+	position:absolute;
+	left:137px;
+	bottom:22px;
+    color:#666;
+ }
+.sjqqapi_popwin .sjqqapi_checkbox{
+ 	margin:0px 0 0 0;
+    padding:0;
+    width:16px;
+    height:16px;
+    border:none;
+	cursor:pointer;
+	background:url(http://img2.sj.qq.com/api/images/sjqq_sprite.png)  -138px -241px  no-repeat;
+ }
+.sjqqapi_popwin .sjqqapi_checkboxclick{
+	margin:0px 0 0 0;
+    padding:0;
+    width:16px;
+    height:16px;
+    border:none;
+	cursor:pointer;
+	background:url(http://img2.sj.qq.com/api/images/sjqq_sprite.png)  -154px -241px  no-repeat;
+ }
+.sjqqapi_popwin .sjqqapi_xyapp{
+	width:140px;
+	height:16px;
+	margin:10px 0 0 210px;
+	border:none;
+	cursor:pointer;
+	font-size:12px;
+ 
+ }
+.sjqqapi_popwin .sjqqapi_foot{
+ 	background:#f3f4f5;
+	width:100%;
+	height:40px;
+	position:relative;
+    line-height:40px;
+ }
+.sjqqapi_foot_info {
+    margin:0;
+    padding:0;
+    text-align: center;
+	display:block;
+	font-style:normal;
+	white-space:nowrap;
+}
+.sjqqapi_popwin .sjqqapi_tp{
+    margin:0;
+    padding:0;
+	font-style:normal;
+	display:block;
+    text-align: center;
+	white-space:nowrap;
+	position: relative;
+	color:#333;
+    left: 50%;
+    float:left;
+ }
+.sjqqapi_tp div{
+	position: relative;
+    right: 50%;
+}
+.sjqqapi_tp .yyb_bg{
+    display:block;
+    float:left;
+    width: 24px;
+    height: 16px;
+ 	background:url(http://img2.sj.qq.com/api/images/yyb_ico.png) 4px 0 no-repeat transparent;
+    *text-indent: 24px;
+}
+.sjqqapi_content .sjqqapi_content_text{
+    display:block;
+    float:left;
+}
+.sjqqapi_content .sjqqapi_content_app{
+  max-width:90px;
+  _width:expression(this.scrollWidth > 90? "90px" : "");
+  overflow:hidden;
+  display:block;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  word-break:keep-all;
+  margin:0;
+  padding:0;
+  float:left;
+}
+.sjqqapi_popwin .sjqqapi_icon, .sjqqapi_popwin .sjqqapi_iconimg{
+	position:absolute;
+	left:85px;
+	top:4px;
+}
+.sjqqapi_popwin .sjqqapi_tip{
+    margin:0;
+	padding:24px 0 0 0;
+	_padding:23px 0 0 0;
+	text-indent:40px;
+	font-size:14px;
+	color:#333333;
+}
+.sjqqapi_popwin .sjqqapi_st{
+    background:url(http://img2.sj.qq.com/api/images/sj_process.gif) no-repeat transparent;
+	width:125px;
+	height:7px;
+	position:absolute;
+    top:32px;
+    left:164px;
+}
+.sjqqapi_popwin .sjqqapi_st_arrow{
+    background:url(http://img2.sj.qq.com/api/images/sj_process_arrow.gif) no-repeat transparent;
+	width:19px;
+	height:14px;
+	position:absolute;
+    top:32px;
+    left:207px;
+}
+.sjqqapi_popwin .sjqqapi_sj{
+    background:url(http://img2.sj.qq.com/api/images/sj_ico.png) no-repeat transparent;
+    width:47px;
+    height:81px;
+	position:absolute;
+	top:0;
+    left:296px;
+}
+.sjqqapi_popwin .sjqqapi_head_title_s{
+  max-width:90px;
+  _width:expression(this.scrollWidth > 90? "90px" : "");
+  height:30px;
+  overflow:hidden;
+  display:block;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  word-break:keep-all;
+  float:left;
+  margin:0;
+  padding:0;
+  text-indent:0px;
+}
+.sjqqapi_head_title_s_con {
+  max-width:90px;
+  _width:expression(this.scrollWidth > 90? "90px" : "");
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  word-break:keep-all;
+}
+.sjqqapi_popwin .sjqqapi_head_install{
+  display:block;
+  float:left;
+  text-indent:10px;
+}
+.sjqqapi_popwin .sjqqapiti0{
+	text-indent:0px;
+}
+.sjqqapi_popwin .sjqqapi_c{
+	position:relative;
+    _top: -30px;
+    *top: -30px;
+}
+.sjqqapi_popwin .lh30{
+	line-height:30px;
+}
+.sjqqapi_popwin .pt10{ padding-top:10px;}
+.sjqqapi_popwin .pt20{ padding-top:20px;}
+.sjqqapi_popwin .pb50{ padding-bottom:40px;}
+.sjqqapi_popwin .pb20{ padding-bottom:20px;}
+.sjqqapi_popwin .pt30{ padding-top:30px;}
+.sjqqapi_popwin .pt35{ padding-top:35px;}
+.sjqqapi_popwin .fs14{ font-size:14px;}
+.sjqqapi_popwin #dckb{display:block;float:left; }
+.sjqqapi_popwin .c1071bb{ color:#1071bb; cursor:pointer; }
