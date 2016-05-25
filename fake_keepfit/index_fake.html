@@ -39,7 +39,7 @@
     <!-- <script src="./Keep _ 移动健身教练 - Time for Change 只为改变_files/sjqqapi.js"></script> -->
     <!-- <link rel="stylesheet" href="./Keep _ 移动健身教练 - Time for Change 只为改变_files/sjqqapi.css"> -->
     <!-- 这里检测，是安卓设备还是ios设备，如果是IOS设备就不显示安卓的图标，如果是安卓设备登录网站不显示ios的下载站点 -->
-    <!-- <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             if (navigator.userAgent.toLowerCase().indexOf('iphone') > -1) {
                 document.getElementById('android-dl').style.display = 'none';
@@ -51,21 +51,48 @@
             var hourTimestamp = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours()).getTime();
             document.getElementById('android-dl').firstChild.href = 'http://dl-android.gotokeep.com/keep-latest.apk?t=' + hourTimestamp;
         });
-    </script> -->
+    </script>
 
     <!-- 这个indexhero是作为第一个版面的整个背景 -->
     <div class="hero indexHero">
-         <!-- header部分 -->
-         <div class="header">
-             <div class="content">
-                  <h1 class="logo">Keep</h1>
-                  <ul>
-                     <li><a href="#">首页</a></li>
-                     <li><a href="#">加入我们</a></li>
-                     <li><a href="#">联系我们</a></li>
-                  </ul>
-             </div>
-         </div>
+        <!-- header部分 -->
+        <div class="header">
+            <div class="content">
+                <h1 class="logo">Keep</h1>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#" class="active">首页</a></li>
+                        <li><a href="#">加入我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- container 部分，包含了信息的展示 -->
+        <div class="container">
+            <div class="slogan">
+                <h2 class="slogan-title">只为改变<br><div class="span en">
+                    TIME FOR CHANGE
+                </div></h2>
+                <p class="intro">
+                    Keep 一个移动健身社区
+                    <br>24 小时移动健身教练，带你突破运动极限
+                </p>
+                <div class="download">
+                    <div class="left">
+                        <div id="ios-dl" class="dl">
+                            <a href="#"><img src="images/ios.png" alt="" /></a>
+                        </div>
+                        <div id="android-dl" class="dl">
+                            <a href="#"><img src="images/android.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="qr-code no-mobile">
+                        <img src="images/weixin-qr.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>

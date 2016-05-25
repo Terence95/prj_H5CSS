@@ -1,4 +1,3 @@
-/*样式重置*/
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -127,7 +126,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     -webkit-appearance: none;
 }
 fieldset {
-    /*border: 1px solid #c0c0c0;*/
+    border: 1px solid #c0c0c0;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
 }
@@ -151,7 +150,267 @@ td, th {
 body {
     font-family: 'NotoSansHans-Thin', 'Heiti SC', 'Microsoft Yahei', simsun, sans-serif;
 }
-/*样式重置*/
+
+/*样式重置没问题*/
 
 
 /*css about hero>content>logo*/
+.hero {
+    height: 870px;
+    /*稍后去掉*/
+    /*background: gray;*/
+    /*background: url("../images/hero.jpg") #393c4b no-repeat center center;*/
+}
+
+/*media query screen是媒体类型*/
+
+@media screen and (max-width: 320px) {
+    .hero {
+        height: 568px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .hero {
+        height: 667px;
+    }
+}
+
+/*当宽度小于*/
+
+@media screen and (max-width: 1024px) {
+    .header {
+        visibility: none;
+        /*display:none 这个属性控制当宽度过小的时候，隐藏header*/
+        display: none;
+    }
+}
+.header .content {
+    height: 94px;
+    overflow: hidden;
+    /*background: red;*/
+}
+
+/*当设备宽度在 1024px 和 768px 之间时 触发这套布局设置*/
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .header .content {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .header .content {
+        width: 960px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+
+/* :before :after 在content前和后插入内容*/
+
+.header .content:before, .header .content:after {
+    content: " ";
+    display: table;
+}
+.header .content:after {
+    clear: both;
+}
+.header .content h1.logo {
+    width: 121px;
+    height: 94px;
+    /*下面这一句把用来标记的keep h1移走*/
+    text-indent: -9999px;
+    background: url("../images/logo.png") transparent no-repeat center center;
+    margin: 0;
+    float: left;
+}
+.header .nav {
+    float: right;
+}
+.header .nav .active {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #fff;
+}
+.header .nav ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header .nav ul li {
+    display: inline-block;
+    line-height: 94px;
+    font-size: 18px;
+    margin-left: 45px;
+}
+.header .nav ul li a {
+    text-decoration: none;
+    /*color: #7a7c79;*/
+    color: #fff;
+}
+
+/*下面这段貌似没有起到什么作用*/
+
+.colorize {
+    background-color: #584f60;
+    color: #fff;
+}
+.indexHero {
+    background: url("../images/hero3.jpg") #393c4b no-repeat center center;
+    /*background-size:100% 100%;*/
+    /*filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')"; */
+    background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;
+}
+
+/*作用有待考究*/
+
+@media screen and (max-width: 375px) {
+    .indexHero {
+        background: url("../images/mobile-hero.jpg") #393c4b no-repeat top left;
+        background-size: 375px;
+    }
+}
+.indexHero .slogan {
+    position: absolute;
+    top: 190px;
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .indexHero .slogan {
+        top: 80px;
+        padding: 14px;
+    }
+}
+.word {
+    margin-bottom: 80px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.indexHero .slogan .slogan-title {
+    font-size: 80px;
+    margin-bottom: 26px;
+    line-height: 1.4;
+}
+.indexHero .slogan .slogan-title .en {
+    font-size: 68px;
+}
+
+/*当屏幕最大为786px时用这套样式*/
+
+@media screen and (max-width: 768px) {
+    /*hero 的字体改变，slogantitle 字体改变*/
+    .indexHero .slogan .slogan-title {
+        font-size: 40px;
+        line-height: 1.6;
+    }
+    /*en内的字体改变大小*/
+    .indexHero .slogan .slogan-title .en {
+        font-size: 30px;
+    }
+    /*intro 的字体大小*/
+}
+.indexHero .slogan .intro {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/*当屏幕最大为768px时，用下面这套布局，这里是关于 intro的改变*/
+
+@media screen and (max-width: 768px) {
+    .indexHero .slogan .intro {
+        line-height: 1.4;
+    }
+}
+
+
+/* TODO: 得改显示下载的那部分，.left那里 */
+
+.left {
+    float: left;
+}
+.left .dl img {
+    opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+    .left {
+        float: none;
+    }
+}
+.zero {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.purple {
+    color: #584f60;
+}
+
+/*关于几个download png 的样式*/
+
+.download:before, .download:after {
+    content: " ";
+    display: table;
+}
+.download:after {
+    clear: both;
+}
+@media screen and (max-width: 768px) {
+    .download {
+        width: 100%;
+        text-align: center;
+    }
+}
+.download .dl {
+    margin: 0;
+}
+.download .dl a {
+    display: block;
+    height: 50px;
+    margin-bottom: 12px;
+}
+/**/
+@media screen and (max-width: 768px) {
+    .download .dl {
+        float: none;
+    }
+}
+
+.download .qr-code {
+    margin-left: 30px;
+    float: left;
+}
+
+.download .qr-code img {
+    width: 112px;
+    height: 112px;
+}
+
+/*container的媒体查询*/
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 960px;
+        /*height: auto;*/
+        /* 就是少了这一句，slogan那段往右偏了 */
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+/*关于hero的一套*/
+
+/*no-mobile*/
+@media screen and (max-width: 768px) {
+    .no-mobile {
+        display: none !important;
+        visibility: none !important;
+    }
+}
