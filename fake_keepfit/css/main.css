@@ -520,3 +520,169 @@ body {
     max-width: 320px;
 }
 /* mobile-feature */
+
+
+/*footer*/
+footer {
+    margin-top: 268px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    background: #584f60;
+    color: #fff;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    footer {
+        margin-top: 20px;
+        padding: 0;
+    }
+}
+
+footer .links {
+    font-size: 12px;
+    /*display:block就是将元素显示为块级元素.
+
+　　block元素的特点是：
+　　总是在新行上开始；
+　　高度，行高以及顶和底边距都可控制；
+　　宽度缺省是它的容器的100%，除非设定一个宽度
+　　<div>, <p>, <h1>, <form>, <ul> 和 <li>是块元素的例子。
+
+　　display:inline就是将元素显示为行内元素.
+
+　　inline元素的特点是：
+　　和其他元素都在一行上；
+　　高，行高及顶和底边距不可改变；
+　　宽度就是它的文字或图片的宽度，不可改变。
+　　<span>, <a>, <label>, <input>, <img>, <strong> 和<em>是inline元素的例子。
+
+　　inline和block可以控制一个元素的行宽高等特性，需要切换的情况如下：
+
+　　让一个inline元素从新行开始；
+　　让块元素和其他元素保持在一行上；
+　　控制inline元素的宽度（对导航条特别有用）；
+　　控制inline元素的高度；
+　　无须设定宽度即可为一个块元素设定与文字同宽的背景色。
+
+　　display:inline-block将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内，允许空格。
+
+    */
+    display: inline-block;
+}
+
+footer .links ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    footer .links ul {
+        display: block;
+    }
+}
+
+footer .links ul li {
+    float: left;
+    border-right: 1px solid #fff;
+    margin-right: -1px;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    footer .links ul li {
+        display: block;
+        float: none;
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    footer .links ul li {
+        border-right: 0px solid transparent;
+    }
+}
+
+footer .links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+footer .social {
+    display: inline-block;
+    font-size: 21px;
+}
+
+footer .social a {
+    color: #ccc;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer .social a:visited {
+    color: #ccc;
+}
+footer .social a:hover {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    footer .social {
+        display: block;
+    }
+}
+
+footer .social i {
+    padding: 0 6px;
+}
+
+footer .copyright {
+    margin: 10px 0;
+}
+
+/*关于微信的一个tool tip 如何实现的，鼠标移动到a标签出，则显示微信二维码*/
+.arrow_box_down {
+    position: relative;
+    background: #fff;
+}
+
+/*弄了一个小小的三角形*/
+.arrow_box_down:after{
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: '\0020';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 14px;
+    margin-left: -14px;
+}
+.wechat-link-wrapper {
+    position: relative;
+}
+
+.wechat-link-wrapper .qr-code {
+    position: absolute;
+    top: -173px;
+    left: -58px;
+    border: 1px solid #584f60;
+}
+
+.wechat-link-wrapper:hover .hide {
+    display: block;
+}
+
+.wechat-link-wrapper .hide {
+    display: none;
+}
