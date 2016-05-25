@@ -258,15 +258,16 @@ body {
     background: url("../images/hero3.jpg") #393c4b no-repeat center center;
     /*background-size:100% 100%;*/
     /*filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')"; */
-    background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
 }
 
 /*作用有待考究*/
 
 @media screen and (max-width: 375px) {
     .indexHero {
-        background: url("../images/mobile-hero.jpg") #393c4b no-repeat top left;
-        background-size: 375px;
+        background: url("../images/hero1.jpg") #393c4b no-repeat top left;
     }
 }
 .indexHero .slogan {
@@ -414,3 +415,107 @@ body {
         visibility: none !important;
     }
 }
+
+/*no-desktop这部分内容不在desktop版本中显示*/
+@media screen and (min-width: 769px) {
+    .no-desktop {
+        display: none;
+        visibility: none;
+    }
+}
+
+/*feature list 部分*/
+/*先是desktop版本的*/
+.feature-list {
+    margin-top: 160px;
+    margin-bottom: 200px;
+}
+.feature-list .feature {
+    /*background-color: rgba(200, 0, 0, 0.3);*/
+    margin-bottom: 80px;
+    border: 1px solid transparent;
+}
+.feature-list .feature .feature-content {
+    color: #929292;
+    position: relative;
+    height: 654px;
+}
+
+/*大屏模式下*/
+@media screen and (min-width: 1024px) {
+    .feature-list .feature .feature-content {
+        width: 960px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .feature-list .feature .feature-content {
+        width: 100%;
+    }
+}
+
+.feature-list .feature.feature-1 {
+    background: url("../images/feature-bg1.png") transparent no-repeat center center;;
+}
+.feature-list .feature.feature-2 {
+    background: url("../images/feature-bg2.png") transparent no-repeat center center;;
+}
+.feature-list .feature.feature-3 {
+    background: url("../images/feature-bg3.png") transparent no-repeat center center;;
+}
+
+.feature-list .feature-wording {
+    position: absolute;
+    top: 190px;
+    width: 270px;
+}
+
+.feature-list .feature-wording.right {
+    right: 0
+}
+
+.feature-list .feature-wording.left {
+    left: 0;
+}
+
+.feature-list .feature-wording .feature-title {
+    font-size: 30px;
+    line-height: 1.4;
+    color: #584f60;
+}
+
+.feature-list .feature-wording .feature-desc {
+    font-size: 20px;
+    line-height: 1.7;
+}
+/* mobile-feature */
+.mobile-feature {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 10px;
+    border: 1px solid transparent;
+    color: #929292;
+}
+
+.mobile-feature .feature {
+    margin-top: 100px;
+}
+
+.mobile-feature .feature-title {
+    font-size: 18px;
+    color: #584f60;
+}
+
+.mobile-feature img {
+    display: block;
+    margin: 30px auto;
+    max-width: 300px;
+}
+
+/*有关那个缩略图的*/
+.mobile-screenshot {
+    width: 70%;
+    max-width: 320px;
+}
+/* mobile-feature */

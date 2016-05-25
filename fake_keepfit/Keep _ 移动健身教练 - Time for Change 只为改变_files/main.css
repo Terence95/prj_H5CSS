@@ -169,7 +169,7 @@ body {
     color: #584f60;
 }
 /*这个是footer里面，mobile设备的时候，no-mobile不显示*/
-/*@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .no-mobile {
         display: none !important;
         visibility: none !important;
@@ -180,7 +180,7 @@ body {
         display: none;
         visibility: none;
     }
-}*/
+}
 /**/
 
 /**/
