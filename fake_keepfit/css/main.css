@@ -267,7 +267,8 @@ body {
 
 @media screen and (max-width: 375px) {
     .indexHero {
-        background: url("../images/hero1.jpg") #393c4b no-repeat top left;
+        background: url("../images/mobile-hero.jpg") #393c4b no-repeat top left;
+        background-size: 400px;
     }
 }
 .indexHero .slogan {
