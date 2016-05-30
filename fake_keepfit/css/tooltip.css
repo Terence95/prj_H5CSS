@@ -1,0 +1,97 @@
+footer {
+    margin-top: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    background: #584f60;
+    color: #fff;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    footer {
+        margin-top: 20px;
+        padding: 0;
+    }
+}
+footer .social {
+    display: inline-block;
+    font-size: 21px;
+}
+footer .social a {
+    color: #ccc;
+    text-decoration: none;
+    display: inline-block;
+}
+footer .social a:visited {
+    color: #ccc;
+}
+footer .social a:hover {
+    color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+    footer .social {
+        display: block;
+    }
+}
+footer .social i {
+    padding: 0 6px;
+}
+footer .copyright {
+    margin: 20px 0;
+}
+.arrow_box_down {
+    position: relative;
+    background: #fff;
+}
+.arrow_box_down:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: '\0020';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 14px;
+    margin-left: -14px;
+}
+
+.wechat-link-wrapper {
+    position: relative;
+}
+.weibo-link-wrapper {
+    position: relative;
+}
+
+.wechat-link-wrapper .qr-code {
+    position: absolute;
+    top: -230px;
+    left: -60px;
+    border: 1px solid #584f60;
+}
+
+.wechat-link-wrapper:hover .hide {
+    display: block;
+}
+
+.wechat-link-wrapper .hide {
+    display: none;
+}
+
+.weibo-link-wrapper .qr-code{
+    position: absolute;
+    border: 1px solid #584f60;
+    top: -120px;
+    left: -36px;
+}
+
+.weibo-link-wrapper:hover .hide {
+    display: block;
+}
+
+.weibo-link-wrapper .hide {
+    display: none;
+}
