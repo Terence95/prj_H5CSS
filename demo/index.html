@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>活动详情</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+</head>
+
+<style>
+    .back {
+        position: absolute;
+        background: url(img/img5.jpg) ;
+        width: 100%;
+        /*height: 100%;*/
+        height: auto;
+        z-index: -100;
+        padding-top: 66px;
+    }
+
+    .back #main {
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 100;
+        padding-bottom: 66px;
+    }
+
+    #left {
+        /*background: red;*/
+        margin-right: 30px;
+        padding-top: 10px;
+        padding-left: 20px;
+        height: 200px;
+    }
+
+    #right {
+        /*background: yellow;*/
+        /*padding-top: 10px;*/
+        margin-top: 30px;
+        /*padding-right: 10px;*/
+        /*margin-right: 10px;*/
+    }
+
+    #display {
+        padding-left: 12px;
+    }
+
+    #logo img {
+        padding-top: 20px;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border-radius: 90%;
+    }
+
+    .back .title h5 {
+        /*text-align: center;*/
+        padding-left: 20px;
+    }
+
+    .info .tinyinfo {
+        font-size: 10px;
+        margin-left: 25px;
+    }
+
+    .info .tinyinfo .from {
+        font-size: 18px;
+    }
+
+    .info .tinyinfo .publisher {
+        font-size: 14px;
+    }
+
+    .article {
+        background: black;
+        /*width: 100px;*/
+        /*height: 200px;*/
+    }
+    .article .card img{
+        width: 560px;
+        /*margin-top: 10px;*/
+        padding-top: 8px;
+        margin: 0 auto;
+        /*height: auto;*/
+    }
+</style>
+
+<body>
+    <div class="back">
+        <div class="container" id="main">
+            <div class="row" id="display">
+                <div class="col s2" id="left">
+                    <div id="logo">
+                        <img src="img/logo.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="col s9" id="right">
+                    <div class="title">
+                        <h5><i class="mdi-image-navigate-before"></i>TITLE<i class="mdi-image-navigate-next"></i></h5>
+                    </div>
+
+                    <div class="info">
+                        <div class="tinyinfo">
+                            <span class="time">5月4日&nbsp&nbsp&nbsp22:00</span>
+                            <span class="from">&nbsp&nbsp&nbspFrom:</span>
+                            <span class="publisher">Terence</span>
+                        </div>
+
+                        <div class="article">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/img66.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
+                                    <p><a href="#">This is a link</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                    <div class="commend">
+                                        <p>
+                                          评论
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

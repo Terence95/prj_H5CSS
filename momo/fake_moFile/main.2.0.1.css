@@ -1,0 +1,69 @@
+/*
+ *  reset
+ */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/1.5 "Microsoft YaHei","微软雅黑",arial,simsun,"宋体";-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+small{font-size:12px;}
+ul,ol{list-style:none;}
+fieldset,img{border:0;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+.clearfix{*zoom:1}
+.clearfix:before,
+.clearfix:after{display:table;content:"";line-height:0;clear:both}
+.hide{display:none;}
+/*
+ *  公共头
+ */
+.common-header{color:#fff;font-size:14px;position: absolute;top:0px;background:url(//s.momocdn.com/static/w5/img/website/white-logo.png) 14px 37px no-repeat;padding-left: 218px;height:120px;left:50%;margin-left:-508px;}
+.common-header a{text-decoration: none;color:#fff;}
+.common-header a.logo-href{display: block;width: 215px;height: 120px;position: absolute;left: 0;top: 0;}
+.common-header a.on{color:#1e78e7;}
+.common-header li{float: left;padding: 0 30px;background:url(//s.momocdn.com/static/w5/img/website/white-border.png) 0 54px no-repeat;height:120px;line-height:120px;}
+.common-header li.no-border{background: none;}
+.white-bg .common-header{background:url(//s.momocdn.com/static/w5/img/website/blue-logo.png) 14px 37px no-repeat;}
+.white-bg .common-header a,
+.white-bg .common-header span{color:#6f6f6f;}
+.white-bg .common-header li{background:url(//s.momocdn.com/static/w5/img/website/gray-border.png) 0 54px no-repeat;}
+.white-bg .common-header li.no-border{background: none;}
+.white-bg .common-header a.on,
+.white-bg .common-header span.on {  color: #1e78e7;    }
+/*service down-list*/
+.common-header li .service {}
+.common-header li .service .down-list{z-index:2000;display:none;text-align:center;line-height: 40px;color: #007aff;position: absolute;top: 90px;left:0;width: 100%;}
+.common-header li .service .down-list{background:#156bd4;border:1px solid #156bd4;}
+.white-bg .common-header li .service .down-list{background:#ffffff;border:1px solid #e4e4e4;}
+.common-header li .service .down-list a{}
+.common-header li .service .down-list span,
+.common-header li .service:hover .down-list{display:block;transition: all 0.1s}
+.common-header li .service .down-list .item{}
+.white-bg .common-header li .service .down-list .item{}
+.common-header li .service .down-list .item:hover{background:#0c5dbf}
+.white-bg .common-header li .service .down-list .item:hover{background:#007aff;color:#ffffff;}
+.common-header li .service .down-list .item:hover a{color:#ffffff;}
+.common-header li .service .down-list .item.colortext{background:#1e79e8;width:100px;position:absolute;top:-51px;left:14px;height: 50px;margin: 0px;}
+.white-bg .common-header li .service .down-list .item.colortext{background:#ffffff;}
+.white-bg .common-header li .service .down-list .item.colortext:hover{background:#ffffff;color:#007aff;}
+.white-bg .common-header li .service .down-list .item.colortext:hover a{color:#007aff;}
+.common-header li .service:before,.white-bg .common-header li .service:after{position:absolute;right:12px;font-size:36px;}
+.common-header li .service:before{ content:'';color:#1e78e7;top: 55px;right:14px;z-index:3000;
+    width: 6px;height: 6px;background:none;transform: rotate(45deg);-o-transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transform: rotate(45deg); }
+.common-header li .service:before{border: 2px solid #ffffff;border-top:none;border-left:none;}
+.white-bg .common-header li .service:before{border: 2px solid #1e78e7;border-top:none;border-left:none;}
+/*.white-bg .common-header li .service:after{content:'';color:#ffffff;top:-56px;}*/
+.common-header .white-bg-service{display:block;position:relative;}
+.common-header .black-bg-service{display:none;}
+.white-bg .common-header .black-bg-service{display:none;}
+.white-bg .common-header .white-bg-service{display:block;}
+
+/*
+ *  公共尾
+ */
+.common-footer {color:#646464;text-align: center;font-size:12px;padding-bottom: 133px;}
+.common-footer ul{width: 410px;margin: 0 auto;*margin-bottom:30px;}
+.common-footer li{float:left;margin-right:35px;margin-bottom:30px;}
+.common-footer a{color:#646464;text-decoration: none;}
+.common-footer a:hover{color:#1e78eb;text-decoration: none;}
