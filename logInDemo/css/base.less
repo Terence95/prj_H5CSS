@@ -1,0 +1,110 @@
+html {
+    font-family: sans-serif;
+    font-size: 100%;
+}
+body {
+    color: #333;
+    background-color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    color: #333;
+    font-size: 14/16rem;
+    text-decoration: none;
+}
+.data-table {
+    width: 100%;
+    clear: none;
+    float: none;
+    font-size: 14/16rem;
+    border: solid #e0e0e0 1/16rem;
+    border-collapse: collapse;
+    tr {
+        height: 35/16rem;
+        &:nth-child(odd) {
+            background-color: #F8F8F8;
+        }
+    }
+    td {
+        padding: 0;
+        margin: 0;
+        border: solid #e0e0e0 1/16rem;
+        padding-left: 10/16rem;
+        padding-right: 10/16rem;
+        font-size: 14/16rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:first-child {
+            width: 50/16rem;
+            text-align: center;
+            input[type="checkbox"] {
+                -webkit-appearance: none;
+                background: #fff url("../img/checkbox.png");
+                height: 22/16rem;
+                vertical-align: middle;
+                width: 22/16rem;
+            }
+            input[type="checkbox"]:checked {
+                background-position: -48/16rem 0;
+            }
+        }
+    }
+    th {
+        padding: 0;
+        margin: 0;
+        border: solid #e0e0e0 1/16rem;
+        padding-left: 10/16rem;
+        padding-right: 10/16rem;
+        text-align: left;
+    }
+}
+.page-bar {
+    margin-top: 20/16rem;
+    background-color: #EBEEF7;
+    height: 40/16rem;
+    line-height: 40/16rem;
+    padding-left: 10/16rem;
+    padding-right: 10/16rem;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+    .page-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 14/16rem;
+        .page-info {
+            float: left;
+        }
+        .page-operation {
+            float: right;
+            a {
+                padding-left: 6/16rem;
+                padding-right: 6/16rem;
+                cursor: pointer;
+                &:hover {
+                    color: #ff6700;
+                }
+            }
+        }
+    }
+}
+i {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+.no-select {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}

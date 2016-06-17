@@ -1,0 +1,83 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+}
+//为了适配移动端此处采用rem单位
+.main {
+    width: 1200/16rem;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    .login-container {
+        width: 500/16rem;
+        height: 420/16rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        border: solid 3/16rem rgba(255, 255, 255, 1);
+        border-radius: 1/16rem;
+        position: absolute;
+        top: 145/16rem;
+        right: 450/16rem;
+        .login-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            .login-item {
+                text-align: center;
+                .title {
+                    margin-top: 30/16rem;
+                    font-size: 60/16rem;
+                    font-family: weiruanyahei,songti,sans-serif;
+                    color: #0ac2ff;
+                    letter-spacing: 1/16rem;
+                }
+                .input {
+                    width: 350/16rem;
+                    height: 40/16rem;
+                    outline: none;
+                    border: solid 1/16rem #eee;
+                    border-radius: 5/16rem;
+                    padding-left: 20/16rem;
+                    padding-right: 20/16rem;
+                    margin-top: 20/16rem;
+                    letter-spacing: 1/16rem;
+                    font-size: 14/16rem;
+                    font-weight: normal;
+                }
+                .btn {
+                    outline: none;
+                    width: 350/16rem;
+                    height: 40/16rem;
+                    cursor: pointer;
+                    border: 0;
+                    letter-spacing: 1/16rem;
+                    border-radius: 5/16rem;
+                    font-size: 14/16rem;
+                    font-weight: normal;
+                    margin-top: 20/16rem;
+                    margin-bottom: 30/16rem;
+                }
+                .blue {
+                    background-color: #00b4ef;
+                    color: #fff;
+                    &:active{
+                      background-color: #24c8ff;
+                    }
+                }
+                .link {
+                    color: #00b4ef;
+                    font-size: 16/16rem;
+                    letter-spacing: 1/16rem;
+                    display: inline-block;
+                    border-bottom: dashed 1/16rem #00b4ef;
+                    padding-bottom: 2/16rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
