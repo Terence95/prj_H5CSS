@@ -8,12 +8,15 @@ body {
 }
 //为了适配移动端此处采用rem单位
 .main {
+    // display: none;
     width: 1200/16rem;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     .login-container {
+        // TODO: note display:none
+        display: none;
         width: 500/16rem;
         height: 420/16rem;
         background-color: rgba(255, 255, 255, 0.3);
@@ -64,8 +67,8 @@ body {
                 .blue {
                     background-color: #00b4ef;
                     color: #fff;
-                    &:active{
-                      background-color: #24c8ff;
+                    &:active {
+                        background-color: #24c8ff;
                     }
                 }
                 .link {
@@ -78,6 +81,28 @@ body {
                     cursor: pointer;
                 }
             }
+        }
+    }
+    .recover-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        top: 150/16rem;
+        left: 206/16rem;
+        // TODO: modify this later
+        // display: none;
+        width: 780/16rem;
+        height: 500/16rem;
+        background-color: #ffffff;
+        opacity: 0.95;
+        border: solid 5/16rem rgba(255,255,255,0.1);
+        border-radius: 5/16rem;
+        .title {
+          font-size: 22/16rem;
+          font-weight: 500;
+          color: #ffffff;
+          background-color: rgba(0,180,239,0.75);
+
         }
     }
 }

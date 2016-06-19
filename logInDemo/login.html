@@ -3,51 +3,85 @@
 <html lang="zh-Hans">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="cleartype" content="on">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="">
-    <link rel="stylesheet" text="text/css" href="css/base.css">
-    <link rel="stylesheet" text="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" text="text/css" href="css/login.css">
-    <title>Login | Demo</title>
-    <meta name="theme-color" content="#ffffff">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<link rel="stylesheet" text="text/css" href="css/base.css">
+	<link rel="stylesheet" text="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" text="text/css" href="css/login.css">
+	<title>Login | Demo</title>
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
 
-    <div class="main">
-        <div class="login-container no-select">
-            <dl class="login-list">
-                <dt class="login-item">
+	<div class="main">
+		<div class="login-container no-select">
+			<dl class="login-list">
+				<dt class="login-item">
                   <li class="title">
                     Login Demo
                   </li>
                 </dt>
 
-                <dt class="login-item">
+				<dt class="login-item">
                   <input type="text" name="username" id="username" class="input"  value="" placeholder="Username" autocomplete="off" required="required" pattern="^[a-zA-Z0-9]{3,15}$">
                 </dt>
 
-                <dt class="login-item">
+				<dt class="login-item">
                   <input type="password" name="username" id="password" class="input"  value="" placeholder="Password" autocomplete="off" required="required" pattern="^[a-zA-Z0-9]{6,15}$">
                 </dt>
 
-                <dt class="login-item">
+				<dt class="login-item">
                   <input type="button" name="name" id="login-btn" class="btn blue" value="Login">
                 </dt>
 
-                <dt class="login-item">
+				<dt class="login-item">
                   <a class="link" id="link-recover">Retrieve Password</a>
                 </dt>
-            </dl>
-        </div>
+			</dl>
+		</div>
 
-			
-    </div>
+		<div class="recover-container no-select">
+			<h2 class="title">找回密码</h2>
+			<div class="step-container">
+				<div class="step-bar">
+					<dl class="step-list">
+						<dt class="step-item step-active">
+								<div class="ball">1</div>
+								<div class="desc">验证个人资料</div>
+						</dt>
+						<dt class="step-item">
+							<div class="ball">2</div>
+							<div class="desc">验证账号资料</div>
+						</dt>
+						<dt class="step-item">
+							<div class="ball">3</div>
+							<div class="desc">设置新密码</div>
+						</dt>
+						<dt class="step-item">
+							<div class="ball">4</div>
+							<div class="desc">完成</div>
+						</dt>
+					</dl>
+				</div>
+
+				<div class="step-content">
+					<div class="step-wrapper">
+						<div class="step">
+							<dl class="content-list">
+		
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 
