@@ -6,6 +6,7 @@
     height: auto;
     z-index: -100;
     padding-top: 66px;
+    background-size: auto;
     font-family: weiruanyahei,songti,sans-serif;
 }
 .back #main {
