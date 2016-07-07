@@ -1,0 +1,36 @@
+.viewer {
+	background: rgba(31, 31, 30, 0.97);
+}
+.viewer li {
+	background: none; padding: 0px;
+}
+.viewer li > div {
+	left: 20px; top: 20px; right: 20px; bottom: 20px;
+}
+.viewer li.loading > div {
+	background: url("../images/loading.gif") no-repeat center;
+}
+.multiplebgs .viewer li.loading > div {
+	background: url("../images/loading.gif") no-repeat center, url("../images/loading_frame.png") no-repeat center;
+}
+.viewer li.previous.loading {
+	background: 0px;
+}
+.viewer li.next.loading {
+	background: 0px;
+}
+.viewer img {
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+.viewer .close {
+	transition:0.2s ease-in-out; top: 30px !important; text-align: center; right: 20px !important; color: rgb(255, 255, 255); line-height: 0; font-size: 32px; font-weight: 500 !important; z-index: 3; opacity: 0.4; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -khtml-opacity: .4; -moz-opacity: .4;
+}
+.viewer .close:hover {
+	opacity: 1; -khtml-opacity: 1; -moz-opacity: 1;
+}
+.viewer .caption {
+	transition:opacity 1.5s ease-in-out; color: rgb(207, 207, 207); line-height: 50px; font-size: 18px; visibility: hidden; opacity: 0; -webkit-transition: opacity 1.5s ease-in-out; -moz-transition: opacity 1.5s ease-in-out;
+}
+.viewer .current .caption {
+	visibility: visible; opacity: 100;
+}
