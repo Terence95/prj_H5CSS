@@ -1,0 +1,92 @@
+/*样式重置*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  min-width: 600px;
+}
+
+.sameheight{
+  margin-bottom: -9999px;
+  padding-bottom: 9999px;
+}
+
+/* header begin */
+.header{
+  background: #dde3f7;
+  height: 150px;
+  margin: 10px 5px 5px 5px;
+}
+
+.header h1{
+  padding: 10px 0 0 10px;
+}
+/* header end */
+
+/* article begin */
+.article{
+  height: 100%;
+  overflow: hidden;
+  margin: 0 5px 5px 5px;
+  /*padding-left: 150px;
+  padding-right: 100px;*/
+}
+
+.article p{
+  padding: 10px 10px 10px 10px;
+}
+
+.article h2{
+  padding: 10px 0 0 10px;
+}
+
+.article .left{
+  /*background: #c02959;*/
+  background: #dde3f7;
+  float: left;
+  width: 150px;
+  margin-left: -100%;
+
+  /*position: relative;*/
+  /*left: -150px;*/
+  /*opacity: 0.3;*/
+}
+
+.article .right{
+  /*background: #0d7792;*/
+  background: #dde3f7;
+  float: left;
+  width:150px;
+  margin-left:-150px;
+  /*position: relative;
+  right: -100px;*/
+}
+
+.article .middle{
+  /*background: #dde3f7;*/
+  float: left;
+  /*width: 100%;*/
+}
+
+.inner{
+  margin-left: 155px;
+  margin-right: 155px;
+  background: #dde3f7;
+}
+/* article end */
+
+/* footer begin */
+.footer{
+  background: #dde3f7;
+  margin-bottom: 5px;
+  height: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.footer h1{
+  padding: 10px 0 0 10px;
+}
+/* footer end */
