@@ -6,13 +6,15 @@ body {
     width: 300px;
     margin: 100px auto;
 }
+
 /* 小黄人整体 */
+
 .minions {
     position: relative;
 }
 
-
 /* 小黄人躯干 */
+
 .minionsbody {
     background: #f9d946;
     width: 240px;
@@ -24,10 +26,16 @@ body {
 }
 .minionsbody .belt {
     position: absolute;
-    top: 14px;
+    /* background: red; */
+    width: 240px;
+    height: 100px;
+    top: -126px;
+    z-index: 100;
+    overflow: hidden;
 }
 
 /* 裤子 */
+
 .minionsbody .trousers {
     position: absolute;
     bottom: 5px;
@@ -57,7 +65,7 @@ body {
     height: 10px;
     border: 5px solid #000;
     position: absolute;
-    top: -90px;
+    top: 39px;
     left: -35px;
     background: #2074a0;
     z-index: 2;
@@ -65,7 +73,7 @@ body {
     transform: rotate(45deg);
 }
 .minionsbody .belt .right {
-    top: -88px;
+    top: 39px;
     left: 163px;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
@@ -94,6 +102,7 @@ body {
 }
 
 /* 裤子上的线条 */
+
 .line_right {
     width: 30px;
     height: 30px;
@@ -285,8 +294,8 @@ body {
     transform: rotate(-5deg);
 }
 
-
 /* 眼睛白色部分动画 */
+
 .eyes .leftEye .left_blackEye .left_white, .eyes .rightEye .right_blackEye .right_white {
     -webkit-animation: whiteeye 5s ease-in-out infinite;
     animation: whiteeye 5s ease-in-out infinite;
@@ -294,39 +303,39 @@ body {
 @-webkit-keyframes whiteeye {
     0%, 20%, 50%, 70%, 100% {
         -webkit-transform: translateX(0px);
-        -moz-transform: translateX(0px);
-        transform: translateX(0px);
     }
     30%, 40% {
         -webkit-transform: translate3d(3px, 4px, 0);
-        -moz-transform: translate3d(3px, 4px, 0);
-        transform: translate3d(3px, 4px, 0);
     }
     80%, 90% {
         -webkit-transform: translate3d(-15px, 4px, 0);
+    }
+}
+@-moz-keyframes whiteeye {
+    0%, 20%, 50%, 70%, 100% {
+        -moz-transform: translateX(0px);
+    }
+    30%, 40% {
+        -moz-transform: translate3d(3px, 4px, 0);
+    }
+    80%, 90% {
         -moz-transform: translate3d(-15px, 4px, 0);
-        transform: translate3d(-15px, 4px, 0);
     }
 }
 @keyframes whiteeye {
     0%, 20%, 50%, 70%, 100% {
-        -webkit-transform: translateX(0px);
-        -moz-transform: translateX(0px);
         transform: translateX(0px);
     }
     30%, 40% {
-        -webkit-transform: translate3d(3px, 4px, 0);
-        -moz-transform: translate3d(3px, 4px, 0);
         transform: translate3d(3px, 4px, 0);
     }
     80%, 90% {
-        -webkit-transform: translate3d(-15px, 4px, 0);
-        -moz-transform: translate3d(-15px, 4px, 0);
         transform: translate3d(-15px, 4px, 0);
     }
 }
 
 /* 眼睛黑色部分动画 */
+
 .eyes .leftEye .left_blackEye, .eyes .rightEye .right_blackEye {
     -webkit-animation: blackeye 5s ease-in-out infinite;
     animation: blackeye 5s ease-in-out infinite;
@@ -334,34 +343,33 @@ body {
 @-webkit-keyframes blackeye {
     0%, 20%, 50%, 70%, 100% {
         -webkit-transform: translateX(0px);
-        -moz-transform: translateX(0px);
-        transform: translateX(0px);
     }
     30%, 40% {
         -webkit-transform: translate3d(10px, 0px, 0);
-        -moz-transform: translate3d(10px, 0px, 0);
-        transform: translate3d(10px, 0px, 0);
     }
     80%, 90% {
         -webkit-transform: translate3d(-10px, 0px, 0);
+    }
+}
+@-moz-keyframes blackeye {
+    0%, 20%, 50%, 70%, 100% {
+        -moz-transform: translateX(0px);
+    }
+    30%, 40% {
+        -moz-transform: translate3d(10px, 0px, 0);
+    }
+    80%, 90% {
         -moz-transform: translate3d(-10px, 0px, 0);
-        transform: translate3d(-10px, 0px, 0);
     }
 }
 @keyframes blackeye {
     0%, 20%, 50%, 70%, 100% {
-        -webkit-transform: translateX(0px);
-        -moz-transform: translateX(0px);
         transform: translateX(0px);
     }
     30%, 40% {
-        -webkit-transform: translate3d(10px, 0px, 0);
-        -moz-transform: translate3d(10px, 0px, 0);
         transform: translate3d(10px, 0px, 0);
     }
     80%, 90% {
-        -webkit-transform: translate3d(-10px, 0px, 0);
-        -moz-transform: translate3d(-10px, 0px, 0);
         transform: translate3d(-10px, 0px, 0);
     }
 }
