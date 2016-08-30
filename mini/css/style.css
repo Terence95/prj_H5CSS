@@ -1,0 +1,367 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 300px;
+    margin: 100px auto;
+}
+/* 小黄人整体 */
+.minions {
+    position: relative;
+}
+
+
+/* 小黄人躯干 */
+.minionsbody {
+    background: #f9d946;
+    width: 240px;
+    height: 400px;
+    border-radius: 115px;
+    z-index: 2;
+    border: 5px solid #000;
+    overflow: hidden;
+}
+.minionsbody .belt {
+    position: absolute;
+    top: 14px;
+}
+
+/* 裤子 */
+.minionsbody .trousers {
+    position: absolute;
+    bottom: 5px;
+    background: #2074a0;
+    width: 240px;
+    height: 100px;
+    border-top: 6px solid #000;
+    border-bottom-right-radius: 191px;
+    border-bottom-left-radius: 191px;
+}
+.trousers_top {
+    width: 160px;
+    height: 60px;
+    border: 6px solid #000;
+    border-bottom: none;
+    border-radius: 0 0 5px 5px;
+    background: #2074a0;
+    position: absolute;
+    bottom: 100px;
+    left: 34px;
+}
+
+/* 吊带部分 */
+
+.minionsbody .belt .left, .minionsbody .belt .right {
+    width: 100px;
+    height: 10px;
+    border: 5px solid #000;
+    position: absolute;
+    top: -90px;
+    left: -35px;
+    background: #2074a0;
+    z-index: 2;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.minionsbody .belt .right {
+    top: -88px;
+    left: 163px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.minionsbody .belt .left:after, .minionsbody .belt .right:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 1px;
+    left: 90px;
+}
+
+/* 口袋部分 */
+
+.pocket {
+    width: 60px;
+    height: 45px;
+    border: 6px solid #000;
+    border-radius: 0px 0px 25px 25px;
+    position: absolute;
+    bottom: 65px;
+    left: 84px;
+}
+
+/* 裤子上的线条 */
+.line_right {
+    width: 30px;
+    height: 30px;
+    border-bottom-left-radius: 100px;
+    border-bottom: 6px solid #000;
+    border-left: 6px solid #000;
+    position: absolute;
+    left: 9px;
+    bottom: 60px;
+    -webkit-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+}
+.line_left {
+    width: 30px;
+    height: 30px;
+    border-bottom-right-radius: 100px;
+    border-bottom: 6px solid #000;
+    border-right: 6px solid #000;
+    position: absolute;
+    right: 9px;
+    bottom: 63px;
+    -webkit-transform: rotate(75deg);
+    transform: rotate(75deg);
+}
+.line_bottom {
+    height: 40px;
+    border: 3px solid #000;
+    border-radius: 3px;
+    position: absolute;
+    left: 118px;
+    bottom: 0px;
+}
+
+/* 眼睛 */
+
+.eyes {
+    position: relative;
+    z-index: 3;
+}
+.eyes .leftEye, .eyes .rightEye {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 6px solid #000;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 27px;
+}
+.eyes .leftEye {
+    left: 124px;
+}
+.eyes .leftEye .left_blackEye, .eyes .rightEye .right_blackEye {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 24px;
+    left: 22px;
+}
+.eyes .leftEye .left_blackEye .left_white, .eyes .rightEye .right_blackEye .right_white {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 7px;
+    left: 17px;
+}
+.eyes .leftEye .left_blackEye .left_white {
+    top: 4px;
+    left: 17px;
+}
+.eyes .leftEye:after, .eyes .rightEye:after {
+    content: '';
+    width: 37px;
+    height: 18px;
+    background: #000;
+    position: absolute;
+    left: -38px;
+    top: 37px;
+    -webkit-transform: skewX(20deg) rotate(7deg);
+}
+.eyes .leftEye:after {
+    left: 89px;
+    top: 37px;
+    -webkit-transform: skewX(-20deg) rotate(-7deg);
+}
+
+/* 嘴巴 */
+
+.mouth {
+    position: relative;
+}
+.mouth .mouth_shape {
+    position: absolute;
+    width: 55px;
+    height: 35px;
+    background: #fff;
+    top: 171px;
+    left: 91px;
+    z-index: 3;
+    border: 5px solid #000;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* 手begin */
+
+.hands {
+    position: relative;
+    z-index: -1;
+}
+.hands .leftHand, .hands .rightHand {
+    width: 80px;
+    height: 80px;
+    border: 6px solid #000;
+    background: #f9d946;
+    position: absolute;
+    top: -190px;
+    left: -23px;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+.hands .leftHand {
+    left: 182px;
+    top: -190px;
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+}
+.hands .leftHand:after, .hands .rightHand:after {
+    content: '';
+    width: 6px;
+    border: 3px solid #000;
+    border-radius: 3px;
+    position: absolute;
+    left: 13px;
+    top: 50px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.hands .leftHand:after {
+    left: 53px;
+    top: 50px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+/* 手 end */
+
+
+/* 鞋子begin */
+
+.shoes {
+    position: relative;
+}
+.shoes .leftShoes, .shoes .rightShoes {
+    width: 36px;
+    height: 50px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 9px;
+    background: #000;
+    position: absolute;
+    top: -4px;
+    left: 88px;
+}
+.shoes .leftShoes {
+    left: 131px;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 6px;
+}
+.shoes .leftShoes:after, .shoes .rightShoes:after {
+    content: '';
+    width: 60px;
+    height: 35px;
+    border-radius: 20px 10px 21px 15px;
+    background: #000;
+    position: absolute;
+    left: -36px;
+    top: 14.4px;
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.shoes .leftShoes:after {
+    border-radius: 10px 20px 15px 21px;
+    left: 13px;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+
+/* 眼睛白色部分动画 */
+.eyes .leftEye .left_blackEye .left_white, .eyes .rightEye .right_blackEye .right_white {
+    -webkit-animation: whiteeye 5s ease-in-out infinite;
+    animation: whiteeye 5s ease-in-out infinite;
+}
+@-webkit-keyframes whiteeye {
+    0%, 20%, 50%, 70%, 100% {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    30%, 40% {
+        -webkit-transform: translate3d(3px, 4px, 0);
+        -moz-transform: translate3d(3px, 4px, 0);
+        transform: translate3d(3px, 4px, 0);
+    }
+    80%, 90% {
+        -webkit-transform: translate3d(-15px, 4px, 0);
+        -moz-transform: translate3d(-15px, 4px, 0);
+        transform: translate3d(-15px, 4px, 0);
+    }
+}
+@keyframes whiteeye {
+    0%, 20%, 50%, 70%, 100% {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    30%, 40% {
+        -webkit-transform: translate3d(3px, 4px, 0);
+        -moz-transform: translate3d(3px, 4px, 0);
+        transform: translate3d(3px, 4px, 0);
+    }
+    80%, 90% {
+        -webkit-transform: translate3d(-15px, 4px, 0);
+        -moz-transform: translate3d(-15px, 4px, 0);
+        transform: translate3d(-15px, 4px, 0);
+    }
+}
+
+/* 眼睛黑色部分动画 */
+.eyes .leftEye .left_blackEye, .eyes .rightEye .right_blackEye {
+    -webkit-animation: blackeye 5s ease-in-out infinite;
+    animation: blackeye 5s ease-in-out infinite;
+}
+@-webkit-keyframes blackeye {
+    0%, 20%, 50%, 70%, 100% {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    30%, 40% {
+        -webkit-transform: translate3d(10px, 0px, 0);
+        -moz-transform: translate3d(10px, 0px, 0);
+        transform: translate3d(10px, 0px, 0);
+    }
+    80%, 90% {
+        -webkit-transform: translate3d(-10px, 0px, 0);
+        -moz-transform: translate3d(-10px, 0px, 0);
+        transform: translate3d(-10px, 0px, 0);
+    }
+}
+@keyframes blackeye {
+    0%, 20%, 50%, 70%, 100% {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    30%, 40% {
+        -webkit-transform: translate3d(10px, 0px, 0);
+        -moz-transform: translate3d(10px, 0px, 0);
+        transform: translate3d(10px, 0px, 0);
+    }
+    80%, 90% {
+        -webkit-transform: translate3d(-10px, 0px, 0);
+        -moz-transform: translate3d(-10px, 0px, 0);
+        transform: translate3d(-10px, 0px, 0);
+    }
+}
