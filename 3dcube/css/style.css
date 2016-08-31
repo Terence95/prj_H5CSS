@@ -100,32 +100,54 @@ body {
 
 #one{
   -webkit-transform: translateZ(80px);
+  -moz-transform: translateZ(80px);
+  -ms-transform: translateZ(80px);
+  -o-transform: translateZ(80px);
+  transform: translateZ(80px);
 }
 
 #two{
   -webkit-transform: rotatex(-90deg) translateZ(80px);
+  -moz-transform: rotatex(-90deg) translateZ(80px);
+  -ms-transform: rotatex(-90deg) translateZ(80px);
+  -o-transform: rotatex(-90deg) translateZ(80px);
+  transform: rotatex(-90deg) translateZ(80px);
 }
 
 #three{
   -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(80px);
+  -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(80px);
+  -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(80px);
+  -o-transform: rotateY(90deg) rotateX(90deg) translateZ(80px);
+  transform: rotateY(90deg) rotateX(90deg) translateZ(80px);
 }
 
 #four{
   -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(80px);
+  -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(80px);
+  -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(80px);
+  -o-transform: rotateY(180deg) rotateZ(90deg) translateZ(80px);
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(80px);
 }
 
 #five{
   -webkit-transform: rotateY(-90deg)rotateZ(90deg)translateZ(80px);
+  -moz-transform: rotateY(-90deg)rotateZ(90deg)translateZ(80px);
+  -ms-transform: rotateY(-90deg)rotateZ(90deg)translateZ(80px);
+  -o-transform: rotateY(-90deg)rotateZ(90deg)translateZ(80px);
+  transform: rotateY(-90deg)rotateZ(90deg)translateZ(80px);
 }
 
 #six{
   -webkit-transform: rotateY(90deg)translateZ(80px);
+  -moz-transform: rotateY(90deg)translateZ(80px);
+  -ms-transform: rotateY(90deg)translateZ(80px);
+  -o-transform: rotateY(90deg)translateZ(80px);
+  transform: rotateY(90deg)translateZ(80px);
 }
 
 /* animation */
 @-webkit-keyframes animation {
-    from,
-    to {}
     16% {
         -webkit-transform: rotateY(-90deg);
     }
@@ -144,8 +166,6 @@ body {
 }
 
 @-ms-keyframes animation {
-    from,
-    to {}
     16% {
         -ms-transform: rotateY(-90deg);
     }
@@ -164,8 +184,6 @@ body {
 }
 
 @-moz-keyframes animation {
-    from,
-    to {}
     16% {
         -moz-transform: rotateY(-90deg);
     }
@@ -184,8 +202,6 @@ body {
 }
 
 @-o-keyframes animation {
-    from,
-    to {}
     16% {
         -o-transform: rotateY(-90deg);
     }
