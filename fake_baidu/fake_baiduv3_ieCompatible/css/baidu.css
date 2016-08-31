@@ -1,0 +1,320 @@
+/*样式重置*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+ul {
+    list-style: none;
+}
+a {
+    cursor: pointer;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+/*container*/
+.container {
+    width: 100%;
+    height: 100%;
+    min-width: 810px;
+    min-height: 600px;
+    _min-height: 810px;
+    _min-width: 600px;
+    position: relative;
+}
+/*container end*/
+
+/*nav*/
+nav {
+    overflow: hidden;
+    width: 493px;
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    margin: 19px 0 5px 0;
+}
+.nav-ul li {
+    /*display: inline-block;*/
+    vertical-align: top;
+    *display: inline;
+}
+.nav-ul a {
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+    line-height: 24px;
+    font-size: 13px;
+    margin-left: 20px;
+    color: #333;
+}
+.strong a {
+    font-weight: bold;
+}
+.strong a:hover, .no-bold a:hover {
+    color: #2529d8;
+}
+
+/*更多 begin*/
+
+.more-btn a {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    background: #38f;
+    border-bottom: 1px solid #38f;
+    text-decoration: none;
+    line-height: 24px;
+    height: 24px;
+    right: 16px;
+    width: 60px;
+    text-align: center;
+}
+.more-btn a:hover {
+    color: #333;
+    background: #F9F9F9;
+}
+.bg .myList0 {
+    display: block;
+}
+.more1 {
+    display: none;
+}
+#more0 {
+    background: #F9F9F9;
+    text-align: center;
+    float: right;
+    /*display: block;*/
+    height: 700px;
+    margin-right: 11px;
+}
+#more0 img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    text-decoration: none;
+    overflow: hidden;
+}
+#more0 a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    border-bottom: #f0f0f0 1px solid;
+    font-size: 12px;
+    color: #666;
+}
+
+/*更多 end*/
+
+
+/*关于设置部分*/
+
+#myList1 {
+    padding-top: 50px;
+    margin-right: 30px;
+}
+#myList {
+    float: right;
+    margin: 0 auto;
+    margin-right: 55px;
+    /*border: 1px solid black;*/
+    -webkit-box-shadow: 0 0 10px #9e9e9e;
+    -moz-box-shadow: 0 0 10px #9e9e9e;
+    -ms-box-shadow: 0 0 10px #9e9e9e;
+    -o-box-shadow: 0 0 10px #9e9e9e;
+    box-shadow: 0 0 10px #9e9e9e;
+    width: 62px;
+    height: 124px;
+    padding-left: 0px;
+    padding-top: 0px;
+    line-height: 200%;
+}
+#mylist li {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    margin: 0 2px 0 0;
+}
+.myList0 {
+    display: none;
+}
+.setting {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+
+.full a {
+    display: inline-block;
+    width: 62px;
+    height: 28px;
+    text-align: center;
+    font-size: 12px;
+}
+.full a:hover {
+    background: #3385ff;
+    color: white;
+}
+
+/*wrapper*/
+
+#wrapper {
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    top: 18%;
+}
+.logo img {
+    width: 270px;
+    height: 129px;
+}
+#form {
+    width: 640px;
+    margin: 20px auto;
+    height: 36px;
+}
+input {
+    border: 0;
+    outline: 0;
+}
+.span-input {
+    width: 539px;
+    height: 34px;
+    background: #ffffff;
+    border-top: 1px solid #B8B8B8;
+    border-left: 1px solid #B8B8B8;
+    border-bottom: 1px solid #CCCCCC;
+    /*border: 1px solid #4791FF;*/
+    border-right: 0;
+    vertical-align: center;
+    float: left;
+    background: url(../img/camera.png) no-repeat 513px;
+}
+.span-input .input {
+    background: url(../img/rec.png) no-repeat 477px;
+}
+.span-input:hover {
+    border-top: 1px solid #4791FF;
+    border-left: 1px solid #4791FF;
+    border-bottom: 1px solid #4791FF;
+}
+.input {
+    font-size: 100%;
+    width: 500px;
+    height: 22px;
+    margin: 6px 0 0 -20px;
+    vertical-align: center;
+}
+/*input end*/
+
+/*submit*/
+.span-submit {
+    float: left;
+    border-bottom: 1px solid transparent;
+    vertical-align: middle;
+}
+.submit {
+    height: 36px;
+    width: 100px;
+    font-size: 15px;
+    display: inline-block;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    color: white;
+    letter-spacing: 1px;
+    vertical-align: center;
+}
+.submit:hover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+    cursor: pointer;
+}
+/*submit end*/
+
+/*wrapper end*/
+
+
+/*footer begin*/
+footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 44px;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+}
+#qrcode {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+#qrcode .qrcode-item {
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding-left: 20px;
+}
+#qrcode .qrcode-item-1 .qrcode-img {
+    display: block;
+    background: url(../img/qrcode1.png) 0 0 no-repeat;
+    /*background-size: 60px 60px;*/
+    height: 60px;
+    width: 60px;
+}
+#qrcode .qrcode-item-2 .qrcode-img {
+    display: block;
+    background: url(../img/qrcode2.png) 0 0 no-repeat;
+    /*background-size: 60px 60px;*/
+    height: 60px;
+    width: 60px;
+}
+#qrcode .qrcode-text {
+    display: block;
+    *display: block;
+    float: left;
+    padding-left: 10px;
+    margin-top: 12px;
+    line-height: 22px;
+}
+#qrcode .qrcode-text b {
+    color: #666;
+    font-weight: bold;
+}
+#qrcode .qrcode-text p {
+    text-align: left;
+    color: #9e9e9e;
+}
+#ftConw, #ftConw a {
+    color: #999;
+}
+#ftConw {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    text-align: left;
+    margin-left: 33px;
+    line-height: 23px;
+    position: relative;
+    width: 335px;
+    height: 70px;
+    top: -2px;
+}
+#ftConw #lh a {
+    padding-right: 15px;
+}
+.c-icon-icrlogo {
+    width: 14px;
+    height: 17px;
+    overflow: hidden;
+    background-position: 1px;
+}
+/*footer end*/
