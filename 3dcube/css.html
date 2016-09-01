@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>css美化表单</title>
+	<link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+	<style media="screen" type="text/css">
+		div{
+			/*width: 300px;
+			height: 300px;*/
+			/*background: orange;*/
+		}
+
+		.btn{
+			background: linear-gradient(#3b6cb8,#3ac4f2);
+			border-radius: 5px;
+		}
+
+		.btn:hover{
+			background: #3b6cb8;
+		}
+
+		.line{
+			height: 1px;
+			width: 100%;
+			border-top: 1px solid #d4d4d4;
+			border-bottom: 1px solid #fff;
+		}
+
+		.transitions{
+			background-color: #ffff00;
+			transition: background-color 1s linear, color 1s linear, width 1s linear, transform 1s linear;
+			width: 100px;
+			height: 100px;
+		}
+
+		.transitions:hover{
+			background-color: #ff00ff;
+			width: 150px;
+			color: white;
+			transform: rotate(360deg);
+		}
+
+		.animations{
+			background-color: #ffffff;
+			width: 100px;
+			height: 100px;
+		}
+		@-webkit-keyframes mycolor{
+			0%{
+				background-color: #eb2d2e;
+			}
+			20%{
+				background-color: #f48029;
+			}
+			30%{
+				background-color: #f7ec45;
+			}
+			40%{
+				background-color: #71bf51;
+			}
+			50%{
+				background-color: #3ac4f2;
+			}
+			70%{
+				background-color: #3b6cb8;
+			}
+			100%{
+				background-color: #6058a1;
+			}
+		}
+
+		.animations:hover{
+			-webkit-animation:mycolor 5s linear;
+		}
+
+
+		.animations1{
+			position: absolute;
+			background-color: #ffff00;
+			top: 650x;
+			width: 100px;
+			height: 100px;
+		}
+
+		@-webkit-keyframes mycolor1{
+			0%{
+				background-color: red;
+				transform: rotate(0deg);
+			}
+			40%{
+				background-color: blue;
+				transform: rotate(30deg);
+			}
+			60%{
+					transform: rotate(-30deg);
+			}
+			100%{
+					background-color: red;
+					transform: rotate(0deg);
+			}
+		}
+
+		.animations1:hover{
+			-webkit-animation-name:mycolor1;
+			-webkit-animation-duration:5s;
+			-webkit-animation-timing-function: ease-in;
+			/* linear easi-in(动画开始速度慢，由慢到快) ease-out(由快到慢) ease-in-out(快-慢-快) */
+		}
+	</style>
+</head>
+
+<body>
+	<div class="">
+		<input type="button" name="name" value="button" class="btn">
+	</div>
+
+
+	<!-- transition:property duration timing-function -->
+
+	<div class="transitions">
+		hello world
+	</div>
+	<br>
+	<div class="animations">
+		<!-- 可实现更加复杂的动画效果 -->
+		animations
+	</div>
+
+	<div class="animations1">
+		aaa
+	</div>
+</body>
+
+</html>
