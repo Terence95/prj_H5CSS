@@ -108,6 +108,24 @@
 			-webkit-animation-timing-function: ease-in;
 			/* linear easi-in(动画开始速度慢，由慢到快) ease-out(由快到慢) ease-in-out(快-慢-快) */
 		}
+
+		.transitions2{
+			width: 100px;
+			height: 100px;
+			margin: 0 auto;
+			background-color: red;
+		}
+
+		.transitions2:hover{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			transition-property: width, height, border-radius;
+			transition-duration: 1s;
+			transition-timing-function: ease-in;
+			transition-delay: 1s;
+		}
+
 	</style>
 </head>
 
@@ -130,6 +148,11 @@
 
 	<div class="animations1">
 		aaa
+	</div>
+
+
+	<div class="transitions2">
+
 	</div>
 </body>
 
