@@ -1,0 +1,125 @@
+body {
+    /* 设定文本不能被选择 */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    background: #f5f5f5
+}
+
+/* jkBanner begin */
+
+.jkBanner {
+    box-sizing: border-box;
+    height: 525px;
+    position: relative;
+    text-align: center;
+    min-width: 1000px;
+}
+.jkBanner .videoContainer {
+    display: inline-block;
+    width: 100%;
+    height: 525px;
+    overflow: hidden;
+    position: relative;
+}
+.jkBanner .videoContainer .index_video {
+    position: relative;
+    left: 50%;
+    margin-left: -960px;
+}
+
+/* jkBanner 遮罩层 */
+
+.jkBanner .videoContainer .video_mask {
+    display: block;
+    height: 525px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+}
+.jkBanner .bannerInfo {
+    display: block;
+    width: 100%;
+    height: 525px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.jkBanner .bannerInfo>h1 {
+    font-size: 35px;
+    color: #fff;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    height: 45px;
+}
+.jkBanner .bannerInfo>p {
+    font-size: 13px;
+    color: #fff;
+    line-height: 21px;
+    height: 21px;
+}
+.jkBanner .bannerInfo>span {
+    margin-top: 45px;
+    font-size: 12px;
+    color: #fafafa;
+    display: block;
+    height: 18px;
+}
+.jkBanner .bannerDownload {
+    height: 44px;
+    margin-top: 48px;
+}
+.jkBanner .bannerDownload>a {
+    display: inline-block;
+    height: 44px;
+    width: 141px;
+}
+.jkBanner .bannerDownload .androidDownload {
+    background: url("../img/anddown_92313c1.png") no-repeat center / 141px 44px;
+    margin-right: 20px;
+    transition: background .1s;
+    -moz-transition: background .1s;
+    -webkit-transition: background .1s;
+    -o-transition: background .1s;
+}
+.jkBanner .bannerDownload .androidDownload:hover {
+    background: url("../img/anddownhover_6bed6d5.png") no-repeat center / 141px 44px
+}
+.jkBanner .bannerDownload .iosDownload {
+    background: url("../img/iosdown_0813309.png") no-repeat center / 141px 44px;
+    transition: background .1s;
+    -moz-transition: background .1s;
+    -webkit-transition: background .1s;
+    -o-transition: background .1s
+}
+.jkBanner .bannerDownload .iosDownload:hover {
+    background: url("../img/iosdownhover_43e4f99.png") no-repeat center / 141px 44px
+}
+.jkBanner .bannerStatus {
+    /*background: red;*/
+    margin-top: 15px;
+    height: 38px;
+}
+.jkBanner .bannerStatus>a {
+    /*background: blue;*/
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+}
+.jkBanner .bannerStatus .haveLogin {
+    /*background: green;*/
+    display: inline-block;
+    width: 120px;
+    height: 38px;
+    background: url("../img/havelogin_1d29673.png") no-repeat center / 120px 30px;
+    transition: background .1s;
+    -moz-transition: background .1s;
+    -webkit-transition: background .1s;
+    -o-transition: background .1s
+}
+.jkBanner .bannerStatus .haveLogin:hover {
+    background: url("../img/haveloginhover_e5aa155.png") no-repeat center / 120px 30px
+}

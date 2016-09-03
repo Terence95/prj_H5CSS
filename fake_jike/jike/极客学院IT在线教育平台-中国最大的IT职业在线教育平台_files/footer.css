@@ -1,0 +1,363 @@
+a {
+	text-decoration: none
+}
+#footer div,
+#footer p,
+#footer dd,
+#footer dl,
+#footer dt {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif
+}
+
+#footer {
+	min-width: 1000px;
+	border-top: 1px solid #e4e4e4;
+	background: #fff;
+}
+
+#footer .jkinfor-block {
+	background: #fff;
+}
+
+#footer .jkinfor-block .jkinfor {
+	position: relative;
+	width: 1000px;
+	height: 215px;
+	margin: 0 auto;
+	border-bottom: 1px solid #f5f5f5;
+	padding-left: 224px;
+	padding-top: 25px;
+	box-sizing: border-box;
+}
+
+#footer .jkinfor-block .jkinfor .jk-logo {
+	position: absolute;
+	left: 0;
+	top: 25px;
+	display: inline-block;
+	width: 160px;
+}
+
+#footer .jkinfor-block .jkinfor .jk-logo img {
+	width: 109px;
+	height: 40px;
+	display: block;
+}
+
+#footer .jkinfor-block .jkinfor .jk-logo p {
+	font-size: 12px;
+	color: #999;
+	margin-top: 20px;
+}
+
+#footer .jkinfor dl {
+	width: 135px;
+	color: #808080;
+	float: left;
+}
+
+#footer .jkinfor dl dt {
+	font-size: 14px;
+	line-height: 30px;
+}
+
+#footer .jkinfor dl dd {
+	font-size: 12px;
+	line-height: 30px;
+}
+
+#footer .jkinfor dl dt a {
+	color: #808080;
+}
+
+#footer .jkinfor dl dd a {
+	color: #999999;
+}
+
+#footer .jkinfor a:hover {
+	color: #35b558;
+}
+
+#footer .jk-down {
+	position: absolute;
+	right: 0;
+	top: 25px;
+	display: inline-block;
+	width: 175px;
+	text-align: left;
+}
+
+#footer .jk-down .hot-tel {
+	color: #808080;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+#footer .jk-down .downCon {
+	position: relative;
+	display: inline-block;
+	width: 140px;
+	height: 30px;
+	border: 1px solid #eeeeee;
+	margin-bottom: 10px;
+	line-height: 30px;
+	color: #808080;
+	font-size: 13px;
+	padding-left: 40px;
+	cursor: pointer;
+}
+
+#footer .jk-down .down-ios {
+	background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-ios.png)no-repeat 0 0;
+	background-size: 30px 30px;
+}
+
+#footer .jk-down .down-and {
+	background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-and.png)no-repeat 0 0;
+	background-size: 30px 30px;
+}
+
+#footer .jk-down .downCon img {
+	display: inline-block;
+	width: 115px;
+	height: 153px;
+	position: absolute;
+	top: -157px;
+	left: 12px;
+	z-index: 2;
+	display: none;
+}
+
+#footer .jk-down .downCon:hover img {
+	display: block;
+}
+
+#footer .copyright {
+	font-size: 12px;
+	color: #999;
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+	padding: 15px 0
+}
+
+#footer .copyright a {
+	color: #999;
+}
+
+#footer .copyright a:hover {
+	color: #35B558;
+}
+
+#footer .copyright a.down-sina {
+	float: right;
+	height: 15px;
+	width: 20px;
+	margin-right: 10px;
+	background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-sina.png)no-repeat 0 0;
+	background-size: 20px 15px;
+}
+
+#footer .copyright a.down-wechat {
+	float: right;
+	height: 15px;
+	width: 20px;
+	background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-wechat.png)no-repeat 0 0;
+	background-size: 18px 15px;
+}
+
+.loading_icon {
+	width: 40px;
+	height: 40px;
+	background: url(http://e.jikexueyuan.com/headerandfooter/images/loading.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	z-index: 2000;
+	top: 50%;
+	left: 50%;
+	margin-top: -20px;
+	margin-left: -20px;
+	display: block;
+	font-size: 1.2rem;
+	line-height: 40px;
+	text-align: center;
+}
+
+.rotate2_360 {
+	-webkit-animation: rotate 1.5s infinite linear;
+	animation: rotate 1.5s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+	100% {
+		-webkit-transform: rotate(360deg)
+	}
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg)
+	}
+}
+
+.ljbm4 {
+	width: 300px;
+	height: 41px;
+	border: none;
+	margin-right: 20px;
+	outline: none;
+	cursor: pointer;
+	background: url(../image/baoming2.png) 0 0 no-repeat;
+	float: left;
+	background-size: 100% 100%;
+	font-size: 12px;
+	color: #fff;
+	line-height: 40px;
+}
+
+.gotop {
+	position: fixed;
+	left: 50%;
+	margin-left: 510px;
+	bottom: 50px;
+	width: 34px;
+	text-align: center;
+	z-index: 2000
+}
+
+.gotop span {
+	cursor: pointer
+}
+
+.gotop span.top {
+	display: block;
+	background: url(http://e.jikexueyuan.com/headerandfooter/images/gotop.jpg) 0 0 no-repeat;
+	background-size: 34px 103px;
+	width: 34px;
+	height: 34px
+}
+
+.gotop span.top:hover {
+	background: url(http://e.jikexueyuan.com/headerandfooter/images/gotop2.jpg) 0 0 no-repeat;
+	background-position: 0 0;
+	background-size: 34px 103px;
+	-webkit-background-size: 34px 103px;
+	-moz-background-size: 34px 103px
+}
+
+.gotop span.erwma {
+	position: relative;
+	display: block;
+	background: url(http://e.jikexueyuan.com/headerandfooter/images/gotop.jpg) 0 -34px no-repeat;
+	background-size: 34px 103px;
+	width: 34px;
+	height: 35px
+}
+
+.gotop span.jk-app {
+	position: relative;
+	display: block;
+	background: #f7f7f7 url(http://e.jikexueyuan.com/headerandfooter/images/phone-1.png) center center no-repeat;
+	background-size: 12px 24px;
+	width: 34px;
+	height: 35px;
+	border-bottom: 1px solid #e0e0e0
+}
+
+.gotop span.jk-app:hover {
+	background: #f7f7f7 url(http://e.jikexueyuan.com/headerandfooter/images/phone-2.png) center center no-repeat;
+	background-size: 12px 24px
+}
+
+.gotop span.jk-app:hover .appewm {
+	display: block;
+}
+
+.appewm {
+	background: url(http://e.jikexueyuan.com/headerandfooter/images/appewm.png) center center no-repeat;
+	background-size: 100%;
+	100%;
+	width: 126px;
+	height: 159px;
+	position: absolute;
+	z-index: 2100;
+	left: -126px;
+	top: -70px;
+	display: none
+}
+
+.gotop a.qq-online {
+	position: relative;
+	display: block;
+	background: #f7f7f7 url(http://e.jikexueyuan.com/headerandfooter/images/kfu.png) center center no-repeat;
+	width: 34px;
+	height: 35px;
+	border-top: 1px solid #e0e0e0
+}
+
+.gotop a.qq-online1 {
+	position: relative;
+	display: block;
+	background: #f7f7f7 url(http://e.jikexueyuan.com/headerandfooter/images/kfu1.png) center center no-repeat;
+	width: 34px;
+	height: 35px;
+	border-top: 1px solid #e0e0e0
+}
+
+.gotop a.qq-online .kefu {
+	position: absolute;
+	padding: 5px;
+	background: #f7f7f7;
+	color: #333;
+	font-size: 12px;
+	text-align: center;
+	width: 180px;
+	left: -190px;
+	display: none
+}
+
+.gotop a.qq-online .kefu i {
+	heihgt: 20px;
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-left: 10px solid #f7f7f7;
+	border-bottom: 8px solid transparent;
+	position: absolute;
+	right: -10px;
+	top: 12px
+}
+
+.gotop a.qq-online:hover .kefu {
+	display: block
+}
+
+.gotop span.erwma img,
+.gotop span.jk-app img {
+	width: 126px;
+	height: 159px;
+	position: absolute;
+	z-index: 2100;
+	left: -126px;
+	top: -70px;
+	display: none
+}
+
+.gotop a.diaocha {
+	display: block;
+	width: 34px;
+	height: 34px
+}
+
+.gotop span.erwma:hover {
+	background: url(http://e.jikexueyuan.com/headerandfooter/images/gotop2.jpg) 0 -34px no-repeat;
+	background-size: 34px 103px;
+	-webkit-background-size: 34px 103px;
+	-moz-background-size: 34px 103px
+}
