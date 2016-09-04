@@ -893,7 +893,7 @@ body {
 .jkBanner .bannerStatus .haveLogin:hover {
     background: url(http://s1.jikexueyuan.com/index/images/havelogin_1d29673.png) no-repeat center / 120px 30px
 }
-.jkBanner .bannerStatus .wechatLogin {
+/*.jkBanner .bannerStatus .wechatLogin {
     background: url(http://s1.jikexueyuan.com/index/images/weixinlogin_204d5be.png) no-repeat center / 38px 38px;
     transition: background .5s;
     -moz-transition: background .5s;
@@ -935,7 +935,7 @@ body {
 }
 .jkBanner .bannerStatus .phoneLogin:hover {
     background: url(http://s1.jikexueyuan.com/index/images/phoneloginhover_d5ddac1.png) no-repeat center / 38px 38px
-}
+}*/
 .jkBanner .bannerCard {
     height: 240px;
     width: 1000px;
