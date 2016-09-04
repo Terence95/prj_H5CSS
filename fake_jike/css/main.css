@@ -313,6 +313,9 @@ body {
 .jkBanner .bannerCard>div .communityClass li .buCard {
     background: url("../img/cardbu_1d16287.jpg") no-repeat top center / 22px 30px;
 }
+
+/* .h2Container */
+
 section .h2Container {
     padding-top: 10px;
     width: 230px;
@@ -382,6 +385,9 @@ section>ul>li:nth-child(n+2):hover {
     -webkit-transition: box-shadow .5s;
     -o-transition: box-shadow .5s
 }
+
+/* jkjiuye begin */
+
 .jkjiuye {
     box-sizing: border-box;
     width: 1000px;
@@ -409,7 +415,6 @@ section>ul>li:nth-child(n+2):hover {
     margin-left: 14px;
     background: #fff;
 }
-
 .jkjiuye ul>li img {
     width: 100%;
     height: 100%;
@@ -433,10 +438,435 @@ section>ul>li:nth-child(n+2):hover {
 .jkjiuye ul>li:last-child {
     width: 242px;
 }
+
+/* jikejiuye end */
+
+
+/* jkbase begin */
+
 .jkbase {
+    box-sizing: border-box;
+    width: 1000px;
+    height: 330px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+}
+.jkbase ul {
+    height: 100%;
+    width: 100%;
+}
+.jkbase ul .h2Container {
+    padding-top: 10px;
+    width: 229px;
+    height: 330px;
+    background: #fff;
+    /*margin-right: 14px;*/
+}
+.jkbase ul .h2Container h2 {
+    border-left: 2px solid #2d85ca;
+}
+.jkbase ul .h2Container>span:before {
+    background: #2d85ca url(http://s1.jikexueyuan.com/index/images/h2icon_a96e146.png) no-repeat center / 15px 14px
+}
+.jkbase ul .h2Container .h2img img {
+    margin-top: 50px;
+    width: 115px;
+    height: 80px;
+}
+.jkbase ul>li {
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 243px;
+    height: 158px;
+}
+.jkbase ul>li img {
+    width: 100%;
+    height: 100%;
+}
+.jkbase ul>li a {
+    display: block;
+    height: 100%;
+}
+.jkbase ul>li:last-child, .jkbase ul>li:nth-child(4) {
+    margin-right: 0;
+}
+.jkbase ul>li:nth-child(2), .jkbase ul>li:nth-child(3), .jkbase ul>li:nth-child(4) {
+    margin-bottom: 14px;
+}
+.jkBase ul>li:nth-child(4), .jkBase ul>li:last-child {
+    width: 242px
+}
+
+/* jkbase end */
+
+
+/* jkSku begin */
+
+.jkSku {
     box-sizing: border-box;
     width: 1000px;
     margin: 0 auto;
     margin-top: 30px;
+    height: 330px;
+    position: relative
+}
+.jkSku ul {
+    height: 100%;
+    width: 100%
+}
+.jkSku ul .h2Container {
+    padding-top: 10px;
+    width: 230px;
+    height: 330px;
+    background: #fff
+}
+.jkSku ul .h2Container h2 {
+    border-left: 2px solid #ff5c00
+}
+.jkSku ul .h2Container>span:before {
+    background: #ff5c00 url(http://s1.jikexueyuan.com/index/images/h2icon_a96e146.png) no-repeat center / 15px 14px
+}
+.jkSku ul .h2Container .h2img img {
+    margin-top: 30px;
+    width: 103px;
+    height: 94px
+}
+.jkSku ul>li {
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 371px;
+    height: 158px
+}
+.jkSku ul>li img {
+    width: 100%;
+    height: 100%
+}
+.jkSku ul>li a {
+    display: block;
+    height: 100%
+}
+.jkSku ul>li:last-child, .jkSku ul>li:nth-child(3) {
+    margin-right: 0
+}
+.jkSku ul>li:nth-child(2), .jkSku ul>li:nth-child(3) {
+    margin-bottom: 14px
+}
+
+/* jkSku end */
+
+
+/* jkDk begin */
+
+.jkDk {
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 158px;
     position: relative;
+}
+.jkDk ul {
+    height: 100%;
+    width: 100%;
+}
+.jkDk ul .h2Container {
+    padding-top: 10px;
+    width: 230px;
+    height: 158px;
+    background: #fff;
+}
+.jkDk ul .h2Container h2 {
+    border-left: 2px solid #ad3a37;
+}
+.jkDk ul .h2Container .h2img {
+    height: 88px
+}
+.jkDk ul .h2Container .h2img img {
+    margin-top: 17px;
+    width: 105px;
+    height: 72px
+}
+.jkDk ul>li {
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 371px;
+    height: 158px
+}
+.jkDk ul>li img {
+    width: 100%;
+    height: 100%
+}
+.jkDk ul>li a {
+    display: block;
+    height: 100%
+}
+.jkDk ul>li:last-child {
+    margin-right: 0
+}
+
+/* jkDk end */
+
+
+/* jkBai begin */
+
+.jkBai {
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 158px;
+    position: relative;
+}
+.jkBai ul {
+    height: 100%;
+    width: 100%;
+}
+.jkBai ul .h2Container {
+    padding-top: 10px;
+    width: 230px;
+    height: 158px;
+    background: #fff;
+    text-align: left;
+}
+.jkBai ul .h2Container h2 {
+    border-left: 2px solid #35b558;
+}
+.jkBai ul .h2Container .h2img {
+    height: 88px;
+}
+.jkBai ul .h2Container .h2img img {
+    margin-top: 17px;
+    width: 95px;
+    height: 72px
+}
+.jkBai ul>li {
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 243px;
+    height: 158px;
+    text-align: center;
+}
+.jkBai ul>li a {
+    display: block;
+    height: 100%
+}
+.jkBai ul>li .baiImg {
+    display: block;
+    height: 55px;
+    margin-top: 30px;
+}
+.jkBai ul>li span {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.jkBai ul>li p {
+    font-size: 12px;
+    color: #666;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 5px;
+}
+.jkBai ul>li:nth-child(2) img {
+    width: 41px;
+    height: 55px
+}
+.jkBai ul>li:nth-child(3) img {
+    width: 55px;
+    height: 48px
+}
+.jkBai ul>li:last-child {
+    margin-right: 0;
+    width: 242px
+}
+.jkBai ul>li:last-child img {
+    width: 55px;
+    height: 55px
+}
+.jkBai ul>li:last-child:hover {
+    boedr: 1px solid #fff;
+    box-shadow: none
+}
+
+/* jkBai end */
+
+
+/* jkStudent begin */
+
+.jkStudent {
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 500px;
+    position: relative;
+}
+.jkStudent>ul {
+    height: 100%;
+    width: 100%;
+}
+.jkStudent>ul .h2Container {
+    text-align: left;
+    padding-top: 10px;
+    width: 230px;
+    height: 500px;
+    background: #fff;
+}
+.jkStudent>ul .h2Container>ul {
+    padding-left: 15px;
+    padding-top: 10px;
+    width: 100%;
+}
+.jkStudent>ul .h2Container>ul>li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    background: #ccc;
+    margin-right: 14px;
+}
+.jkStudent>ul .h2Container>ul>li:nth-child(3n) {
+    margin-right: 0
+}
+.jkStudent>ul .h2Container>ul>li:nth-child(n+4) {
+    margin-top: 14px
+}
+.jkStudent>ul .h2Container>ul>li a {
+    display: block;
+    height: 100%
+}
+.jkStudent>ul .h2Container>ul>li a img {
+    width: 100%;
+    height: 100%
+}
+.jkStudent>ul>li {
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 243px;
+    height: 243px;
+    text-align: center;
+    padding-top: 30px;
+}
+.jkStudent>ul>li a {
+    display: block;
+    height: 100%;
+}
+.jkStudent>ul>li .s_pic {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+.jkStudent>ul>li .s_name {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+.jkStudent>ul>li .s_job {
+    font-size: 12px;
+    color: gray;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 10px
+}
+.jkStudent>ul>li .s_status {
+    font-size: 12px;
+    color: gray;
+    height: 16px;
+    margin-top: 35px
+}
+.jkStudent>ul>li .s_comp {
+    margin-top: 5px;
+    height: 20px;
+}
+.jkStudent>ul>li:nth-child(n+5) {
+    margin-top: 14px;
+}
+.jkStudent>ul>li:nth-child(4), .jkStudent>ul>li:last-child {
+    width: 242px;
+    margin-right: 0
+}
+
+/* jkOrganization begin */
+
+.jkOrganization {
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 158px;
+    position: relative;
+}
+.jkOrganization ul {
+    height: 100%;
+    width: 100%;
+}
+.jkOrganization ul .h2Container {
+    padding-top: 10px;
+    width: 230px;
+    height: 158px;
+    background: #fff;
+    text-align: left;
+}
+.jkOrganization ul .h2Container h2 {
+    border-left: 2px solid #ad3a37
+}
+.jkOrganization ul>li {
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 243px;
+    height: 158px;
+    text-align: center
+}
+.jkOrganization ul>li a {
+    display: block;
+    height: 100%
+}
+.jkOrganization ul>li .baiImg {
+    display: block;
+    height: 55px;
+    margin-top: 30px
+}
+.jkOrganization ul>li span {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+    font-weight: 500
+}
+.jkOrganization ul>li p {
+    font-size: 12px;
+    color: #666;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 5px
+}
+.jkOrganization ul>li:nth-child(2) img {
+    width: 55px;
+    height: 48px
+}
+.jkOrganization ul>li:nth-child(3) img {
+    width: 55px;
+    height: 48px
+}
+.jkOrganization ul>li:last-child {
+    margin-right: 0;
+    width: 242px
+}
+.jkOrganization ul>li:last-child img {
+    width: 55px;
+    height: 48px
 }
