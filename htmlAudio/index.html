@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Play Audio</title>
+	</head>
+	<body>
+			<button type="button" name="button" onclick="clickA()">play/pause</button>
+			<audio id="audio" src="iremember.mp3" controls="controls">
+				您的浏览器不支持
+			</audio>
+			<script type="text/javascript">
+					var a = document.getElementById("audio");
+					function clickA(){
+						if(a.paused){
+							a.play();
+						}else{
+							a.pause();
+						}
+					}
+			</script>
+	</body>
+</html>
