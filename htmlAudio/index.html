@@ -3,7 +3,13 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Play Audio</title>
+		<title>Play Audio and Video</title>
+		<style media="screen">
+			.video{
+				width: 300px;
+				height: 270px;
+			}
+		</style>
 	</head>
 	<body>
 			<button type="button" name="button" onclick="clickA()">play/pause</button>
@@ -20,5 +26,11 @@
 						}
 					}
 			</script>
+
+			<div class="video">
+					<video src="http://baobab.wandoujia.com/api/v1/playUrl?vid=8126&editionType=default&f=iphone&u=011f2924aa2cf27aa5dc8066c041fe08116a9a0c&vc=67" autoplay poster="posterimage.jpg" controls="controls">
+						浏览器不支持
+					</video>
+			</div>
 	</body>
 </html>
