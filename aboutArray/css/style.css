@@ -1,0 +1,20 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+	 font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.wrapper{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #dde3f7;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 200px;
+}
