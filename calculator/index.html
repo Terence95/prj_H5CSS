@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="shortcut icon" href="images/Calculator.ico" type="image/x-icon">
-	<script src="js/index.js"></script>
+
 
 </head>
 
@@ -26,30 +26,31 @@
 			<!-- calculator keyboard -->
 			<div id="cal-btn">
 				<ul>
-					<li>7</li>
-					<li>8</li>
-					<li>9</li>
-					<li class="tool">←</li>
+					<li onclick="command(7)">7</li>
+					<li onclick="command(8)">8</li>
+					<li onclick="command(9)">9</li>
+					<li onclick="delet()" class="tool">←</li>
 					<li class="tool" onclick="clearscreen()">C</li>
-					<li>4</li>
-					<li>5</li>
-					<li>6</li>
-					<li class="tool">×</li>
-					<li class="tool">÷</li>
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li class="tool">+</li>
-					<li class="tool">-</li>
-					<li>0</li>
-					<li>00</li>
-					<li class="tool">.</li>
-					<li class="tool">%</li>
-					<li class="tool">=</li>
+					<li onclick="command(4)">4</li>
+					<li onclick="command(5)">5</li>
+					<li onclick="command(6)">6</li>
+					<li onclick="times()" class="tool">×</li>
+					<li onclick="divide()" class="tool">÷</li>
+					<li onclick="command(1)">1</li>
+					<li onclick="command(2)">2</li>
+					<li onclick="command(3)">3</li>
+					<li onclick="plus()" class="tool">+</li>
+					<li onclick="minus()" class="tool">-</li>
+					<li onclick="command(0)">0</li>
+					<li onclick="doubleZero()">00</li>
+					<li onclick="dot()" class="tool">.</li>
+					<li onclick="persent()" class="tool">%</li>
+					<li onclick="equal()" class="tool">=</li>
 				</ul>
 			</div>
 		</form>
 	</div>
+	<script src="js/index.js"></script>
 </body>
 
 </html>
