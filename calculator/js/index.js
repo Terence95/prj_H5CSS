@@ -1,4 +1,4 @@
-// js简易计算器
+// js完整计算器
 var num = 0;
 var result = 0;
 var shownum = "0";
@@ -8,7 +8,7 @@ var quit = 0; // 防止重复按键
 
 // command 函数, 显示输入数据
 function command(num) {
-    if (calstate == 5) {
+    if (calstate === 5) {
         clearscreen();
     }
     var str = String(document.calculator.numScreen.value);
@@ -130,6 +130,132 @@ function persent() { //百分号
     document.calculator.numScreen.value = str;
     operate = 0;
     calcul = 5;
+}
+
+
+// 平方
+function square() {
+    var firsnum = document.calculator.numScreen.value;
+    var str = String(firsnum);
+    if ((str != "0" && (operate === 0))) {
+        var tempresult = parseFloat(firsnum * firsnum).toFixed(4);
+        str = String(tempresult);
+    } else {
+        str = "0";
+    }
+    document.calculator.numScreen.value = str;
+    // alert(firsnum);
+    operate = 0;
+}
+
+// 立方
+function cube() {
+    var firsnum = document.calculator.numScreen.value;
+    var str = String(firsnum);
+    if ((str != "0" && (operate === 0))) {
+        var tempresult = parseFloat(firsnum * firsnum * firsnum).toFixed(4);
+        str = String(tempresult);
+    } else {
+        str = "0";
+    }
+    document.calculator.numScreen.value = str;
+    // alert(firsnum);
+    operate = 0;
+}
+
+// 平方根
+function sqrt() {
+    var firsnum = document.calculator.numScreen.value;
+    var str = String(firsnum);
+    if ((str != "0" && (operate === 0))) {
+        var tempresult = parseFloat(Math.sqrt(firsnum)).toFixed(4);
+        str = String(tempresult);
+    } else {
+        str = "0";
+    }
+    document.calculator.numScreen.value = str;
+    // alert(firsnum);
+    operate = 0;
+}
+
+// cubeRoot
+function cubeRoot() {
+    var firsnum = document.calculator.numScreen.value;
+    var str = String(firsnum);
+    if ((str != "0" && (operate === 0))) {
+        var tempresult = parseFloat(Math.pow(firsnum, 1 / 3)).toFixed(4);
+        str = String(tempresult);
+    } else {
+        str = "0";
+    }
+    document.calculator.numScreen.value = str;
+    // alert(firsnum);
+    operate = 0;
+}
+
+
+// sin
+function sin() {
+    var firsnum = document.calculator.numScreen.value;
+    var str = String(firsnum);
+    if ((str != "0" && (operate === 0))) {
+        var tempresult = parseFloat(Math.sin(2 * Math.PI / 360 * firsnum)).toFixed(4);
+        str = String(tempresult);
+    } else {
+        str = "0";
+    }
+    document.calculator.numScreen.value = str;
+    // alert(firsnum);
+    operate = 0;
+}
+
+// cos
+function cos() {
+    var firsnum = document.calculator.numScreen.value;
+    var str = String(firsnum);
+    if ((str != "0" && (operate === 0))) {
+        var tempresult = parseFloat(Math.cos(2 * Math.PI / 360 * firsnum)).toFixed(4);
+        str = String(tempresult);
+    } else {
+        str = "0";
+    }
+    document.calculator.numScreen.value = str;
+    // alert(firsnum);
+    operate = 0;
+}
+
+// tan
+function tan() {
+    var firsnum = document.calculator.numScreen.value;
+    var str = String(firsnum);
+    if ((firsnum == 90) || (firsnum == 270)) {
+        alert("无效输入");
+        // calstate = 5;
+        clearscreen();
+    } else if (firsnum % 180 === 0) {
+        str = "0";
+        calstate = 0;
+    } else {
+        str = String(parseFloat(Math.tan(2 * Math.PI / 360 * firsnum)).toFixed(4));
+    }
+    document.calculator.numScreen.value = str;
+    // alert(firsnum);
+    operate = 0;
+}
+
+// log
+function log() {
+    var firsnum = document.calculator.numScreen.value;
+    var str = String(firsnum);
+    if ((str != "0" && (operate === 0))) {
+        var tempresult = parseFloat(Math.log(firsnum)/Math.LN10).toFixed(4);
+        str = String(tempresult);
+    } else {
+        str = "0";
+    }
+    document.calculator.numScreen.value = str;
+    // alert(firsnum);
+    operate = 0;
 }
 
 // 计算函数
