@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>calculator</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="shortcut icon" href="images/Calculator.ico" type="image/x-icon">
+
+
+</head>
+
+<body>
+	<!-- calculator begin -->
+	<div id="calculator">
+		<div id="cal-header">
+			<h1>Calculator</h1>
+		</div>
+		<!-- panel -->
+		<form name="calculator" action="" method="get">
+			<!-- screen -->
+			<div id="cal-screen">
+				<input type="text" name="numScreen" value="0" onfocus="this.blur()" class="screen">
+			</div>
+			<!-- calculator keyboard -->
+			<div id="cal-btn">
+				<ul>
+					<li id="cmd7">7</li>
+					<li id="cmd8">8</li>
+					<li id="cmd9">9</li>
+					<li class="tool" id="delet">←</li>
+					<li class="tool" id="clearscreen">C</li>
+					<li class="tool" id="square">X<sup>2</sup></li>
+					<li class="tool" id="cube">X<sup>3</sup></li>
+					<li id="cmd4">4</li>
+					<li id="cmd5">5</li>
+					<li id="cmd6">6</li>
+					<li class="tool" id="times">×</li>
+					<li class="tool" id="divide">÷</li>
+					<li class="tool" id="sqrt">√X</li>
+					<li class="tool" id="cubeRoot"><sup>3</sup>√X</li>
+					<li id="cmd1">1</li>
+					<li id="cmd2">2</li>
+					<li id="cmd3">3</li>
+					<li class="tool" id="plus">+</li>
+					<li class="tool" id="minus">-</li>
+					<li class="tool" id="sin">sin</li>
+					<li class="tool" id="cos">cos</li>
+					<li id="cmd0">0</li>
+					<li id="doubleZero">00</li>
+					<li class="tool" id="dot">.</li>
+					<li class="tool" id="persent">%</li>
+					<li class="tool" id="equal">=</li>
+					<li class="tool" id="tan">tan</li>
+					<li class="tool" id="log">log</li>
+				</ul>
+			</div>
+		</form>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
