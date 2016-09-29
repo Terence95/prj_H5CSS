@@ -13,13 +13,11 @@ define(['jquery'], function($) {
         $('body').css('background-size', 'cover');
         save(i);
     });
-    // $(".bgcon img").click(function() {
-    //     $("body").css("background", 'url(images/bg' + i + '.jpg)');
-    // });
 });
 
 var curImg;
 
+// 使用localStorage实现背景本地化
 function save(data) {
     localStorage.setItem('getImg', data);
 }
