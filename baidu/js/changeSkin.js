@@ -1,5 +1,6 @@
 // 更改皮肤效果
 define(['jquery'], function($) {
+
     var i = 1;
     $(".skin-img li").hover(function() {
         i = $(this).index();
@@ -9,8 +10,8 @@ define(['jquery'], function($) {
     });
     $('.list-one img').click(function(event) {
         /* Act on the event */
-        $('body').css('background', 'url(images/bg' + i + 's.jpg)');
-        $('body').css('background-size', 'cover');
+        $('.container').css('background', 'url(images/bg' + i + 's.jpg)');
+        $('.container').css('background-size', 'cover');
         save(i);
     });
 });
@@ -24,8 +25,9 @@ function save(data) {
 
 function load() {
     curImg = localStorage.getItem('getImg');
-    $('body').css(
+    console.log(curImg);
+    $('.container').css(
         "background", 'url(images/bg' + curImg + 's.jpg)'
     );
-    $('body').css('background-size', 'cover');
+    $('.container').css('background-size', 'cover');
 }

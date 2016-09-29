@@ -24,6 +24,7 @@ require.config({
 require(["jquery", "showhover", "showSkinMenu", "previewSkin", "changeSkin", "jquery.leoweather.min", "changeTab"], function($, showhover, showSkinMenu, previewSkin, changeSkin, changeTab) {
 
     load();
+    // localStorage.clear();
     // $('#temp').leoweather({
     //     format: '<em>{天气} {白天气温} </em>'
     // });
@@ -47,6 +48,4 @@ require(["jquery", "showhover", "showSkinMenu", "previewSkin", "changeSkin", "jq
     // $('.more').mouseleave(function() {
     //     $('.more-list').removeClass('show-index');
     // });
-
-
 });
