@@ -24,6 +24,9 @@ require.config({
 require(["jquery", "showhover", "showSkinMenu", "previewSkin", "changeSkin", "jquery.leoweather.min", "changeTab"], function($, showhover, showSkinMenu, previewSkin, changeSkin, changeTab) {
 
     load();
+    showSearch();
+
+
     // localStorage.clear();
     // $('#temp').leoweather({
     //     format: '<em>{天气} {白天气温} </em>'
@@ -49,3 +52,17 @@ require(["jquery", "showhover", "showSkinMenu", "previewSkin", "changeSkin", "jq
     //     $('.more-list').removeClass('show-index');
     // });
 });
+
+function showSearch() {
+    $(window).scroll(function() {
+        var showScrollHeight = $(window).scrollTop();
+        console.log(showScrollHeight);
+        var searchHeight = $('#wrapper').height() - $('#header').height() * 2;
+        // console.log(searchHeight);
+        if (showScrollHeight > searchHeight) {
+            $('.hide-search').slideDown(400);
+        } else {
+            $('.hide-search').hide();
+        }
+    });
+}

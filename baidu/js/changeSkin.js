@@ -10,8 +10,9 @@ define(['jquery'], function($) {
     });
     $('.list-one img').click(function(event) {
         /* Act on the event */
-        $('.container').css('background', 'url(images/bg' + i + 's.jpg)');
-        $('.container').css('background-size', 'cover');
+        $('body').css('background', 'url(images/bg' + i + 's.jpg)');
+        $('body').css('background-size', 'cover');
+        $('body').css('background-attachment', 'fixed');
         save(i);
     });
 });
@@ -26,8 +27,9 @@ function save(data) {
 function load() {
     curImg = localStorage.getItem('getImg');
     console.log(curImg);
-    $('.container').css(
+    $('body').css(
         "background", 'url(images/bg' + curImg + 's.jpg)'
     );
-    $('.container').css('background-size', 'cover');
+    $('body').css('background-size', 'cover');
+    $('body').css('background-attachment', 'fixed');
 }

@@ -23,7 +23,7 @@ body {
     /*background-image:url(../images/bg0s.jpg);*/
     background-color: rgba(51, 51, 51, 1);
     background-size: cover;
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
 }
 
 /*#user,
@@ -42,7 +42,9 @@ article,
     min-width: 960px;
     /*min-height: 400px;*/
     margin: 0 auto;
-    background-color: rgba(51, 51, 51, 1);
+    background-color: transparent;
+    /*background-color: rgba(51, 51, 51, 1);*/
+    /*background-attachment:fixed;*/
 }
 
 /* nav */
@@ -563,6 +565,91 @@ header {
 .skin-page ul li {
     display: inline-block;
     cursor: pointer;
+}
+
+/* hide-search */
+
+.hide-search {
+    display: none;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background: #ffffff;
+    top: 0;
+    z-index: 100;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.hide-search-con {
+    width: 805px;
+    height: 50px;
+    margin: 0 auto;
+}
+.hide-search-logo {
+    width: 101px;
+    height: 33px;
+    position: relative;
+    top: 0;
+    float: left;
+    margin-left: 40px;
+    margin-right: 16px;
+}
+.hide-search-logo>img {
+    width: 101px;
+    height: 33px;
+    display: block;
+    position: relative;
+    bottom: 5px;
+}
+.hide-search-form {
+    letter-spacing: -8px;
+    height: 34px;
+    width: 585px;
+    float: left;
+    left: -10px;
+    position: relative;
+    bottom: 19px;
+}
+.hide-search-form>.input_box {
+    display: inline-block;
+    letter-spacing: 0;
+    width: 453px;
+    height: 32px;
+    border: 1px solid #b8b8b8;
+    border-right: 0;
+    vertical-align: top;
+}
+.input_box>input {
+    width: 416px;
+    height: 22px;
+    font: 16px/22px arial;
+    margin: 5px 0 0 7px;
+    outline: 0;
+    background: #fff;
+    border: 0;
+}
+.hide-search-form>.span_btn {
+    letter-spacing: 0;
+    display: inline-block;
+    z-index: 0;
+    width: 98px;
+    height: 33px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    letter-spacing: -3px;
+}
+.span_btn>.submit_btn {
+    width: 98px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    background: #38f;
+    border: 0px;
+    outline: 0px;
+    padding: 2px 6px 3px;
 }
 
 /* wrapper-container */
