@@ -1,0 +1,1142 @@
+body {
+    background: #f5f5f5
+}
+/* lesson-list begin */
+#lesson-list {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    position: relative
+}
+#lesson-list .lesson-nav {
+    width: 210px;
+    padding-bottom: 0;
+    color: #000;
+    font-size: 12px;
+    float: left;
+    border: 1px solid #e4e4e4;
+    border-top: 2px solid #35b558
+}
+#lesson-list .lesson-nav dt {
+    padding: 0 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    height: 36px;
+    border-bottom: 1px solid #f5f5f5;
+    color: #333;
+    line-height: 36px;
+    cursor: default
+}
+#lesson-list .lesson-nav dl {
+    margin-bottom: 20px
+}
+#lesson-list .lesson-nav dd {
+    font-size: 12px;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0 15px
+}
+#lesson-list .lesson-nav dl a:hover {
+    color: #35b558!important
+}
+#lesson-list .lesson-nav dl a {
+    color: #333;
+    width: 170px;
+    display: inline-block
+}
+#lesson-list .lesson-nav dl a.active {
+    color: #35b558
+}
+#lesson-list .lesson-nav dd span {
+    color: #999;
+    font-weight: 400
+}
+#lesson-list .lesson-nav dl.classify span:nth-child(1) {
+    padding-left: 0
+}
+#lesson-list .lesson-nav dl.classify span {
+    color: #333;
+    padding: 0 7px;
+    font-weight: 600
+}
+#lesson-list .listbox {
+    width: 766px;
+    float: right
+}
+#lesson-list .listbox .lessonlist-nav {
+    height: 42px;
+    border-bottom: 1px solid #f3f3f3;
+    line-height: 42px
+}
+#lesson-list .lessonlist-nav ul.time-hot {
+    width: 120px;
+    float: left
+}
+#lesson-list .lessonlist-nav ul.time-hot li {
+    width: 60px;
+    height: 42px;
+    text-align: center;
+    color: #333;
+    float: left;
+    font-size: 12px;
+    cursor: pointer
+}
+#lesson-list .lessonlist-nav ul.time-hot li a {
+    color: #333
+}
+#lesson-list .lessonlist-nav ul.time-hot li.nav_on {
+    border-bottom: 1px solid #35b558
+}
+#lesson-list .lessonlist-nav .change-type {
+    width: 350px;
+    height: 42px;
+    float: right;
+    font-size: 12px;
+    color: #333;
+    text-align: right
+}
+#lesson-list .lessonlist-nav .change-type span {
+    padding: 0 5px
+}
+#lesson-list .listbox .classfiy-change {
+    width: 60px;
+    height: 24px;
+    padding-top: 10px;
+    float: right;
+    line-height: 42px;
+    margin-left: 50px
+}
+#lesson-list .listbox .classfiy-change li {
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    background: url(http://s1.jikexueyuan.com/course/images/listype-icon_c7585b8.png) 0 -26px no-repeat;
+    line-height: 24px;
+    float: left;
+    display: block
+}
+#lesson-list .classfiy-change li.list-icon {
+    background-position: -30px -26px
+}
+.lesson-list ul {
+    width: 790px;
+    margin-top: 15px
+}
+.lesson-list2 ul li {
+    height: 100px;
+    padding: 0;
+    background-color: #fff;
+    margin-top: 13px
+}
+.lesson-list2 .lessonimg-box {
+    width: 185px;
+    height: 100px;
+    float: left;
+    margin-right: 15px;
+    position: relative
+}
+.lessonimg-box .cancel-favorites {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 300
+}
+.lesson-list2 .lessonimg-box .lessonimg {
+    width: 185px;
+    height: 100px
+}
+.lesson-list2 .lessonimg-box .free-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    z-index: 101;
+    background: url(http://s1.jikexueyuan.com/course/images/icon_7f8b929.png) -58px -43px no-repeat
+}
+.lesson-list2 .lessonimg-box .hot-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 13px;
+    z-index: 21;
+    background: url(http://s1.jikexueyuan.com/course/images/icon_7f8b929.png) -58px -70px no-repeat
+}
+.lesson-list2 .lesson-infor {
+    position: relative;
+    height: 100px;
+    width: 566px;
+    float: left
+}
+.lesson-list2 .lesson-infor .lesson-info-h2, .lesson-list2 .lesson-infor h5 {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden
+}
+.lesson-list2 .lesson-infor .lesson-info-h2 a, .lesson-list2 .lesson-infor h5 a {
+    color: #333
+}
+.lesson-list2 .lesson-infor .lesson-info-h2 a:hover, .lesson-list2 .lesson-infor h5 a:hover {
+    color: #35b558
+}
+.lesson-list2 .lesson-infor p {
+    color: gray;
+    font-size: 12px;
+    opacity: 1!important;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 10px
+}
+.timeandicon {
+    font-size: 12px;
+    color: gray;
+    position: relative
+}
+.timeandicon dl dd {
+    font-size: 12px;
+    float: left;
+    display: inline-block;
+    margin-right: 15px
+}
+.timeandicon .time-icon {
+    background: url(http://s1.jikexueyuan.com/course/images/icon_7f8b929.png) 0 -72px no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+}
+.timeandicon .learn-number {
+    float: right
+}
+.timeandicon .xinhao-icon {
+    background: url(http://s1.jikexueyuan.com/course/images/icon_7f8b929.png) 0 -56px no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+}
+.lesson-list2 .lesson-infor .lessonicon-box {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: -75px
+}
+.lesson-list2 .lesson-infor .lessonicon-box a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    background-size: 16px 16px;
+    -webkit-background-size: 16px 16px
+}
+.lesson-list2 .lesson-infor .lessonicon-box a.android {
+    background: url(http://s1.jikexueyuan.com/course/images/icon_7f8b929.png) 0 -88px no-repeat
+}
+.lesson-list2 .lesson-infor .lessonicon-box a.ios {
+    background: url(http://s1.jikexueyuan.com/course/images/icon_7f8b929.png) 0 -106px no-repeat
+}
+.lesson-list2 .lessonplay {
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0
+}
+.lesson-list2 .lessonplay .playericon {
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(http://s1.jikexueyuan.com/course/images/player_icon_5c67475.png) no-repeat;
+    background-size: 50px 50px;
+    cursor: pointer
+}
+.anlibox {
+    margin-top: 50px
+}
+.anlibox .anli {
+    width: 680px;
+    height: 120px;
+    margin-bottom: 45px
+}
+.anlibox h6 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px
+}
+.anlibox p {
+    font-size: 12px;
+    color: #c7c5c5;
+    line-height: 16px
+}
+.anlibox .vip-btn {
+    font-size: 14px;
+    color: #fff;
+    background: #ff5c00;
+    padding: 4px 20px;
+    border-radius: 3px;
+    display: inline-block
+}
+.anlibox .jjsx-btn {
+    font-size: 14px;
+    color: #333;
+    background: #e8e8e8;
+    padding: 4px 20px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 10px
+}
+.anlibox .plan {
+    width: 280px;
+    height: 100px
+}
+.anlibox .lessshowbox {
+    height: 64px;
+    width: 640;
+    position: relative
+}
+.anlibox .lessshowbox span {
+    display: block;
+    width: 15px;
+    height: 23px;
+    position: absolute;
+    z-index: 50;
+    cursor: pointer
+}
+.anlibox .lessshowbox span.prev-img {
+    background: url(http://s1.jikexueyuan.com/course/images/icon_7f8b929.png) 0 -129px no-repeat;
+    left: 0;
+    top: 20px
+}
+.anlibox .lessshowbox span.next-img {
+    background: url(http://s1.jikexueyuan.com/course/images/icon_7f8b929.png) 0 -153px no-repeat;
+    right: 0;
+    top: 20px
+}
+.anlibox .lessshowbox .imgbox {
+    width: 640px;
+    height: 64px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto
+}
+.anlibox .lessshowbox .imgbox ul {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0
+}
+.anlibox .lessshowbox .imgbox li {
+    width: 200px;
+    height: 64px;
+    float: left;
+    margin: 0 10px
+}
+.anlibox .lessshowbox .imgbox li img {
+    float: left;
+    margin-right: 10px
+}
+.anlibox .lessshowbox .imgbox a {
+    color: #333
+}
+.anlibox .lessshowbox .imgbox h3, .anlibox .lessshowbox .imgbox strong {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px
+}
+.tx-text {
+    background: #fff;
+    padding: 20px 0;
+    font-size: 12px;
+    color: #666
+}
+.tx-text p {
+    width: 790px
+}
+.tx-text a {
+    padding: 12px 50px!important;
+    font-size: 18px
+}
+.mar-t8 {
+    margin-top: 8px
+}
+#map-all {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 30px
+}
+#map-all .videobox {
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+    float: left
+}
+#map-all .video-infor {
+    width: 339px;
+    float: right;
+    height: 360px
+}
+#map-all .video-infor h1 {
+    color: #35b558;
+    font-size: 30px;
+    margin-bottom: 15px
+}
+#map-all .video-infor strong {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 30px;
+    display: block
+}
+#map-all .video-infor p {
+    font-size: 12px;
+    color: #666
+}
+.gray-bc {
+    background: #f7f7f7
+}
+#map-all .video-infor .one-infor {
+    border-top: 1px solid #fff
+}
+#map-all .video-infor .one-infor h2 {
+    cursor: pointer;
+    font-size: 14px;
+    color: #35b558;
+    background: #f3f3f3;
+    line-height: 30px;
+    border-left: 2px solid #35b558;
+    padding-left: 20px
+}
+#map-all .video-infor .one-infor h2:hover {
+    background: #e7ede2
+}
+#map-all .video-infor .one-infor .content {
+    padding: 15px;
+    color: #666;
+    font-size: 12px;
+    line-height: 20px;
+    height: 208px;
+    overflow: auto
+}
+.sz-list {
+    width: 1000px;
+    margin: 0 auto
+}
+.sz-list h2.sz-list-h2, .sz-list h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 30px auto;
+    margin-bottom: 130px
+}
+.sz-list .green-line {
+    width: 1px;
+    background: #35b558;
+    position: relative;
+    margin-left: 499.5px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding-bottom: 100px
+}
+.sz-list .green-line .oneless {
+    width: 13px;
+    height: 13px;
+    background: #35b558;
+    border-radius: 50%;
+    margin: -6.5px 0 0 -6.5px;
+    position: relative
+}
+.sz-list .green-line .oneless .lesson-show {
+    cursor: pointer;
+    width: 440px;
+    padding: 10px;
+    background: #f3f3f3;
+    position: absolute;
+    left: -500px;
+    top: -80px
+}
+.sz-list .green-line .oneless .lesson-show .top-show img {
+    width: 140px;
+    height: 84px;
+    float: left;
+    margin-right: 15px
+}
+.sz-list .green-line .oneless .lesson-show .top-show h3.top-show-h3, .sz-list .green-line .oneless .lesson-show .top-show h4 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden
+}
+.sz-list .green-line .oneless .lesson-show .top-show p {
+    font-size: 12px;
+    color: gray;
+    height: auto;
+    overflow: hidden
+}
+.sz-list .green-line .lesson-show .triangle-bl {
+    position: absolute;
+    right: -20px;
+    top: 65px
+}
+.sz-list .green-line .lesson-show .triangle-br {
+    position: absolute;
+    left: -20px;
+    top: 65px
+}
+.szlist-infor {
+    text-align: center
+}
+.szlist-infor p {
+    font-size: 12px;
+    color: #999;
+    display: block;
+    margin-bottom: 50px
+}
+.szlist-infor a.greenbtn {
+    padding: 5px 20px;
+    margin-bottom: 25px
+}
+.sz-list .green-line .imgshow-box h5 {
+    font-size: 12px;
+    color: #666;
+    margin: 10px 0
+}
+.sz-list .green-line .imgshow-box ul {
+    overflow: hidden;
+    width: 470px
+}
+.sz-list .green-line .imgshow-box ul li {
+    float: left;
+    width: 100px;
+    height: 60px;
+    margin-right: 8px
+}
+.sz-list .green-line .imgshow-box ul li img {
+    width: 100px;
+    height: 60px
+}
+#impop-box {
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 5px
+}
+#impop-box .popclose {
+    float: right;
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px
+}
+#impop-box .popclose img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    display: block;
+    border: 0
+}
+.lesson-nav2 .nav-title {
+    font-size: 14px;
+    color: #35b558
+}
+.lesson-nav2 .nav-title a {
+    font-size: 12px;
+    color: #666;
+    float: right;
+    line-height: 19px
+}
+.lesson-nav2 .sc-one {
+    margin-top: 20px
+}
+.lesson-nav2 .sc-one h2 {
+    margin-bottom: 10px
+}
+.lesson-nav2 .sc-one h2 a {
+    color: #333
+}
+.lesson-nav2 .sc-one img {
+    width: 60px;
+    height: 32px;
+    float: left
+}
+.lesson-nav2 .sc-one .sc-text {
+    margin-left: 75px;
+    color: #666;
+    font-size: 12px
+}
+.lesson-nav2 .sc-one .sc-text p {
+    margin-bottom: 2px
+}
+.lesson-nav2 .sc-one .sc-text a {
+    color: #666
+}
+#lesson-list .lesson-nav2 {
+    width: 170px;
+    padding: 20px;
+    background: #f3f3f3;
+    color: #000;
+    font-size: 12px;
+    float: left
+}
+#lesson-list .lessonlist-nav ul.lesson-name {
+    width: 790px;
+    float: left
+}
+#lesson-list .lessonlist-nav ul.lesson-name li {
+    height: 42px;
+    text-align: center;
+    font-weight: 600;
+    padding: 0 15px;
+    color: #333;
+    float: left;
+    font-size: 14px;
+    cursor: pointer
+}
+#lesson-list .lessonlist-nav ul.lesson-name li a {
+    color: #333
+}
+#lesson-list .lessonlist-nav ul.lesson-name li.nav_on, #lesson-list .lessonlist-nav ul.lesson-name li:hover {
+    border-bottom: 1px solid #35b558
+}
+.lk-lesson, .my-help {
+    margin-top: 30px
+}
+.lk-lesson .nav-title, .my-help .nav-title {
+    font-size: 14px;
+    color: #35b558;
+    margin-bottom: 20px
+}
+.lk-lesson a {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+    display: block;
+    height: 16px;
+    overflow: hidden
+}
+.my-help p {
+    font-size: 12px;
+    color: #666
+}
+.lessonbox {
+    display: none
+}
+.height-650 {
+    height: 650px!important
+}
+.new-sc {
+    border-top: 1px solid #f3f3f3;
+    margin-top: 50px
+}
+.new-sc h2 {
+    font-size: 14px;
+    color: #35b558;
+    margin-top: 20px
+}
+h2.new-kc .all-lesson {
+    font-size: 12px;
+    color: #999;
+    float: right;
+    margin-top: 4px
+}
+h2.new-kc {
+    color: #35b558
+}
+.noshow {
+    display: none
+}
+.laddingicon-box {
+    width: 766px;
+    margin: 0 auto;
+    height: 300px
+}
+.laddingicon-box img {
+    width: 50px;
+    height: 50px;
+    margin: 75px auto;
+    display: block
+}
+.lessshowbox {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -o-user-select: none
+}
+.lesson-list2 .lesson-shoucang {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(http://s1.jikexueyuan.com/course/images/shoucang-1_76dc56f.png);
+    background-size: 16px 16px;
+    z-index: 101;
+    cursor: pointer
+}
+.lesson-list2 .lesson-shoucang:hover {
+    background: url(http://s1.jikexueyuan.com/course/images/shoucang-2_3d597dc.png);
+    background-size: 16px 16px
+}
+.lesson-list2 .ysc {
+    background: url(http://s1.jikexueyuan.com/course/images/shoucang-3_3111bf6.png);
+    background-size: 16px 16px
+}
+.soon-nav li {
+    width: 20%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px;
+    color: #333;
+    float: left;
+    cursor: pointer
+}
+.soon-nav li.on {
+    width: 20%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px;
+    border-bottom: 1px solid #35b558;
+    color: #35b558;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+.soonbox {
+    margin-top: 20px;
+    display: none
+}
+.soonbox dl dd {
+    width: 368px;
+    height: 70px;
+    float: left;
+    margin-bottom: 15px;
+    overflow: hidden
+}
+.soonbox dl dd h4 {
+    font-size: 14px;
+    color: #333
+}
+.soonbox dl dd p {
+    font-size: 12px;
+    color: gray
+}
+.soonbox dl dd img {
+    width: 130px;
+    height: 70px;
+    float: left;
+    margin-right: 15px
+}
+.soonbox dl dd:nth-child(2n+1) {
+    width: 360px;
+    height: 70px;
+    float: left;
+    margin-right: 30px
+}
+.lesson-list.list-col-3 li:nth-child(3n+3) {
+    margin-right: 0
+}
+.lesson-list ul li {
+    height: 225px;
+    margin-right: 13px;
+    margin-bottom: 13px
+}
+.lesson-list .lesson-infor {
+    height: 88px
+}
+.lesson-list .lesson-hover {
+    background: #fff!important
+}
+#container>.wrap:after {
+    display: table;
+    clear: both;
+    content: " "
+}
+.al-tagClass {
+    padding: 10px 10px 0;
+    font-size: 12px
+}
+.al-tagClass li {
+    margin-bottom: 10px
+}
+.al-tagClass li:after {
+    display: table;
+    clear: both;
+    content: " "
+}
+.al-tagClass dl {
+    float: left
+}
+.al-tagClass dt {
+    float: left;
+    width: 24px;
+    padding-top: 2px;
+    text-align: right
+}
+.al-tagClass dt img {
+    width: 22px;
+    height: 22px
+}
+.al-tagClass dd {
+    margin-left: 30px;
+    font-size: 12px;
+    line-height: 1.2
+}
+.al-tagClass h4 a {
+    color: #333
+}
+.al-tagClass h4 a:hover {
+    color: #35b558;
+    text-decoration: underline
+}
+.al-tagClass dd p {
+    color: #999
+}
+.al-tagClass .subscribe {
+    float: right;
+    margin: 6px 0 0;
+    color: #ff5c00;
+    font-size: 12px;
+    cursor: pointer
+}
+.al-tagClass .subscribe.over {
+    color: #666
+}
+.al-tagClass .al-tag {
+    display: inline-block;
+    height: 18px;
+    margin-right: 5px;
+    padding: 0 4px;
+    background: #f3fef6;
+    border: 1px solid #7bda95;
+    color: #999;
+    line-height: 16px;
+    cursor: pointer
+}
+.al-tagClass .al-tag img {
+    height: 14px;
+    margin: -2px 4px 0 0
+}
+.al-tagClass .al-tag+span {
+    color: #999
+}
+.tagGather>.hd {
+    height: 34px;
+    padding: 2px 0;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 12px;
+    line-height: 30px
+}
+.tagGather>.hd h2 {
+    float: left;
+    font-size: 14px;
+    font-weight: 700
+}
+.tagGather>.hd h2 img {
+    height: 20px;
+    margin-right: 4px
+}
+.tagGather>.hd .hd-aside {
+    float: right
+}
+.tagGather>.bd {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5
+}
+.tagGather .descriptionTxt {
+    margin-bottom: 16px;
+    padding: 5px 0
+}
+.tagGather .hd-aside .subscribe {
+    display: inline-block;
+    padding: 0 4px;
+    margin-right: 10px;
+    background: #ff5c00;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer
+}
+.tagGather .hd-aside .subscribe.over {
+    color: #666
+}
+.tagGather .hd-aside .attention {
+    color: #c2c2c2
+}
+.tagGather .lesson-list li:nth-child(3n+3) {
+    margin-right: 0
+}
+.tagGatherList {
+    overflow: hidden
+}
+.tagGatherList>ul {
+    margin: 0 0 -1px
+}
+.tagGatherList>ul:after {
+    display: table;
+    clear: both;
+    content: " "
+}
+.tagGatherList>ul>li {
+    float: left;
+    width: 256px;
+    height: 125px;
+    border: 1px solid #e4e4e4;
+    border-width: 0 1px 1px 0
+}
+.tagGatherList>ul>li:nth-child(3n+3) {
+    border-right: 0
+}
+.tagGatherList>ul>li:nth-child(1) .mod-tagItem, .tagGatherList>ul>li:nth-child(2) .mod-tagItem, .tagGatherList>ul>li:nth-child(3) .mod-tagItem {
+    padding-top: 0
+}
+.tagGatherList>ul>li:nth-child(1), .tagGatherList>ul>li:nth-child(2), .tagGatherList>ul>li:nth-child(3) {
+    height: 115px
+}
+.mod-tagItem {
+    padding: 10px;
+    color: gray;
+    font-size: 12px
+}
+.mod-tagItem .link {
+    float: left;
+    display: inline-block;
+    height: 24px;
+    padding: 4px 9px;
+    background: #f5f5f5;
+    color: gray;
+    line-height: 16px;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    -ms-transition: background .3s;
+    transition: background .3s
+}
+.mod-tagItem .link:hover {
+    padding: 3px 8px;
+    background: #f3fff6;
+    border: 1px solid #7bda95
+}
+.mod-tagItem .link img {
+    width: 18px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: bottom
+}
+.mod-tagItem .text {
+    clear: both;
+    height: 60px;
+    overflow: hidden;
+    margin-bottom: 6px;
+    padding: 6px 2px 0
+}
+.mod-tagItem .learnTime {
+    line-height: 14px;
+    font-size: 12px
+}
+.mod-tagItem .learnTime:before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    background: url(/static/images/clok.png) no-repeat;
+    background-size: 14px;
+    content: " ";
+    vertical-align: bottom
+}
+.mod-tagItem .subscribe {
+    float: right;
+    margin: 6px 0 0;
+    color: #ff5c00;
+    font-size: 12px;
+    cursor: pointer
+}
+.mod-tagItem .subscribe.over {
+    color: #666
+}
+.lesson-list ul {
+    width: auto
+}
+#tagAll {
+    padding: 15px 0 8px;
+    border: 1px solid #e6e6e6
+}
+#tagAll>h3 {
+    margin: 0 0 15px;
+    padding: 0 9px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 24px
+}
+#tagAll ul {
+    margin: 0 -1px
+}
+#tagAll ul:after {
+    display: table;
+    clear: both;
+    content: " "
+}
+#tagAll li {
+    float: left;
+    width: 250px;
+    margin: 0 0 7px;
+    padding: 0 9px;
+    white-space: nowrap
+}
+#tagAll li span {
+    display: inline-block;
+    color: #666;
+    font-size: 12px;
+    line-height: 23px;
+    vertical-align: middle
+}
+#tagAll .tagElem {
+    margin-right: 8px
+}
+#tagAll .tagElem a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 160px;
+    vertical-align: top;
+    padding: 0 8px;
+    color: #666;
+    background: #f3fff6;
+    border-right: 1px solid #99edb0;
+    border-bottom: 1px solid #84dc9c;
+    line-height: 22px;
+    white-space: nowrap
+}
+#tagAll .tagElem a:hover {
+    background: #35b559;
+    color: #fff
+}
+#tagAll .tagElem+span em {
+    margin-right: 8px
+}
+#tagIndex #page-nav {
+    text-align: center
+}
+.previewMode li {
+    position: relative;
+    float: left;
+    width: 36px;
+    height: 38px;
+    border-left: 1px solid #f5f5f5;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    transition: background-color .2s
+}
+.previewMode li.curr, .previewMode li:hover {
+    background: #fff
+}
+.previewMode li .icon {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    background: url(http://s1.jikexueyuan.com/course/images/preview-icon_2ae2eb9.png) no-repeat 0 0
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2) {
+    .previewMode li .icon {
+        background-image: url(http://s1.jikexueyuan.com/course/images/preview-icon-x2_03c235e.png);
+        background-size: 60px 14px
+    }
+}
+.previewMode li a.lesson-map {
+    display: block
+}
+.previewMode li.kuai-icon .icon {
+    width: 14px;
+    background: url(../img/icon-kuai_3c1a8cf.png) no-repeat 0 0;
+    background-size: 14px
+}
+.previewMode li.list-icon .icon {
+    width: 19px;
+    background: url(../img/icon-list_6d9f87f.png) no-repeat center;
+    background-size: 16px 12px
+}
+.previewMode li.tree-icon .icon {
+    width: 19px;
+    background-position: -34px 0
+}
+.previewMode li.tree-icon:hover {
+    background: 0 0
+}
+.previewMode li.tree-icon a.lesson-map:hover {
+    background: #fff
+}
+.previewMode li .mod-tips {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    margin-right: -42px;
+    white-space: nowrap;
+    color: #7c5900;
+    font-size: 12px;
+    cursor: default
+}
+.previewMode .mod-tips .arrow {
+    position: absolute;
+    top: 100%;
+    right: 55px;
+    margin-top: -1px;
+    display: inline-block
+}
+.previewMode .mod-tips .arrow:after, .previewMode .mod-tips .arrow:before {
+    display: block;
+    width: 0!important;
+    height: 0!important;
+    padding: 0!important;
+    font-size: 0!important;
+    line-height: 0!important;
+    border: 5px solid transparent;
+    border-bottom-width: 0;
+    border-top-color: #f1e5b3;
+    content: " "
+}
+.previewMode .mod-tips .arrow:after {
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    border-width: 4px;
+    border-bottom-width: 0;
+    border-top-color: #fff9df
+}
+.lesson-banner-width {
+    display: block;
+    width: 210px;
+    height: 120px;
+    overflow: hidden;
+    margin-top: 10px
+}

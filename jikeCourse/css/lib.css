@@ -1,0 +1,2110 @@
+@charset "utf-8";
+blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif
+}
+a, dd, div, dl, i, img, input, li, p, span, ul {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+button, h1, h2, h3, h4, h5, h6, input, select, textarea {
+    font-size: 100%;
+    font-weight: 400
+}
+input.input-one {
+    font-size: 100%;
+    font-weight: 400
+}
+body {
+    background: #f5f5f5
+}
+address, cite, dfn, em, i, var {
+    font-style: normal
+}
+code, kbd, pre, samp {
+    font-family: courier new, courier, monospace
+}
+small {
+    font-size: 12px
+}
+ol, ul {
+    list-style: none
+}
+a {
+    text-decoration: none
+}
+sup {
+    vertical-align: text-top
+}
+sub {
+    vertical-align: text-bottom
+}
+legend {
+    color: #000
+}
+fieldset, img {
+    border: 0
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+.f_l {
+    float: left
+}
+.f_r {
+    float: right
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    outline: 0
+}
+.none {
+    display: none!important
+}
+iframe {
+    vertical-align: top
+}
+s {
+    text-decoration: none
+}
+button {
+    border: 0 none
+}
+article, aside, figcaption, figure, footer, header, hgroup, nav, section, video {
+    display: block
+}
+input {
+    outline: 0;
+    border: 0
+}
+.cf {
+    zoom: 1
+}
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden
+}
+.relative {
+    position: relative
+}
+.absolute {
+    position: absolute
+}
+img, input, label, select {
+    vertical-align: middle
+}
+.b {
+    font-weight: 700
+}
+.fw_no {
+    font-weight: 400
+}
+.text_under {
+    text-decoration: underline
+}
+.curs {
+    cursor: pointer
+}
+.w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+    clear: both
+}
+.flex {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff!important;
+    z-index: 900!important;
+    border-bottom: 1px solid #e8e8e8;
+    -webkit-box-shadow: rgba(0, 0, 0, .1)0 1px 5px;
+    -moz-box-shadow: rgba(0, 0, 0, .1)0 1px 5px;
+    box-shadow: rgba(0, 0, 0, .1)0 1px 5px
+}
+.loginflex {
+    position: fixed;
+    left: 50%;
+    margin-left: 312px;
+    top: 0;
+    z-index: 1000
+}
+.index-title {
+    font-size: 48px;
+    text-align: center;
+    color: #000;
+    line-height: 80px
+}
+.h1-title {
+    font-size: 24px;
+    color: #35b558;
+    line-height: 80px
+}
+.h2-title, h2.h2-title {
+    font-size: 20px;
+    color: #333
+}
+.color-red {
+    color: #ff5c00!important
+}
+.greenbtn {
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    background: #35b558;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.greenbtn:active, .greenbtn:focus, .greenbtn:hover {
+    background: #66d178;
+    color: #fff
+}
+.greenbtn2 {
+    display: inline-block;
+    color: #35b558;
+    font-size: 16px;
+    background: #f3fff6;
+    border: 1px solid #35b558;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.greenbtn2:active, .greenbtn2:focus, .greenbtn2:hover {
+    background: #35b558;
+    color: #fff;
+    border-color: #35b558
+}
+.greenbtn3 {
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    background: #7bda95;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.greenbtn3:active, .greenbtn3:focus, .greenbtn3:hover {
+    background: #35b558;
+    color: #fff
+}
+.orange-color {
+    color: #f60
+}
+.orinagebtn {
+    background: #ff5c00;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 3px;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.orinagebtn:active, .orinagebtn:focus, .orinagebtn:hover {
+    background: #ff8530
+}
+.garybtn:active, .garybtn:focus, .garybtn:hover {
+    background: #ff7600;
+    color: #000
+}
+.mar-t10 {
+    margin-top: 10px!important
+}
+.mar-t20 {
+    margin-top: 20px!important
+}
+.mar-t30 {
+    margin-top: 30px!important
+}
+.mar-t40 {
+    margin-top: 40px!important
+}
+.mar-t50 {
+    margin-top: 50px!important
+}
+.mar-t60 {
+    margin-top: 60px!important
+}
+.mar-t70 {
+    margin-top: 70px!important
+}
+.mar-t80 {
+    margin-top: 80px!important
+}
+.mar-t90 {
+    margin-top: 90px!important
+}
+.mar-l10 {
+    margin-left: 10px!important
+}
+.mar-l20 {
+    margin-left: 20px!important
+}
+.mar-l25 {
+    margin-left: 25px!important
+}
+.mar-l40 {
+    margin-left: 40px!important
+}
+.mar-l30 {
+    margin-left: 30px!important
+}
+.mar-l70 {
+    margin-left: 70px!important
+}
+.mar-l80 {
+    margin-left: 80px!important
+}
+.mar-l90 {
+    margin-left: 90px!important
+}
+.mar-l100 {
+    margin-left: 100px!important
+}
+.mar-r10 {
+    margin-right: 10px!important
+}
+.mar-r20 {
+    margin-right: 20px!important
+}
+.mar-r25 {
+    margin-right: 25px!important
+}
+.mar-r30 {
+    margin-right: 30px!important
+}
+.mar-r40 {
+    margin-right: 40px!important
+}
+.mar-b10 {
+    margin-bottom: 10px!important
+}
+.mar-b15 {
+    margin-bottom: 15px!important
+}
+.mar-b40 {
+    margin-bottom: 40px!important
+}
+.mar-b30 {
+    margin-bottom: 30px!important
+}
+.lesson-flex {
+    position: fixed!important;
+    left: 50%;
+    margin-left: -500px;
+    z-index: 300
+}
+.lesson-list ul {
+    width: 790px;
+    margin-top: 15px
+}
+.lesson-list ul li {
+    width: 250px;
+    height: 225px;
+    float: left;
+    margin-right: 13px;
+    margin-bottom: 13px
+}
+.lesson-list .lessonimg-box {
+    width: 100%;
+    height: 135px;
+    position: relative
+}
+.lesson-list .lessonimg-box .lessonimg {
+    width: 100%;
+    height: 135px
+}
+.lesson-list .lessonimg-box .vip-icon, .lesson-list2 .lessonimg-box .vip-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    z-index: 101;
+    background: url(http://s1.jikexueyuan.com/common/images/tag_vip_4d846c2.png) 0 0 no-repeat;
+    background-size: 100% 100%
+}
+.lesson-list .lessonimg-box .rz-icon, .lesson-list2 .lessonimg-box .rz-icon {
+    height: 22px;
+    width: 61px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    z-index: 101;
+    background: url(http://s1.jikexueyuan.com/common/images/tag_rz_5a84337.png) 0 0 no-repeat;
+    background-size: 100% 100%
+}
+.lesson-list .lessonimg-box .free-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    z-index: 101;
+    background: url(http://s1.jikexueyuan.com/common/images/icon_7f8b929.png) -58px -43px no-repeat
+}
+.right-45 {
+    right: 45px!important
+}
+.lesson-list .lessonimg-box .hot-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 13px;
+    z-index: 21;
+    background: url(http://s1.jikexueyuan.com/common/images/icon_7f8b929.png) -58px -70px no-repeat
+}
+.lesson-list .lesson-infor {
+    padding: 10px;
+    position: relative;
+    z-index: 200;
+    height: 88px;
+    overflow: hidden;
+    background: #fff
+}
+.lesson-list .lesson-infor .lesson-info-h2, .lesson-list .lesson-infor h5 {
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 12px;
+    height: 36px;
+    overflow: hidden
+}
+.lesson-list .lesson-infor .lesson-info-h2 a, .lesson-list .lesson-infor .lesson-info-h2 a:hover, .lesson-list .lesson-infor h5 a, .lesson-list .lesson-infor h5 a:hover {
+    color: #333
+}
+.lesson-list .lesson-infor p {
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-bottom: 10px;
+    display: none
+}
+.lesson-list .lesson-infor .timeandicon {
+    font-size: 12px;
+    color: gray;
+    position: relative
+}
+.lesson-list .lesson-infor .timeandicon dl {
+    width: 120px;
+    float: left;
+    white-space: nowrap
+}
+.lesson-list .lesson-infor .timeandicon dl dd {
+    font-size: 12px
+}
+.lesson-list .lesson-infor .timeandicon .time-icon {
+    background: url(http://s1.jikexueyuan.com/common/images/clok_a413ecf.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    background-size: 14px 14px
+}
+.lesson-list .lesson-infor .timeandicon .learn-number {
+    float: right;
+    display: none
+}
+.lesson-list .lesson-infor .zhongji {
+    display: none
+}
+.mar-b8 {
+    margin-bottom: 8px
+}
+.lesson-infor .timeandicon .xinhao-icon {
+    background: url(http://s1.jikexueyuan.com/common/images/one-ji_1731712.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+}
+.lesson-infor .timeandicon .xinhao-icon2 {
+    background: url(http://s1.jikexueyuan.com/common/images/tow-ji_ec2b553.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+}
+.lesson-infor .timeandicon .xinhao-icon3 {
+    background: url(http://s1.jikexueyuan.com/common/images/three-ji_b588ab1.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+}
+.lesson-list .lesson-infor .lessonicon-box {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    bottom: 4px
+}
+.lesson-list .lesson-infor .lessonicon-box a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px
+}
+.lesson-list .lesson-infor .lessonicon-box a img {
+    display: block;
+    width: 16px;
+    height: 16px
+}
+.lesson-list .lessonplay {
+    background: #000;
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0
+}
+.lesson-list .lessonplay .playericon {
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(http://s1.jikexueyuan.com/common/images/player_icon_5c67475.png) 0 0 no-repeat;
+    cursor: pointer;
+    background-size: 50px 50px
+}
+.crumbs {
+    height: 48px;
+    line-height: 48px;
+    font-size: 12px;
+    color: #333;
+    overflow: hidden
+}
+.crumbs a, .crumbs span {
+    color: #333
+}
+.crumbs em {
+    margin: 0 3px;
+    display: inline-block
+}
+.crumbs a:hover {
+    color: #35b558
+}
+.garybtn2 {
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    background: #ff7600;
+    border: 1px solid #35b558;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.garybtn2:active, .garybtn2:focus, .garybtn2:hover {
+    background: #7F7F7F;
+    color: #ccc
+}
+#loading {
+    width: 100%;
+    height: 2px;
+    overflow: hidden;
+    background: #f3f3f3
+}
+#loading .loading-length {
+    width: 0;
+    height: 2px;
+    overflow: hidden;
+    background: #35b558;
+    background: -webkit-gradient(linear, 10% 10%, 100% 100%, color-stop(0.14, #35b550), color-stop(0.5, #8aca8c), color-stop(1, #2d85ca))
+}
+.greencolor {
+    color: #35b558!important
+}
+.jkxy-form {
+    width: 100%;
+    height: 100%;
+    display: inline-block
+}
+.jkxy-form .boder-r {
+    border-right: 1px dashed #ebebeb
+}
+.jkxy-form .form-l {
+    float: left;
+    width: 400px;
+    display: inline-block
+}
+.form-l .form-dom {
+    display: inline-block
+}
+.form-dom .form-tit {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: right
+}
+.form-dom .form-tit>i {
+    line-height: 30px;
+    padding-right: 3px;
+    color: #f30
+}
+.form-dom .form-input {
+    float: left
+}
+.form-input .greenbtn {
+    padding: 10px 50px
+}
+.form-dom .form-tip {
+    height: 30px;
+    line-height: 30px
+}
+.form-c {
+    float: left;
+    width: 100%;
+    display: inline-block
+}
+.form-r {
+    float: right;
+    width: 210px;
+    display: inline-block
+}
+.form-r>p {
+    font-size: 14px;
+    color: #999;
+    line-height: 180%
+}
+.login-url, .reg-url {
+    font-size: 14px;
+    color: #ff5c00
+}
+.login-url-arrow {
+    padding-top: 5px;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(/static/images/arrow-red.png) no-repeat
+}
+.jkxy-input {
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 3px;
+    width: 220px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #ccc
+}
+.jkxy-textarea {
+    padding: 5px;
+    width: 350px;
+    height: 100px;
+    font-size: 14px;
+    line-height: 150%;
+    border-radius: 2px;
+    border: 1px solid #ccc
+}
+.jkxy-checkbox {
+    float: left;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 3px;
+    vertical-align: baseline
+}
+.jkxy-select {
+    padding: .5em;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid #ccc
+}
+.jkxy-checkcode {
+    width: 80px
+}
+.form-tip-succ {
+    font-size: 12px;
+    color: green
+}
+.form-tip-error {
+    font-size: 12px;
+    color: red
+}
+.form-tip-warn {
+    font-size: 12px;
+    color: #ff5c00
+}
+span.form-icon-succ {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(/static/images/tip_succ.png) no-repeat
+}
+span.form-icon-error {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(/static/images/tip_error.png) no-repeat
+}
+.form-autologin {
+    padding: 0;
+    font-size: 12px;
+    color: #999;
+    vertical-align: top
+}
+.form-autologin>input {
+    vertical-align: text-top
+}
+.form-agreement {
+    font-size: 12px;
+    color: #999
+}
+.form-forgetpwd {
+    float: right;
+    margin-right: 75px;
+    font-size: 12px;
+    color: #999;
+    text-decoration: underline
+}
+.web-tip-warning {
+    width: 100%;
+    color: #ae9d49;
+    background: #fbf2ce
+}
+.web-tip-warning p a {
+    color: #FF5C00
+}
+.web-tip-normal {
+    width: 100%;
+    color: #666;
+    background: #f3f3f3
+}
+.web-tip-normal p a {
+    color: #35b558
+}
+.web-tip-normal>p>i.icon-close {
+    float: right;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    cursor: pointer
+}
+.web-tip-normal>p, .web-tip-warning>p {
+    margin: 0 auto;
+    padding: .6em 0;
+    width: 1000px;
+    font-size: 12px
+}
+.waring-success {
+    background: #35b558
+}
+.waring-failure {
+    background: #ff5c00
+}
+.waring-sub {
+    background: #2d85ca
+}
+#warning {
+    position: fixed;
+    top: -40px;
+    left: 50%;
+    z-index: 60000;
+    opacity: 0;
+    padding: 4px 20px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center
+}
+.login-offline {
+    margin: 0 auto;
+    width: 572px;
+    text-align: center
+}
+.login-offline .login-offline-green {
+    font-size: 18px;
+    color: #35b558
+}
+.login-offline .login-offline-relogin {
+    font-size: 14px;
+    color: #999
+}
+.login-offline .login-offline-relogin>a {
+    color: #FF5C00;
+    text-decoration: underline
+}
+.login-offline-bottom {
+    border-top: 1px dashed #e8e8e8
+}
+.login-offline-bottom .offline-danxin {
+    float: left;
+    margin-left: 20px;
+    margin-right: 55px;
+    font-size: 14px;
+    color: #999
+}
+.login-offline-bottom .offline-service {
+    float: left;
+    font-size: 14px;
+    color: #999
+}
+.login-offline-bottom .offline-danxin>a, .login-offline-bottom .offline-service>a {
+    color: #2d85ca;
+    text-decoration: underline
+}
+.free-vip {
+    background: #35b558;
+    height: 70px;
+    width: 100%;
+    color: #fff
+}
+.free-vip strong {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 70px
+}
+.free-vip a.greenbtn {
+    width: 140px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    font-size: 18px;
+    background: #28a24a;
+    color: #fff;
+    text-align: center;
+    float: right;
+    margin-top: 15px;
+    border-radius: 3px
+}
+.free-vip a.greenbtn:hover {
+    background: #66d178
+}
+.freevip-infor {
+    margin-top: 100px
+}
+.freevip-infor li {
+    width: 290px;
+    height: 180px;
+    float: left;
+    margin-right: 65px
+}
+.freevip-infor li img {
+    width: 48px;
+    float: left;
+    margin-top: 3px
+}
+.freevip-infor li div {
+    margin-left: 68px
+}
+.freevip-infor li strong {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333
+}
+.freevip-infor li p {
+    font-size: 12px;
+    color: #666;
+    line-height: 24px
+}
+.triangle-bl {
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #f3f3f3;
+    border-right: 20px solid transparent
+}
+.triangle-br {
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #f3f3f3;
+    border-left: 20px solid transparent
+}
+.small-buyvipbtn {
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: #ff5c00;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center
+}
+.small-buyvipbtn-noclick {
+    background: #35b558;
+    color: #fff;
+    cursor: default
+}
+.pay-dialog>p {
+    font-size: 14px;
+    color: #999
+}
+.pay-btn-box .orinagebtn {
+    margin-right: 20px;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 3px;
+    font-size: 18px;
+    background: #ff5c00;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.pay-btn-box .orinagebtn:active, .pay-btn-box .orinagebtn:focus, .pay-btn-box .orinagebtn:hover {
+    background: #ff7600;
+    color: #fff
+}
+.pay-btn-box .greybtn {
+    display: inline-block;
+    color: #999;
+    padding: 10px 40px;
+    border-radius: 3px;
+    font-size: 18px;
+    background: #e8e8e8;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.pay-btn-box .greybtn:active, .pay-btn-box .greybtn:focus, .pay-btn-box .greybtn:hover {
+    background: #f3f3f3
+}
+.pay-dialog-fail>p {
+    font-size: 12px;
+    color: #999;
+    line-height: 200%
+}
+.pay-dialog-fail>p.pay-fail-h1 {
+    font-size: 18px;
+    color: #35b558
+}
+#login-user {
+    color: #35b558
+}
+#warningpop {
+    width: 630px;
+    background: #000;
+    background: rgba(0, 0, 0, .4);
+    margin: 0 auto;
+    padding: 15px 15px 1px;
+    border-radius: 3px;
+    display: none
+}
+#warningpop .text {
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 15px
+}
+#warningpop .text .close-img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    float: right
+}
+#warningpop .title {
+    height: 15px;
+    margin-bottom: 10px
+}
+#warningpop .popclose {
+    width: 15px;
+    height: 15px;
+    float: right;
+    cursor: pointer
+}
+.gotop span.news {
+    width: 34px;
+    height: 34px;
+    background: #ff3c00;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    display: block
+}
+.jkxy-subask-nologin {
+    text-align: center;
+    padding: 3em 2em;
+    background: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+    border: 1px solid #ccc
+}
+.jkxy-subask-nologin>a {
+    color: #35b558;
+    padding: 0 3px
+}
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: .5em;
+    background: #fffbf1;
+    color: #657b83;
+    -webkit-text-size-adjust: none;
+    border-radius: 3px
+}
+.diff .hljs-header, .hljs-comment, .hljs-doctype, .hljs-javadoc, .hljs-pi, .hljs-template_comment, .lisp .hljs-string {
+    color: #93a1a1
+}
+.css .hljs-tag, .hljs-addition, .hljs-keyword, .hljs-request, .hljs-status, .hljs-winutils, .method, .nginx .hljs-title {
+    color: #859900
+}
+.hljs-command, .hljs-dartdoc, .hljs-hexcolor, .hljs-link_url, .hljs-number, .hljs-phpdoc, .hljs-regexp, .hljs-rules .hljs-value, .hljs-string, .hljs-tag .hljs-value, .tex .hljs-formula {
+    color: #2aa198
+}
+.css .hljs-function, .hljs-built_in, .hljs-chunk, .hljs-decorator, .hljs-id, .hljs-identifier, .hljs-localvars, .hljs-title, .vhdl .hljs-literal {
+    color: #268bd2
+}
+.hljs-attribute, .hljs-class .hljs-title, .hljs-constant, .hljs-link_reference, .hljs-parent, .hljs-type, .hljs-variable, .lisp .hljs-body, .smalltalk .hljs-number {
+    color: #b58900
+}
+.css .hljs-pseudo, .diff .hljs-change, .hljs-attr_selector, .hljs-cdata, .hljs-header, .hljs-pragma, .hljs-preprocessor, .hljs-preprocessor .hljs-keyword, .hljs-shebang, .hljs-special, .hljs-subst, .hljs-symbol, .hljs-symbol .hljs-string {
+    color: #cb4b16
+}
+.hljs-deletion, .hljs-important {
+    color: #dc322f
+}
+.hljs-link_label {
+    color: #6c71c4
+}
+.tex .hljs-formula {
+    background: #eee8d5
+}
+.ask-text img {
+    max-width: 100%
+}
+.lesson-tx {
+    background: #f3f3f3;
+    height: 189px;
+    border: 1px solid #f3f3f3
+}
+.lesson-tx .leftimg {
+    width: 80px;
+    margin-right: 20px
+}
+.lesson-tx .tx-infor {
+    width: 900px
+}
+.lesson-tx .tx-infor h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+    height: 30px;
+    overflow: hidden
+}
+.lesson-tx .tx-infor p {
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+    height: 54px;
+    overflow: hidden
+}
+.lesson-tx .tx-nav {
+    width: 100%;
+    height: 30px;
+    margin-top: 15px
+}
+.lesson-tx .tx-nav li {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #333;
+    line-height: 30px
+}
+.lesson-tx .tx-nav li a {
+    color: #333
+}
+.lesson-tx .tx-nav li a:hover {
+    color: #35b558
+}
+.lesson-tx .tx-sj {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    bottom: -17px;
+    position: absolute;
+    z-index: 300;
+    left: 157px
+}
+.lesson-tx .tx-lb {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    bottom: -17px;
+    position: absolute;
+    z-index: 300;
+    left: 490px
+}
+.lesson-tx .tx-ljt {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    bottom: -17px;
+    position: absolute;
+    z-index: 300;
+    left: 825px
+}
+#B-blacklayer {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6000;
+    display: block;
+    background: #000;
+    background: rgba(0, 0, 0, .4)!important
+}
+#browser {
+    width: 650px;
+    height: 320px;
+    padding: 60px 40px;
+    background: #fff;
+    border-radius: 3px;
+    position: fixed;
+    left: 50%;
+    margin-left: -325px;
+    top: 50%;
+    margin-top: -190px;
+    z-index: 7000
+}
+#browser .b-title {
+    color: #35b558;
+    font-size: 20px;
+    text-align: center
+}
+#browser .b-title strong {
+    color: #35b558;
+    font-size: 24px;
+    text-align: center
+}
+#browser p {
+    color: #666;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 30px 0 70px
+}
+#browser .downloading {
+    text-align: center
+}
+#browser .downloading a {
+    display: inline-block;
+    margin: 0 20px
+}
+::selection {
+    background: #35b558;
+    color: #fff
+}
+::-moz-selection {
+    background: #35b558;
+    color: #fff
+}
+::-webkit-selection {
+    background: #35b558;
+    color: #fff
+}
+.no-contnet-block {
+    width: 100%;
+    text-align: center
+}
+.no-contnet-block .no-contnet-box {
+    margin: 0 auto;
+    width: 600px;
+    height: auto
+}
+.no-contnet-block .no-contnet-box .no-content-img {
+    float: left;
+    width: 75px;
+    height: 75px
+}
+.no-contnet-block .no-contnet-box .no-content-img img {
+    width: 100%
+}
+.no-contnet-block .no-contnet-box .no-content-h3 {
+    float: left;
+    margin-left: 36px;
+    padding: 0;
+    width: 440px;
+    text-align: left
+}
+.no-contnet-block .no-contnet-box .no-content-h3 .no-content-textbig {
+    font-size: 16px;
+    color: #666;
+    line-height: 230%
+}
+.no-contnet-block .no-contnet-box .no-content-h3 .no-content-text {
+    font-size: 12px;
+    color: #999;
+    line-height: 140%
+}
+#timeCare {
+    position: fixed;
+    top: 0;
+    z-index: 2001;
+    padding: 5px 20px;
+    width: auto;
+    height: auto;
+    background: #35b558;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px
+}
+#timeCare .jkxy_hello {
+    font-size: 12px;
+    line-height: 200%
+}
+#timeCare .jkxy_time {
+    font-size: 12px;
+    display: none
+}
+.pewm, .pewm1, .pewm2, .pewm3 {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    width: 105px;
+    height: 120px;
+    text-align: center;
+    z-index: 2000
+}
+.pewm1 {
+    width: 105px;
+    height: 80px;
+    bottom: 470px;
+    cursor: pointer;
+    background-size: 100% 100%
+}
+.pewm2 {
+    bottom: 335px;
+    cursor: pointer;
+    width: 105px;
+    height: 120px;
+    background-size: 100% 100%
+}
+.pewm3 {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 200px;
+    width: 105px;
+    height: 120px;
+    text-align: center;
+    z-index: 2000
+}
+.pewm1, .pewm2, .pewm3 {
+    font-size: 12px;
+    color: #252525
+}
+.pewm1 p, .pewm2 p, .pewm3 p {
+    padding-top: 20px
+}
+.cricle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: #333;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    border-radius: 50%
+}
+.cricle .cright, .cricle .left, .cricle .text {
+    width: 50px;
+    height: 50px
+}
+.cricle .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 41;
+    color: #fff;
+    font: 700 14px/50px arial;
+    text-align: center
+}
+.cricle .mask {
+    z-index: 40
+}
+.cricle .bg, .cricle .mask {
+    width: 25px;
+    height: 50px;
+    background: #333;
+    position: absolute;
+    top: 0
+}
+.cricle .bg {
+    background: url(http://s1.jikexueyuan.com/common/images/player-2_9becd9a.png) no-repeat 0 0;
+    background-size: 50px 50px
+}
+.cricle .left .bg, .cricle .mask {
+    left: 0
+}
+.cricle .cright {
+    display: none
+}
+.cricle .cright .bg {
+    background-position: right top;
+    right: 0
+}
+.jd-line {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    background: rgba(0, 0, 0, .4);
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    overflow: hidden
+}
+.green-line {
+    width: 50%;
+    height: 100%;
+    background: #35b558
+}
+.lesson-list .lesson-shoucang {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(http://s1.jikexueyuan.com/common/images/shoucang-1_76dc56f.png);
+    background-size: 16px 16px;
+    z-index: 101;
+    cursor: pointer
+}
+.lesson-list .lesson-shoucang:hover {
+    background: url(http://s1.jikexueyuan.com/common/images/shoucang-2_3d597dc.png);
+    background-size: 16px 16px
+}
+.lesson-list .ysc {
+    background: url(http://s1.jikexueyuan.com/common/images/shoucang-3_3111bf6.png);
+    background-size: 16px 16px
+}
+.learn-finish {
+    background-color: #ff5c00!important
+}
+.padd-t40 {
+    padding-top: 40px
+}
+.lottery-close {
+    background: url(http://s1.jikexueyuan.com/common/images/close3_215a363.png) center center no-repeat;
+    width: 8px;
+    height: 8px;
+    background-size: 100% 100%;
+    display: block;
+    float: right;
+    cursor: pointer
+}
+.search-section div, .search-section input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+.sevenday {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 10px
+}
+.sevenday a {
+    color: #35b558;
+    font-size: 12px;
+    float: right
+}
+.sevenday i {
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    background: url(http://s1.jikexueyuan.com/common/images/choose-all_f8829a0.png) 0 0 no-repeat;
+    overflow: hidden;
+    margin-right: 5px;
+    cursor: pointer;
+    margin-top: 0
+}
+.sevenday i.choose-this {
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    background: url(http://s1.jikexueyuan.com/common/images/choose-all_f8829a0.png) 0 -32px no-repeat;
+    overflow: hidden;
+    margin-right: 5px;
+    cursor: pointer;
+    margin-top: 0
+}
+.popclose {
+    cursor: pointer
+}
+.mod-tips {
+    position: relative;
+    z-index: 10;
+    color: gray;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center
+}
+.mod-tips>.wrap {
+    padding: 10px 30px 10px 10px;
+    background: #fff9df;
+    border: 1px solid #f1e5b3
+}
+.mod-tips>.wrap a {
+    color: gray;
+    display: inline-block
+}
+.mod-tips em {
+    color: #ff5c00
+}
+.mod-tips .close {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    z-index: 20;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(http://s1.jikexueyuan.com/common/images/tips-close_8a20e8c.png) no-repeat;
+    background-size: 14px;
+    cursor: pointer
+}
+.mod-tips.tips-min>.wrap {
+    padding: 0 6px
+}
+.mod-tips.tips-min {
+    line-height: 18px;
+    white-space: nowrap
+}
+.mod-tips.tips-min .close {
+    position: static;
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
+    padding: 2px;
+    background-size: 6px;
+    background-position: 50%
+}
+.pwd-strong>span.active {
+    background: #35b558!important
+}
+.warning {
+    padding-left: 20px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 12px;
+    float: left;
+    padding-top: 1px;
+    padding-bottom: 1px
+}
+.wrong {
+    background: url(http://s1.jikexueyuan.com/common/images/wrong_2817e8d.png) 0 center no-repeat!important;
+    color: #f76874
+}
+.right {
+    background: url(http://s1.jikexueyuan.com/common/images/right_bcc30bd.png) 0 center no-repeat!important;
+    color: #f76874
+}
+.empty {
+    background: url(http://s1.jikexueyuan.com/common/images/gt_36cd46d.png) 0 center no-repeat!important;
+    color: #2d85ca
+}
+.sort {
+    position: relative;
+    z-index: 500
+}
+.sort>.wrap {
+    box-sizing: content-box;
+    height: 38px;
+    background: #fff;
+    color: gray;
+    line-height: 38px
+}
+.sort .sortMode {
+    overflow: visible;
+    float: left;
+    height: 38px
+}
+.sort .sortMode h3 {
+    float: left;
+    padding: 0 21px;
+    background: #fff;
+    border-right: 1px solid #f5f5f5;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: default
+}
+.sort .sortMode h1 {
+    float: left;
+    padding: 0 18px;
+    background: #fff;
+    border-right: 1px solid #e4e4e4;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: default
+}
+.sort .sortMode>dl {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    float: left;
+    height: 36px;
+    margin: 0 1px 0 -1px;
+    white-space: nowrap
+}
+.sort .sortMode dt {
+    padding: 0 18px;
+    cursor: default
+}
+.sort .sortMode dd {
+    position: relative;
+    z-index: 12;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .1s ease .1s;
+    -moz-transition: all .1s ease .1s;
+    -ms-transition: all .1s ease .1s;
+    transition: all .1s ease .1s
+}
+.sort .sortMode dd a {
+    display: block;
+    padding: 0 32px 0 17px;
+    font-weight: 500;
+    color: gray
+}
+.sort .previewMode {
+    float: right
+}
+.sort .sortMode dt>.arrow {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px
+}
+.sort .sortMode dt>.arrow:after, .sort .sortMode dt>.arrow:before {
+    display: block;
+    width: 0!important;
+    height: 0!important;
+    padding: 0!important;
+    font-size: 0!important;
+    line-height: 0!important;
+    border: 5px solid transparent;
+    border-bottom-width: 0;
+    border-top-color: gray;
+    content: " "
+}
+.sort .sortMode dt>.arrow:after {
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    border-width: 4px;
+    border-bottom-width: 0;
+    border-top-color: #fff
+}
+.sort .sortMode dd a:hover {
+    color: #35B558
+}
+.sort .sortMode>dl:hover {
+    height: auto;
+    overflow: visible;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-width: 0 1px 1px;
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .1)
+}
+.sort .sortMode>dl:hover dt {
+    padding: 0 17px
+}
+.sort .sortMode>dl:hover dt>.arrow {
+    visibility: hidden
+}
+.sort .sortMode>dl:hover dd {
+    visibility: visible;
+    opacity: 1
+}
+#crumbs {
+    margin: 0 0 10px;
+    color: #ccc;
+    font-size: 12px
+}
+#crumbs:after {
+    display: table;
+    clear: both;
+    content: " "
+}
+#crumbs li {
+    float: left;
+    margin: 0 5px 0 0
+}
+#crumbs li a {
+    color: #ccc
+}
+#crumbs li a:hover {
+    color: #35b558
+}
+#crumbs li>i {
+    margin: 0 5px 0 0;
+    font-family: "Lantinghei SC", \5b8b\4f53
+}
+.dialog-box .dialog-tit {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #666;
+    padding: 0 15px;
+    background: #f3f3f3
+}
+.pay-dialog {
+    text-align: center
+}
+.pay-dialog>p {
+    padding: 25px 0 5px
+}
+.dialog-box .dialog-tit .popclose {
+    background: url(http://s1.jikexueyuan.com/common/images/close3_215a363.png) center center no-repeat;
+    width: 14px;
+    height: 14px;
+    float: right;
+    margin-top: 13px;
+    background-size: 14px 14px
+}
+.form-dom {
+    width: 100%;
+    overflow: hidden;
+    display: block
+}
+.form-c {
+    padding-top: 40px
+}
+.load-list {
+    margin-top: 15px
+}
+.user-xy {
+    font-size: 12px;
+    margin: 8px 0 15px
+}
+.user-xy a {
+    color: #999
+}
+#footer .copyright strong {
+    font-weight: 400
+}
+.aside-banner {
+    margin: 0 0 20px
+}
+.aside-banner img {
+    width: 100%;
+    vertical-align: bottom
+}
+#container>.wrap:after {
+    display: table;
+    clear: both;
+    content: " "
+}
+#main {
+    width: 776px
+}
+#aside {
+    width: 210px
+}
+.aside-list {
+    margin: 0 0 30px;
+    border: 1px solid #e4e4e4
+}
+.aside-list>.hd {
+    height: 33px;
+    padding: 0 12px;
+    border-bottom: 1px solid #e4e4e4;
+    color: #333;
+    line-height: 32px;
+    cursor: default
+}
+.aside-list>.hd h2 {
+    font-size: 14px;
+    font-weight: 700
+}
+.wrong {
+    background: url(http://s1.jikexueyuan.com/common/images/wrong_2817e8d.png) 0 center no-repeat!important;
+    color: #f76874
+}
+.right {
+    background: url(http://s1.jikexueyuan.com/common/images/right_bcc30bd.png) 0 center no-repeat!important;
+    color: #f76874
+}
+.empty {
+    background: url(http://s1.jikexueyuan.com/common/images/gt_36cd46d.png) 0 center no-repeat!important;
+    color: #2d85ca
+}
+.index-public-title strong a {
+    color: #333
+}
+ul.pages {
+    display: block;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    /*margin: 10px 10px 45px;*/
+    padding: 0
+}
+ul.pages li {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    margin-left: 5px;
+    line-height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+    color: gray;
+    border: 1px solid #e4e4e4
+}
+ul.pages li:hover {
+    line-height: 30px;
+    border: 1px solid #35B558;
+    color: #35B558
+}
+ul.pages li.pgEmpty {
+    border: 1px solid #f0f0f0;
+    color: #d9d6c3;
+    width: 50px;
+    cursor: default
+}
+ul.pages li.pgNext {
+    width: 50px
+}
+ul.pages li:nth-child(2) {
+    width: 72px
+}
+ul.pages li:nth-last-child(2) {
+    width: 72px
+}
+ul.pages li.thpoint {
+    border: 0;
+    cursor: auto;
+    color: #000;
+    background: none!important;
+    margin-top: 3px
+}
+ul.pages li.pagetotal {
+    width: 70px
+}
+ul.pages li.pagenow {
+    width: 100px
+}
+ul.pages li.go {
+    width: 32px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 6px
+}
+ul.pages li.pgCurrent {
+    background: #35b558;
+    color: #fff;
+    border: 1px solid #35B558
+}
+#page-nav input {
+    width: 35px!important;
+    height: 22px!important;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    color: #666;
+    line-height: 22px;
+    margin: 0 10px;
+    vertical-align: middle
+}
+#page-nav {
+    text-align: center;
+    margin-top: 17px;
+    height: 28px
+}
+.lesson-infor-show ul, .lesson-infor-show ol, .ask-text ul li, .ask-text ol li {
+    list-style: initial!important
+}
+.ask-text ul li, .ask-text ol li {
+    padding: 0!important;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    outline: 0;
+    word-wrap: break-word
+}
+.lesson-list2 .lesson-infor .ask-text p {
+    padding: 0!important;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #333;
+    outline: 0;
+    word-wrap: break-word
+}
+.ask-text ul {
+    list-style: disc!important
+}
+.ask-text li {
+    border-bottom: 0!important
+}
+.ask-text ol {
+    list-style: decimal!important
+}
+.ask-text i {
+    list-style: inherit!important
+}
+.ask-text i, .ask-text cite, .ask-text em, .ask-text var, .ask-text address, .ask-text dfn {
+    font-style: italic
+}
+.pewm1 .close, .pewm2 .close, .pewm3 .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    z-index: 2200;
+    width: 14px;
+    height: 14px;
+    display: block;
+    background: url(http://s1.jikexueyuan.com/common/images/close4_e9b7521.png) center center no-repeat;
+    background-size: 10px auto
+}
+.pewm3 .close {
+    right: -13px;
+    cursor: pointer
+}
+#this-news {
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    z-index: 10000;
+    top: 50px;
+    left: 100px;
+    box-sizing: border-box;
+    margin-left: -150px;
+    border: 1px solid #f3f3f3;
+    background: #fff;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, .1)
+}
+#this-news h3 {
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #333;
+    padding: 0 15px;
+    border-bottom: 1px solid #f3f3f3
+}
+#this-news span {
+    padding-left: 5px
+}
+#this-news h3 em {
+    background: url(http://s1.jikexueyuan.com/common/images/newsok_aedd06d.gif) center center no-repeat;
+    display: block;
+    height: 10px;
+    margin-top: 8px;
+    background-size: 100% 100%;
+    float: right
+}
+#this-news .gray {
+    color: #999
+}
+#this-news .blue {
+    color: #2d85ca
+}
+#this-news li {
+    display: block;
+    padding: 11px 15px;
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 12px;
+    color: gray;
+    cursor: pointer
+}
+#this-news li:hover {
+    background: #f7f7f7
+}
+#this-news li div.answer {
+    width: 60%;
+    float: left;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+#this-news li:last-child {
+    border: 0
+}
+#this-news li em {
+    float: right;
+    color: #bfbfbf;
+    font-style: normal
+}
+#this-news .cf {
+    line-height: 16px!important
+}
+#this-news li p {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    height: 14px;
+    line-height: 16px!important;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+#this-news .news-list {
+    overflow-y: scroll;
+    width: 100%;
+    height: 290px
+}
+#this-news .all-news {
+    background: #fff;
+    text-align: center;
+    line-height: 24px!important;
+    border-top: 1px solid #f3f3f3
+}
+#this-news .all-news a {
+    color: #333;
+    display: inline;
+    line-height: 24px!important;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none
+}
+#this-news .all-news a:hover {
+    background: 0 0
+}
+.topic {
+    position: absolute;
+    top: -8px;
+    left: 50px;
+    width: 15px
+}
+.nonews img {
+    width: 139px;
+    margin: 50px auto;
+    display: block
+}
+#this-news::-webkit-scrollbar {
+    width: 3px
+}
+#this-news::-webkit-scrollbar-track {}
+#this-news::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .1)
+}
+#this-news::-webkit-scrollbar-button {
+    background-color: #ddd
+}
+#this-news::-webkit-scrollbar-corner {
+    background-color: #000
+}
+.my-massage {
+    background: url(http://s1.jikexueyuan.com/common/images/massage-icon_95c7c4c.gif) left center no-repeat;
+    background-size: 15px 13px;
+    box-sizing: content-box;
+    display: inline-blockwidth: 50px;
+    text-align: left;
+    padding-left: 20px;
+    position: relative
+}
+.my-massage2 {
+    background: url(http://s1.jikexueyuan.com/common/images/massage-icon2_d1369b2.gif) left center no-repeat;
+    background-size: 15px 13px;
+    box-sizing: content-box;
+    display: inline-blockwidth: 50px;
+    text-align: left;
+    padding-left: 12px;
+    position: relative
+}
+.bounce1 {
+    left: 3px
+}
+.bounce2 {
+    left: 7px
+}
+.bounce3 {
+    left: 11px
+}
+.bounce1, .bounce2, .bounce3 {
+    width: 2px;
+    height: 2px;
+    top: 23px;
+    background-color: #ad3a37;
+    position: absolute;
+    display: none;
+    border-radius: 100%;
+    -webkit-animation: bouncedelay 2s infinite;
+    -moz-animation: bouncedelay 2s infinite;
+    -ms-animation: bouncedelay 2s infinite;
+    animation: bouncedelay 2s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+#messagebox .bounce1 {
+    -webkit-animation-delay: -.32s;
+    -moz-animation-delay: -.32s;
+    -ms-animation-delay: -.32s;
+    animation-delay: -.32s
+}
+#messagebox .bounce2 {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: -.16s
+}
+@-webkit-keyframes bouncedelay {
+    0%, 80%, 100% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+}
+@-moz-keyframes bouncedelay {
+    0%, 80%, 100% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+}
+@-ms-keyframes bouncedelay {
+    0%, 80%, 100% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+}
+@keyframes bouncedelay {
+    0%, 80%, 100% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+}
+.ask-text ul li, .ask-text ol li {
+    padding: 0!important;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    outline: 0;
+    word-wrap: break-word
+}
+.lesson-list2 .lesson-infor .ask-text p {
+    padding: 0!important;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #333;
+    outline: 0;
+    word-wrap: break-word
+}
+.ask-text ul {
+    list-style: disc!important
+}
+.ask-text li {
+    border-bottom: 0!important
+}
+.ask-text ol {
+    list-style: decimal!important
+}
+.ask-text i {
+    list-style: inherit!important
+}
+.ask-text i, .ask-text cite, .ask-text em, .ask-text var, .ask-text address, .ask-text dfn {
+    font-style: italic
+}
+.pewm1 .close, .pewm2 .close, .pewm3 .close {
+    position: absolute;
+    top: -5px;
+    right: -13px;
+    z-index: 2200;
+    width: 14px;
+    height: 14px;
+    display: block;
+    background: url(http://s1.jikexueyuan.com/common/images/close4_e9b7521.png) center center no-repeat;
+    background-size: 10px auto
+}
+.lesson-center-focus {
+    width: 560px;
+    float: left;
+    margin-left: 10px;
+    overflow: hidden
+}
+.icon-tag-blue, .icon-tag-yellow, .icon-tag-red {
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    padding: 1px 3px;
+    border-radius: 3px;
+    vertical-align: text-bottom;
+    background: #70a8db
+}
+.icon-tag-yellow {
+    background: #ffc706
+}
+.icon-tag-red {
+    background: #ff6251
+}

@@ -1,0 +1,75 @@
+/* backTop */
+
+.backTop {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 50px;
+    height: 140px;
+    text-align: center;
+    z-index: 2000;
+    cursor: pointer;
+}
+.backTop .arrow-con {
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+.back-arrow {
+    background: url(../img/back-top-icon.jpg) 0 0 no-repeat;
+    background-size: 34px 103px;
+    width: 34px;
+    height: 34px;
+    display: none;
+}
+.arrow-con:hover .back-arrow {
+    background: url(../img/gotop2.jpg) 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 34px 103px;
+    -webkit-background-size: 34px 103px;
+    -moz-background-size: 34px 103px;
+}
+.backTop .jk-app-con {
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background: #F7F7F7;
+    padding: 5px 11px;
+}
+.backTop .jk-app {
+    position: relative;
+    display: block;
+    background: url(../img/phone-btn.png) no-repeat;
+    background-size: 12px 24px;
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 24px;
+}
+.jk-app .app-code {
+    width: 126px;
+    height: 159px;
+    background: url(../img/app-code.png);
+    background-size: 100%;
+    position: absolute;
+    top: -70px;
+    left: -136px;
+    /*display: block;*/
+    display: none;
+}
+.jk-app-con:hover .jk-app {
+    background: url(../img/phone-2.png) no-repeat;
+    background-size: 12px 24px;
+}
+.jk-app-con:hover .app-code {
+    display: block;
+}
+.backTop .research {
+    display: block;
+    background: url(../img/wx.jpg) no-repeat;
+    background-size: 34px 34px;
+    width: 34px;
+    height: 35px;
+    border-top: 1px solid #e0e0e0;
+}
