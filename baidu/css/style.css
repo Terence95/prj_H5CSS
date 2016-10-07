@@ -1291,7 +1291,6 @@ input {
     margin-left: 20px;
     width: 195px;
     height: 320px;
-    margin-bottom: 25px;
     margin-top: 25px;
 }
 .video_col a:hover {
@@ -1442,6 +1441,7 @@ input {
     white-space: 0;
     color: #fff;
     display: block;
+    margin-top: 20px;
 }
 .footer-link, .footer-text {
     width: 720px;
