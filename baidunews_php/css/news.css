@@ -1,0 +1,102 @@
+/* 加上cf类就自带清除浮动的效果 */
+
+.cf::before, .cf::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+html {
+    font-size: 62.5%;
+    font-family: arial;
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+/* nav begin */
+
+nav {
+    background: #3d98f0;
+    border-top: 1px solid #5dabf0;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+nav ul li {
+    display: inline-block;
+    width: 16.66%;
+    font-size: 1.44rem;
+    text-align: center;
+}
+nav a {
+    display: inline-block;
+    padding: 1rem 0;
+    color: #fff;
+}
+nav ul i {
+    display: inline-block;
+    height: 2rem;
+    float: right;
+    border-right: 1px solid #5dabf0;
+    position: relative;
+    left: 0.1rem;
+    top: 8px;
+}
+
+/* news begin */
+
+.news-lists {
+    margin: 1rem 0 0;
+    padding: 0 1.1rem;
+    list-style: none;
+}
+.news-lists h1 {
+    font-size: 1.3rem;
+}
+.news-list {
+    margin-top: 0.8rem;
+    display: flex;
+    border-bottom: 1px solid #f6f6f6;
+}
+.newsimg {
+    flex: 1;
+    /*vertical-align: middle;
+    width: 33.33%;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    margin-left: 0;
+    background-color: #F4F7F9;
+    position: relative;*/
+}
+.newsimg img {
+    width: 100%;
+    height: auto;
+}
+.newscontent {
+    flex: 2;
+    padding: 0 0.8rem;
+}
+.newscontent span {
+    display: inline-block;
+}
+.newstime {
+    margin-top: 1.1rem
+}
+.newscontent span:nth-child(2) {
+    margin-left: .8rem;
+    border: 1px solid #ff0000;
+    border-radius: 3px;
+    color: #FF0000;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320.1,minimum-scale=1.0,maximum-scale=1.0" />
+    <title>百度新闻</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/news.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="headerLeft">
+                <div class="headerTools toBaidu">
+                    <a href=""></a>
+                </div>
+                <div class="headerTools toUser">
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="headerRight">
+                <div class="headerTools toSearch">
+                    <a href=""></a>
+                </div>
+                <div class="headerTools toAddTools">
+                    <a href=""></a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">精选</a><i></i></li>
+                <li><a href="">百家</a><i></i></li>
+                <li><a href="">本地</a><i></i></li>
+                <li><a href="">娱乐</a><i></i></li>
+                <li><a href="">社会</a><i></i></li>
+                <li><a href="">军事</a><i></i></li>
+                <li><a href="">女人</a><i></i></li>
+                <li><a href="">搞笑</a><i></i></li>
+                <li><a href="">互联网</a><i></i></li>
+                <li><a href="">科技</a><i></i></li>
+                <li><a href="">更多</a><i></i></li>
+
+            </ul>
+        </nav>
+
+        <article class="news-main">
+            <ul class="news-lists">
+                <!-- <li class="news-list">
+                    <div class="newsimg">
+                        <img src="img/1.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1>这是一条测试数据</h1>
+                        <p><span class="newstime">2016年10月14日</span>
+                            <span class="newssrc">搜狐财经</span></p>
+                    </div>
+                </li> -->
+                <!-- 这里自动添加新闻 -->
+            </ul>
+        </article>
+
+        <footer>
+
+        </footer>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var deviceWidth = $('body').width();
+            // 遍历li
+            $('nav li').each(function(index, el) {
+                // 得到每个li里面a标签里面字符的长度
+                // console.log($(this).find('a').html());
+                if ($(this).find('a').html().split('').length > 2) {
+                    $(this).width(deviceWidth / 3);
+                } else {
+                    $(this).width(deviceWidth / 6);
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript" src="js/news.js"></script>
+</body>
+
+</html>
