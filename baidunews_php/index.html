@@ -40,12 +40,13 @@
                 <li><a href="">娱乐</a><i></i></li>
                 <li><a href="">社会</a><i></i></li>
                 <li><a href="">军事</a><i></i></li>
+            </ul>
+            <ul>
                 <li><a href="">女人</a><i></i></li>
                 <li><a href="">搞笑</a><i></i></li>
                 <li><a href="">互联网</a><i></i></li>
                 <li><a href="">科技</a><i></i></li>
                 <li><a href="">更多</a><i></i></li>
-
             </ul>
         </nav>
 
@@ -72,6 +73,7 @@
     <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+
             var deviceWidth = $('body').width();
             // 遍历li
             $('nav li').each(function(index, el) {
@@ -83,6 +85,8 @@
                     $(this).width(deviceWidth / 6);
                 }
             });
+
+
         });
     </script>
     <script type="text/javascript" src="js/news.js"></script>

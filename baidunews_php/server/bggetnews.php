@@ -2,8 +2,8 @@
       header("Content-type:application/json;charset=utf-8");
 
       // [{newstype:newstitle}];
-      // require_once('db.php');
-      $link = mysqli_connect('localhost','root','','baidunews',3306);
+      require_once('db.php');
+      // $link = mysqli_connect('localhost','root','','baidunews',3306);
       if ($link) {
         # 执行成功过程
         // echo "in";

@@ -1,13 +1,13 @@
 <?php
     header("Content-type:application/json;charset=utf-8");
-    // require_once('db.php');
-    $link = mysqli_connect('localhost','root','','baidunews',3306);
+    require_once('db.php');
+    // $link = mysqli_connect('localhost','root','','baidunews',3306);
 
     if ($link) {
        $newsid = $_POST['newsid'];
 
        mysqli_query($link,"SET NAMES utf8");
-       // mysql 删除语句  
+       // mysql 删除语句
        $sql = "DELETE FROM `news` WHERE `news`.`id` = '{$newsid}'";
 
        mysqli_query($link, $sql);
