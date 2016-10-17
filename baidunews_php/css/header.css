@@ -4,6 +4,7 @@ header {
     background: rgb(62, 152, 240) url(../img/bg-news-logo_344ce44.png) 0 0 no-repeat;
     background-size: 77px;
     background-position: 50%;
+    /*position: fixed;*/
 }
 .headerLeft {
     float: left;

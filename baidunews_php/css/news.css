@@ -26,6 +26,7 @@ a {
 nav {
     background: #3d98f0;
     border-top: 1px solid #5dabf0;
+    /*position: fixed;*/
 }
 nav ul {
     margin: 0;
@@ -52,6 +53,15 @@ nav ul i {
     position: relative;
     left: 0.1rem;
     top: 8px;
+}
+
+/* fixed div */
+
+.fixed {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin-top: 0rem;
 }
 
 /* news begin */
@@ -99,4 +109,10 @@ nav ul i {
     border: 1px solid #ff0000;
     border-radius: 3px;
     color: #FF0000;
+}
+
+/* news-main */
+
+.news-main {
+    padding-top: 10.3rem;
 }
