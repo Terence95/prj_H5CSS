@@ -10,6 +10,7 @@ var eventproxy = require('eventproxy');
 var ep = eventproxy();
 
 var baseUrl = 'https://cnodejs.org/';
+var sinaUrl = 'http://weibo.com/tttttsugar?is_all=1';
 
 
 
@@ -24,6 +25,7 @@ app.get('/', function(req, res, next) {
         // 就可以得到一个实现了 jquery 接口的变量，我们习惯性地将它命名为 `$`
         // 剩下就都是 jquery 的内容了
         var $ = cheerio.load(sres.text);
+        // console.log($);
         var items = [];
         $('#topic_list .topic_title').each(function(index, el) {
             var $element = $(el);
@@ -32,6 +34,14 @@ app.get('/', function(req, res, next) {
                 href:$element.attr('href')
             });
         });
+        // $('.WB_detail').each(function(index, element) {
+        //     // console.log(element);
+        //     var $element = $(element);
+        //
+        //     items.push({
+        //         content:$element.html(),
+        //     });
+        // });
         res.send(items);
     });
 });
