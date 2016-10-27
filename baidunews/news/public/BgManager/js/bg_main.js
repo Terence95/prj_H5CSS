@@ -5,6 +5,10 @@ require.config({
         jquery: 'lib/jquery.min',
         findTableName: 'basic/findTableName',
         findRightItem: 'basic/findRightItem',
+        calculateSelectedNum: 'basic/calculateSelectedNum',
+        convertToTable: 'basic/convertToTable',
+        convertToSelected: 'basic/convertToSelected',
+
         findAll: 'findAll/findAll',
         createInnerBoxFragment: 'findAll/createInnerBoxFragment',
 
@@ -20,6 +24,7 @@ requirejs(['jquery', 'findAll', 'leftBarSelected', 'createInnerBoxFragment', 'fi
         // 测试百家请求
         // var table = "news_baijia";
         // find 开启 ajax 请求 /BgManager/+table名
+        
         findAll(table);
     });
 

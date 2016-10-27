@@ -1,4 +1,4 @@
-define(['jquery','createInnerBoxFragment'], function($,createInnerBoxFragment) {
+define(['jquery', 'createInnerBoxFragment', 'calculateSelectedNum'], function($, createInnerBoxFragment, calculateSelectedNum) {
     function findAll(table) {
         $.ajax({
             url: '/BgManager/' + table,
@@ -15,7 +15,15 @@ define(['jquery','createInnerBoxFragment'], function($,createInnerBoxFragment) {
             }
         });
 
-
+        // 给新闻id添加点击 标记事件
+        // 这个是动态添加的类，需要同步ajax, 之后抛出它的选择器事件
+        var contentitemid = $('.content-item-id').click(function(event) {
+            /* Act on the event */
+            var _this = $(this);
+            _this.toggleClass('selected');
+            calculateSelectedNum();
+        });
+        return contentitemid;
     }
     return findAll;
 });
