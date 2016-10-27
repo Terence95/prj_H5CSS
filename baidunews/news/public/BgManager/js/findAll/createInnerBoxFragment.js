@@ -20,10 +20,10 @@ define(['jquery', 'findRightItem'], function($, findRightItem) {
         });
 
         // TODO: 暂时写死展示 tab-item-1中的数据
-        // $('.tab-item-1').children('.content-box').html(innerBoxHTML);
+        // $('.tab-item-2').children('.content-box').html(innerBoxHTML);
 
         // 函数createInnerBoxFragment 传入参数 table 这里拿到之后去找对应的tab-item
-        console.log("." + findRightItem(table));
+        // console.log("." + findRightItem(table));
         $("." + findRightItem(table)).children('.content-box').html(innerBoxHTML);
     }
 

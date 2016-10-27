@@ -9,10 +9,10 @@ define(['findAll', 'findTableName'], function(findAll, findTableName) {
                 _this.siblings().removeClass('focused');
                 _this.addClass('focused');
                 var leftListName = _this.next().text();
-                // console.log(leftListName);
+                console.log(leftListName);
                 var table = findTableName(leftListName);
                 findAll(table);
-                $(".selectedItemNum").text(0);
+                // $(".selectedItemNum").text(0);
 
             })
         )

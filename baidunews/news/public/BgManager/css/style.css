@@ -75,6 +75,10 @@ header a {
     margin: 0 auto;
 }
 
+.focused {
+    display: block;
+}
+
 
 /* Backend Panel Start */
 
@@ -161,49 +165,85 @@ header a {
     font-size: 20px;
     z-index: 9;
 }
-.top-bar li{
-		float: right;
-}
-.top-bar a{
-		display: block;
-		padding: 0 20px;
-		color: #000;
+
+.top-bar li {
+    float: right;
 }
 
-.top-bar a:hover{
-		color: #848faf;
+.top-bar a {
+    display: block;
+    padding: 0 20px;
+    color: #000;
 }
 
-.top-bar li:hover{
-		background: #fff;
+.top-bar a:hover {
+    color: #848faf;
 }
 
-.tab-content{
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: calc(100% - 200px);
-		height: 100%;
-		padding-top: 60px;
-		overflow: hidden;
-}
-.tab-content section{
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		padding: 10px;
-		padding-right: 0px;
-		display: none;
+.top-bar li:hover {
+    background: #fff;
 }
 
-.backendpanel > input.tab-1:checked~ .tab-content .tab-item-1{
-		display: block;
-		overflow: hidden;
+.tab-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 200px);
+    height: 100%;
+    padding-top: 60px;
+    overflow: hidden;
 }
 
-.backendpanel > input.tab-1:checked~ .tab-content .tab-item-2{
-		display: block;
+.tab-content section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-right: 0px;
+    display: none;
 }
+
+.backendpanel>input.tab-1:checked~.tab-content .tab-item-1 {
+    display: block;
+    overflow: hidden;
+}
+
+.backendpanel>input.tab-2:checked~.tab-content .tab-item-2 {
+    display: block;
+}
+
+.backendpanel>input.tab-3:checked~.tab-content .tab-item-3 {
+    display: block;
+}
+
+.backendpanel>input.tab-4:checked~.tab-content .tab-item-4 {
+    display: block;
+}
+
+.backendpanel>input.tab-5:checked~.tab-content .tab-item-5 {
+    display: block;
+}
+
+.backendpanel>input.tab-6:checked~.tab-content .tab-item-6 {
+    display: block;
+}
+
+.backendpanel>input.tab-7:checked~.tab-content .tab-item-7 {
+    display: block;
+}
+
+.backendpanel>input.tab-8:checked~.tab-content .tab-item-8 {
+    display: block;
+}
+
+.backendpanel>input.tab-9:checked~.tab-content .tab-item-9 {
+    display: block;
+}
+
+.backendpanel>input.tab-10:checked~.tab-content .tab-item-10 {
+    display: block;
+}
+
 
 /* Responsive */
 
