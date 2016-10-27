@@ -193,7 +193,7 @@ header a {
 		height: 100%;
 		padding: 10px;
 		padding-right: 0px;
-		/*display: none;*/
+		display: none;
 }
 
 .backendpanel > input.tab-1:checked~ .tab-content .tab-item-1{

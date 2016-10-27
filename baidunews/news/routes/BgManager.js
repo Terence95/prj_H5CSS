@@ -31,12 +31,45 @@ router.use('/news_recommend', orm.express("mysql://" + dbusername + ":" + dbpass
     }
 }));
 
-router.get('/news_recommend', function (req, res, next) {
-    req.models.news_recommend.find({}, ["time","Z"], function (err, news) {
+router.get('/news_recommend', function(req, res, next) {
+    req.models.news_recommend.find({}, ["time", "Z"], function(err, news) {
         res.status(200);
         res.json(news);
     });
 });
+
+// add
+
+// edit
+
+// delete
+
+
+
+/* news_baijia */
+router.use('/news_baijia', orm.express("mysql://" + dbusername + ":" + dbpassword + "@localhost/" + dbname, {
+    define: function(db, models, next) {
+        models.news_baijia = db.define("news_baijia", {
+            id: {
+                type: 'serial',
+                key: true
+            },
+            title: String,
+            img_url: String,
+            content: String,
+            from: String,
+            time: String
+        });
+        next();
+    }
+}));
+router.get('/news_baijia', function(req, res, next) {
+    req.models.news_baijia.find({}, ["time", "Z"], function(err, news) {
+        res.status(200);
+        res.json(news);
+    });
+});
+
 
 
 module.exports = router;
