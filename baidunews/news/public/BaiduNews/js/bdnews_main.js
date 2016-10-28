@@ -17,7 +17,7 @@ requirejs(['jquery', 'findAll'], function($, findAll) {
     var findNum = 5;
     //查询偏移
     var offset;
-    
+
     //开始加载并发送数据
     $(document).ready(function() {
         var table = "news_recommend";
@@ -30,7 +30,7 @@ requirejs(['jquery', 'findAll'], function($, findAll) {
     var loadMoreFlag = 1;
     $(".loadMore").click(function() {
         var _this = $(this);
-        if (loadMoreFlag == 0) {
+        if (loadMoreFlag === 0) {
             return;
         }
         var table = _this.parent().attr("name");
@@ -44,7 +44,7 @@ requirejs(['jquery', 'findAll'], function($, findAll) {
         var _this = $(this);
         $(".anvRowBox").removeClass("focused");
         _this.addClass("focused");
-        var table = _this.attr("name")
+        var table = _this.attr("name");
         $(".selected").removeClass("selected");
         $("." + table + "_box").addClass("selected");
         //清除之前加载的数据

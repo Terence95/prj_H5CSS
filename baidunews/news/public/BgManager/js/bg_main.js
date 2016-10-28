@@ -10,6 +10,7 @@ require.config({
         convertToSelected: 'basic/convertToSelected',
 
         additems: 'add/additem',
+        deleteitems: 'delete/deleteitems',
 
         findAll: 'findAll/findAll',
         createInnerBoxFragment: 'findAll/createInnerBoxFragment',
@@ -18,7 +19,7 @@ require.config({
     }
 });
 
-requirejs(['jquery', 'findAll', 'leftBarSelected', 'createInnerBoxFragment', 'findRightItem', 'findTableName', 'additems'], function($, findAll, leftBarSelected, createInnerBoxFragment, findRightItem, findTableName, additems) {
+requirejs(['jquery', 'findAll', 'leftBarSelected', 'createInnerBoxFragment', 'findRightItem', 'findTableName', 'additems', 'deleteitems'], function($, findAll, leftBarSelected, createInnerBoxFragment, findRightItem, findTableName, additems, deleteitems) {
 
     // 初始默认展示news_recommend的数据
     $(document).ready(function() {

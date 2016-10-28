@@ -18,8 +18,8 @@ define(['jquery', 'createInnerBoxFragment'], function($, createInnerBoxFragment)
                 "offset": offset
             },
             success: function(data) {
-                //console.log(data);
-                if (data === "") {
+                // console.log(data);
+                if (data.length === 0) {
                     $(".loadMore").text("已全部加载完毕！");
                     loadMoreFlag = 0;
                     return;
@@ -27,6 +27,7 @@ define(['jquery', 'createInnerBoxFragment'], function($, createInnerBoxFragment)
                 $(".loadMore").text("点击加载更多");
                 //查询成功后offset计数
                 offsetback = offset + findNum;
+                // 每次加5️递增
                 //console.log("当前offset:" + offsetback);
                 //插入返回的新闻html片段,插入在“更多”之前
                 createInnerBoxFragment(data, table);

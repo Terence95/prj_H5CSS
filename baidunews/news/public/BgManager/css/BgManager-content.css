@@ -108,20 +108,6 @@
     opacity: 1;
 }
 
-
-/*.masktoadditems {
-    display: none;
-    width: 660px;
-    height: auto;
-    position: fixed;
-    left: 50%;
-    top: 142.5px;
-    margin-left: -330px;
-    z-index: 999;
-    padding: 10px;
-    background: rgba(0, 0, 0, .2);
-}*/
-
 .masktoadditems {
     /*display: block;*/
     display: none;
@@ -200,48 +186,6 @@ textarea {
     height: 150px !important;
     overflow-y: scroll;
 }
-/*
-
-.btn-myown {
-    width: 150px;
-    display: inline-block;
-    position: relative;
-    bottom: 0px;
-}
-
-.form-position {
-    margin: 10px 15px 10px 10px;
-}
-
-textarea {
-    resize: none;
-    width: 100%;
-    height: 150px !important;
-    overflow-y: scroll;
-}
-
-.buttonbox {
-    margin-bottom: 20px;
-    width: 150px;
-    position: relative;
-    display: inline-block;
-    left: 50%;
-    margin: 0 -75px;
-}*/
-
-.masktodeleteitems {
-    display: none;
-    width: 660px;
-    height: auto;
-    position: fixed;
-    left: 50%;
-    top: 172.5px;
-    margin-left: -330px;
-    /*    margin: 0;*/
-    z-index: 999;
-    padding: 10px;
-    background: rgba(0, 0, 0, .2);
-}
 
 .masktoedititems {
     display: none;
@@ -252,6 +196,20 @@ textarea {
     top: 142.5px;
     margin-left: -330px;
     /*    margin: 0;*/
+    z-index: 999;
+    padding: 10px;
+    background: rgba(0, 0, 0, .2);
+}
+
+.masktodeleteitems {
+    /*display: block;*/
+    display: none;
+    position: fixed;
+    width: 660px;
+    height: auto;
+    left: 50%;
+    top: 142.5px;
+    margin-left: -330px;
     z-index: 999;
     padding: 10px;
     background: rgba(0, 0, 0, .2);
@@ -273,16 +231,14 @@ textarea {
 }
 
 .deleteNotice {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 80px;
-    text-align: center;
-    width: auto;
     height: 80px;
+    width: auto;
     margin: 20px 20px;
-    border: 1px solid grey;
+    text-align: center;
     background: #eee;
     border-radius: 3px;
-    box-shadow: 2px 2px #eee;
 }
 
 .deleteNotice span {

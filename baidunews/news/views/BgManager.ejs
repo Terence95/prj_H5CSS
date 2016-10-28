@@ -29,6 +29,7 @@
                     </div>
                 </div>
 
+
                 <!-- tab menu -->
                 <input type="radio" class="tab-1 focused" name="tab" checked="checked">
                 <span>推荐</span><i class="fa fa-star"></i>
@@ -92,6 +93,10 @@
                 <!-- tab-content begin -->
                 <div class="tab-content">
                     <!-- section1 begin -->
+                    <!--  -->
+                    <!-- <div class="backendTitle">
+                        <h3>Backend</h3>
+                    </div> -->
                     <section class="tab-item-1">
                         <h1 style="display:inline-block; margin-right:20px;">推荐</h1><span>已选中：</span><span class="selectedItemNum">0</span><span>个。</span>
                         <div class="content-box">
@@ -248,9 +253,89 @@
         </div>
         <!-- add end -->
 
+        <!-- delete begin -->
+        <div class="masktodeleteitems">
+            <div class="inner">
+                <div class="hd">
+                    <h2><i class="fa fa-minus"></i> 删除新闻<small>&nbsp;&nbsp;From</small>&nbsp;<small><mark class="innerHdItemsName"></mark></small></h2>
+                    <i class="inner-close"></i>
+                </div>
+                <!-- 删除提示信息 -->
+                <div class="deleteNotice">
+                    <span class="deleteConfirms"></span>
+                </div>
+                <form class="form-position form-horizontal" action="php/deleteItems.php">
+
+                    <div class="delBtnBox">
+                        <div class="deleteBtnBox">
+                            <button type="button" class="btn btn-primary" id="needReEdit">我还需要修改</button>
+                        </div>
+                        <div class="deleteBtnBox">
+                            <button type="button" class="btn btn-danger" id="deleteConfirm">确认删除!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!-- delete end -->
+
+        <!-- edit begin-->
+        <div class="masktoedititems">
+            <div class="inner">
+                <div class="hd">
+                    <h2><i class="fa fa-edit"></i> 修改新闻<small>&nbsp;&nbsp;From</small>&nbsp;<small><mark class="innerHdItemsName"></mark></small></h2>
+                    <i class="inner-close"></i>
+                </div>
+                <form class="form-position form-horizontal" action="php/insertItems.php">
+                    <div class="form-group">
+                        <label for="title" class="col-sm-2 control-label">新闻标题</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="editTitle" placeholder="新闻标题">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="img_url" class="col-sm-2 control-label">图片地址</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="editImg_url" placeholder="图片URL">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="content" class="col-sm-2 control-label">新闻内容</label>
+                        <div class="col-sm-10">
+                            <textarea type="text" class="form-control" id="editContent" placeholder="新闻内容" resize="none"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="time" class="col-sm-2 control-label">新闻时间</label>
+                        <div class="col-sm-10">
+                            <input type="datetime" class="form-control" id="editTime" placeholder="新闻时间">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="from" class="col-sm-2 control-label">新闻来源</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="editFrom" placeholder="新闻来源">
+                        </div>
+                    </div>
+                    <div class="buttonbox">
+                        <button type="button" class="btn btn-success btn-myown" id="submitOfEditItems">提交修改</button>
+                        <span class="editConfirm"></span>
+                    </div>
+
+            </div>
+        </div>
+        <!-- edit end-->
+
 
 
     </div>
+    <footer>
+        <p>
+
+        </p>
+    </footer>
     <script data-main="js/bg_main" type="text/javascript" src="js/lib/require.js"></script>
 </body>
 
