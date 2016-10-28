@@ -15,7 +15,7 @@ define(['jquery', 'findAll', 'convertToTable'], function($, findAll, convertToTa
 
                 var timenow = new Date();
                 var string = timenow.getFullYear() + "-" + (timenow.getMonth() + 1) + "-" + timenow.getDate() + " " + timenow.getHours() + ":" + timenow.getMinutes() + ":" + timenow.getSeconds();
-                console.log(string);
+                // console.log(string);
                 $('#title').val("");
                 $('#img_url').val("");
                 $('#content').val("");
@@ -55,6 +55,39 @@ define(['jquery', 'findAll', 'convertToTable'], function($, findAll, convertToTa
                     }, 1000);
                     return;
                 }
+                $.ajax({
+                        url: './' + tablename + '/add',
+                        type: 'post',
+                        data: {
+                            "table": tablename,
+                            "title": title,
+                            'img_url': img_url,
+                            'content': content,
+                            'time': time,
+                            'from': from
+                        },
+                        success: function() {
+                            // 刷新右边栏目
+                            findAll(tablename);
+                            $('.addConfirm').text("添加成功...");
+                            setTimeout(function() {
+                                // 隐藏mask
+                                $('.mask').css('display', 'none');
+                                $('.masktoadditems').css('display', 'none');
+                                $('.addConfirm').text("");
+                            }, 100);
+                        }
+                    })
+                    .done(function() {
+                        console.log("request add item done");
+                    })
+                    .fail(function() {
+                        console.log("error");
+                    })
+                    .always(function() {
+                        console.log("complete");
+                    });
+
 
             })
         )

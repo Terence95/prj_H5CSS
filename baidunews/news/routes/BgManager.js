@@ -39,7 +39,18 @@ router.get('/news_recommend', function(req, res, next) {
 });
 
 // add
-
+router.post('/news_recommend/add', function(req, res, next) {
+    req.models.news_recommend.create({
+        title: req.body.title,
+        img_url: req.body.img_url,
+        content: req.body.content,
+        from: req.body.from,
+        time: req.body.time
+    }, function(err, news) {
+        res.status(200);
+        res.json(news);
+    });
+});
 // edit
 
 // delete

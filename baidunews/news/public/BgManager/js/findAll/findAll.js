@@ -11,7 +11,7 @@ define(['jquery', 'createInnerBoxFragment', 'calculateSelectedNum'], function($,
                 // console.log(data);
                 // createInnerBoxFragment 方法拿到数据之后生成对应的数据
                 createInnerBoxFragment(data, table);
-                console.log(data);
+                // console.log(data);
             }
         });
 
