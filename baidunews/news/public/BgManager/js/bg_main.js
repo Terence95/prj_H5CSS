@@ -9,6 +9,8 @@ require.config({
         convertToTable: 'basic/convertToTable',
         convertToSelected: 'basic/convertToSelected',
 
+        additems: 'add/additem',
+
         findAll: 'findAll/findAll',
         createInnerBoxFragment: 'findAll/createInnerBoxFragment',
 
@@ -16,7 +18,7 @@ require.config({
     }
 });
 
-requirejs(['jquery', 'findAll', 'leftBarSelected', 'createInnerBoxFragment', 'findRightItem', 'findTableName'], function($, findAll, leftBarSelected, createInnerBoxFragment, findRightItem, findTableName) {
+requirejs(['jquery', 'findAll', 'leftBarSelected', 'createInnerBoxFragment', 'findRightItem', 'findTableName', 'additems'], function($, findAll, leftBarSelected, createInnerBoxFragment, findRightItem, findTableName, additems) {
 
     // 初始默认展示news_recommend的数据
     $(document).ready(function() {
@@ -24,7 +26,7 @@ requirejs(['jquery', 'findAll', 'leftBarSelected', 'createInnerBoxFragment', 'fi
         // 测试百家请求
         // var table = "news_baijia";
         // find 开启 ajax 请求 /BgManager/+table名
-        
+
         findAll(table);
     });
 

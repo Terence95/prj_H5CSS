@@ -199,6 +199,56 @@
         </div>
         <!-- mask end -->
 
+        <!-- add begin-->
+        <div class="masktoadditems">
+            <div class="inner">
+                <div class="hd">
+                    <h2><i class="fa fa-plus"></i> 添加新闻<small>&nbsp;&nbsp;To</small>&nbsp;<small><mark class="innerHdItemsName"></mark></small></h2>
+                    <i class="inner-close"></i>
+                </div>
+                <form class="form-position form-horizontal" action="php/insertItems.php">
+                    <div class="form-group">
+                        <label for="title" class="col-sm-2 control-label">新闻标题</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="title" placeholder="新闻标题">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="img_url" class="col-sm-2 control-label">图片地址</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="img_url" placeholder="图片URL">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="content" class="col-sm-2 control-label">新闻内容</label>
+                        <div class="col-sm-10">
+                            <textarea type="text" class="form-control" id="content" placeholder="新闻内容" resize="none"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="time" class="col-sm-2 control-label">新闻时间</label>
+                        <div class="col-sm-10">
+                            <input type="datetime" class="form-control" id="time" placeholder="新闻时间">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="from" class="col-sm-2 control-label">新闻来源</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="from" placeholder="新闻来源">
+                        </div>
+                    </div>
+                    <div class="buttonbox">
+                        <button type="button" class="btn btn-success btn-myown" id="submitOfAddItems">提交</button>
+                        <span class="addConfirm"></span>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <!-- add end -->
+
+
 
     </div>
     <script data-main="js/bg_main" type="text/javascript" src="js/lib/require.js"></script>
