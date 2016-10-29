@@ -68,7 +68,22 @@ router.post('/news_recommend/delete', function(req, res, next) {
 
 });
 
-// edit
+// news_recommend edit
+router.post('/news_recommend/edit', function(req, res, next) {
+    req.models.news_recommend.get(req.body.id, function(err, item) {
+        item.save({
+            title: req.body.title,
+            img_url: req.body.img_url,
+            content: req.body.content,
+            from: req.body.from,
+            time: req.body.time
+        }, function(err) {
+            console.log(req.body.id + "保存成功！");
+            res.status(200);
+            res.send(true);
+        });
+    });
+});
 
 /* news_baijia */
 router.use('/news_baijia', orm.express("mysql://" + dbusername + ":" + dbpassword + "@localhost/" + dbname, {
@@ -120,7 +135,23 @@ router.post('/news_baijia/delete', function(req, res, next) {
             });
         });
     }
+});
 
+// news_baijia edit
+router.post('/news_baijia/edit', function(req, res, next) {
+    req.models.news_baijia.get(req.body.id, function(err, item) {
+        item.save({
+            title: req.body.title,
+            img_url: req.body.img_url,
+            content: req.body.content,
+            from: req.body.from,
+            time: req.body.time
+        }, function(err) {
+            console.log(req.body.id + "保存成功！");
+            res.status(200);
+            res.send(true);
+        });
+    });
 });
 
 /* news_local */
@@ -175,7 +206,22 @@ router.post('/news_local/delete', function(req, res, next) {
     }
 
 });
-
+// news_local edit
+router.post('/news_local/edit', function(req, res, next) {
+    req.models.news_local.get(req.body.id, function(err, item) {
+        item.save({
+            title: req.body.title,
+            img_url: req.body.img_url,
+            content: req.body.content,
+            from: req.body.from,
+            time: req.body.time
+        }, function(err) {
+            console.log(req.body.id + "保存成功！");
+            res.status(200);
+            res.send(true);
+        });
+    });
+});
 
 
 /* news_internet */
@@ -230,6 +276,23 @@ router.post('/news_internet/delete', function(req, res, next) {
 
 });
 
+// news_internet edit
+router.post('/news_internet/edit', function(req, res, next) {
+    req.models.news_internet.get(req.body.id, function(err, item) {
+        item.save({
+            title: req.body.title,
+            img_url: req.body.img_url,
+            content: req.body.content,
+            from: req.body.from,
+            time: req.body.time
+        }, function(err) {
+            console.log(req.body.id + "保存成功！");
+            res.status(200);
+            res.send(true);
+        });
+    });
+});
+
 
 /* news_science */
 router.use('/news_science', orm.express("mysql://" + dbusername + ":" + dbpassword + "@localhost/" + dbname, {
@@ -282,7 +345,22 @@ router.post('/news_science/delete', function(req, res, next) {
     }
 });
 
-
+// news_science edit
+router.post('/news_science/edit', function(req, res, next) {
+    req.models.news_science.get(req.body.id, function(err, item) {
+        item.save({
+            title: req.body.title,
+            img_url: req.body.img_url,
+            content: req.body.content,
+            from: req.body.from,
+            time: req.body.time
+        }, function(err) {
+            console.log(req.body.id + "保存成功！");
+            res.status(200);
+            res.send(true);
+        });
+    });
+});
 
 /* news_women */
 router.use('/news_woman', orm.express("mysql://" + dbusername + ":" + dbpassword + "@localhost/" + dbname, {
@@ -334,6 +412,23 @@ router.post('/news_woman/delete', function(req, res, next) {
             });
         });
     }
+});
+
+// news_woman edit
+router.post('/news_woman/edit', function(req, res, next) {
+    req.models.news_woman.get(req.body.id, function(err, item) {
+        item.save({
+            title: req.body.title,
+            img_url: req.body.img_url,
+            content: req.body.content,
+            from: req.body.from,
+            time: req.body.time
+        }, function(err) {
+            console.log(req.body.id + "保存成功！");
+            res.status(200);
+            res.send(true);
+        });
+    });
 });
 
 
@@ -389,6 +484,23 @@ router.post('/news_picture/delete', function(req, res, next) {
     }
 });
 
+// news_picture edit
+router.post('/news_picture/edit', function(req, res, next) {
+    req.models.news_picture.get(req.body.id, function(err, item) {
+        item.save({
+            title: req.body.title,
+            img_url: req.body.img_url,
+            content: req.body.content,
+            from: req.body.from,
+            time: req.body.time
+        }, function(err) {
+            console.log(req.body.id + "保存成功！");
+            res.status(200);
+            res.send(true);
+        });
+    });
+});
+
 
 /* news_military */
 router.use('/news_military', orm.express("mysql://" + dbusername + ":" + dbpassword + "@localhost/" + dbname, {
@@ -441,6 +553,22 @@ router.post('/news_military/delete', function(req, res, next) {
             });
         });
     }
+});
+// news_military edit
+router.post('/news_military/edit', function(req, res, next) {
+    req.models.news_military.get(req.body.id, function(err, item) {
+        item.save({
+            title: req.body.title,
+            img_url: req.body.img_url,
+            content: req.body.content,
+            from: req.body.from,
+            time: req.body.time
+        }, function(err) {
+            console.log(req.body.id + "保存成功！");
+            res.status(200);
+            res.send(true);
+        });
+    });
 });
 
 /* news_society */
@@ -495,7 +623,22 @@ router.post('/news_society/delete', function(req, res, next) {
         });
     }
 });
-
+// news_society edit
+router.post('/news_society/edit', function(req, res, next) {
+    req.models.news_society.get(req.body.id, function(err, item) {
+        item.save({
+            title: req.body.title,
+            img_url: req.body.img_url,
+            content: req.body.content,
+            from: req.body.from,
+            time: req.body.time
+        }, function(err) {
+            console.log(req.body.id + "保存成功！");
+            res.status(200);
+            res.send(true);
+        });
+    });
+});
 
 /* news_entertainment */
 router.use('/news_entertainment', orm.express("mysql://" + dbusername + ":" + dbpassword + "@localhost/" + dbname, {
@@ -548,6 +691,23 @@ router.post('/news_entertainment/delete', function(req, res, next) {
             });
         });
     }
+});
+
+// news_entertainment edit
+router.post('/news_entertainment/edit', function(req, res, next) {
+    req.models.news_entertainment.get(req.body.id, function(err, item) {
+        item.save({
+            title: req.body.title,
+            img_url: req.body.img_url,
+            content: req.body.content,
+            from: req.body.from,
+            time: req.body.time
+        }, function(err) {
+            console.log(req.body.id + "保存成功！");
+            res.status(200);
+            res.send(true);
+        });
+    });
 });
 
 module.exports = router;

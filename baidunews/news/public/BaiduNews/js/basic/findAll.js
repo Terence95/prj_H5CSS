@@ -2,6 +2,7 @@ define(['jquery', 'createInnerBoxFragment'], function($, createInnerBoxFragment)
 
 
     var offsetback;
+    // 查数据的部分
 
     function findAll(table, offset, findNum) {
         //    console.log("findNow::" + table);
