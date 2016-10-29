@@ -42,10 +42,14 @@ requirejs(['jquery', 'findAll'], function($, findAll) {
     //nav的选择
     $(".anvRowBox").click(function() {
         var _this = $(this);
+        // 移除focused标识
         $(".anvRowBox").removeClass("focused");
+        // 然后在被点击的添加focused标识
         _this.addClass("focused");
+        // 找到table名字
         var table = _this.attr("name");
         $(".selected").removeClass("selected");
+        // 为对应的表的nav添加 selected标识
         $("." + table + "_box").addClass("selected");
         //清除之前加载的数据
         $("." + table + "_box").find(".newsInnerBox").remove();
