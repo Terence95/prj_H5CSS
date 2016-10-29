@@ -328,7 +328,31 @@
         </div>
         <!-- edit end-->
 
+        <!--退出-->
+        <div class="masktoquit">
+            <div class="inner">
+                <div class="hd">
+                    <h2><i class="fa fa-sign-out"></i> 退出</h2>
+                    <i class="inner-close"></i>
+                </div>
 
+                <!--退出提示信息-->
+                <div class="quitNotice">
+                    <span class="">确认退出？</span>
+                </div>
+                <form class="form-position form-horizontal" action="php/deleteItems.php">
+
+                    <div class="delBtnBox">
+                        <div class="deleteBtnBox">
+                            <button type="button" class="btn btn-primary" id="goback">返回……</button>
+                        </div>
+                        <div class="deleteBtnBox">
+                            <button type="button" class="btn btn-danger" id="quitConfirm">确认退出!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
     </div>
     <footer>

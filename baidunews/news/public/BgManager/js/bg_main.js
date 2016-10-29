@@ -8,10 +8,12 @@ require.config({
         calculateSelectedNum: 'basic/calculateSelectedNum',
         convertToTable: 'basic/convertToTable',
         convertToSelected: 'basic/convertToSelected',
+        htmlspecialchars: 'basic/htmlspecialchars',
 
         additems: 'add/additem',
         deleteitems: 'delete/deleteitems',
         edititems: 'edit/edititem',
+
 
         findAll: 'findAll/findAll',
         createInnerBoxFragment: 'findAll/createInnerBoxFragment',
@@ -20,7 +22,7 @@ require.config({
     }
 });
 
-requirejs(['jquery', 'findAll', 'leftBarSelected', 'createInnerBoxFragment', 'findRightItem', 'findTableName', 'additems', 'deleteitems', 'edititems'], function($, findAll, leftBarSelected, createInnerBoxFragment, findRightItem, findTableName, additems, deleteitems, edititems) {
+requirejs(['jquery', 'findAll', 'leftBarSelected', 'createInnerBoxFragment', 'findRightItem', 'findTableName', 'additems', 'deleteitems', 'edititems', 'htmlspecialchars'], function($, findAll, leftBarSelected, createInnerBoxFragment, findRightItem, findTableName, additems, deleteitems, edititems, htmlspecialchars) {
 
     // 初始默认展示news_recommend的数据
     $(document).ready(function() {
@@ -40,4 +42,26 @@ requirejs(['jquery', 'findAll', 'leftBarSelected', 'createInnerBoxFragment', 'fi
 
     leftBarSelected;
 
+    //显示退出界面
+    $(".quit").click(function() {
+        $(".mask").css("display", "block");
+        $(".masktoquit").css("display", "block");
+    });
+    //右上关闭按钮
+    $(".inner-close").click(function() {
+        $(".mask").css("display", "none");
+        $(".masktoquit").css("display", "none");
+    });
+    //返回按钮
+    $("#goback").click(function() {
+        $(".inner-close").click();
+        return;
+    });
+    //退出按钮并跳转
+    $("#quitConfirm").click(function() {
+        window.location.href = '../login';
+        $(".mask").css("display", "none");
+        $(".masktoquit").css("display", "none");
+        return;
+    });
 });

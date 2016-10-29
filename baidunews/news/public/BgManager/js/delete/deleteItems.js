@@ -1,4 +1,4 @@
-define(['convertToTable', 'convertToSelected', 'findAll'], function(convertToTable, convertToSelected, findAll) {
+define(['convertToTable', 'convertToSelected', 'findAll', 'findRightItem'], function(convertToTable, convertToSelected, findAll, findRightItem) {
     return {
         showBox: (
             $('.deleteitems').click(function(event) {
@@ -42,6 +42,7 @@ define(['convertToTable', 'convertToSelected', 'findAll'], function(convertToTab
                 // 选中需要删除的信息集合 -- selected
                 var tablename = convertToTable();
                 var selected = convertToSelected(tablename);
+                var tab_item = findRightItem(tablename);
 
                 // 需要传递要删除的新闻id，和表名tablename
                 var idsDel = '';
@@ -57,7 +58,7 @@ define(['convertToTable', 'convertToSelected', 'findAll'], function(convertToTab
                 // console.log(idsDel);
                 // 开ajax
                 $.ajax({
-                        url: './' + tablename + '/delete',
+                        url: './news_list/delete',
                         type: 'post',
                         data: {
                             "table": tablename,
@@ -68,6 +69,7 @@ define(['convertToTable', 'convertToSelected', 'findAll'], function(convertToTab
                             if (data) {
                                 // findAll 也是重新请求 拿到数据
                                 findAll(tablename);
+                                $('.' + tab_item).find('.selectedItemNum').text(0);
                                 $('.deleteConfirms').html('删除成功，正在返回');
                                 setTimeout(function() {
                                     // 关闭

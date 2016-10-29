@@ -7,8 +7,8 @@ define(['jquery', 'createInnerBoxFragment'], function($, createInnerBoxFragment)
     function findAll(table, offset, findNum) {
         //    console.log("findNow::" + table);
         $.ajax({
-            type: "get",
-            url: "/index/" + table + "/",
+            type: "post",
+            url: "/index/news_list",
             async: false,
             beforeSend: function() {
                 $(".loadMore").text("正在加载……");

@@ -1,4 +1,4 @@
-define(['convertToTable', 'convertToSelected', 'findRightItem', 'findAll'], function(convertToTable, convertToSelected, findRightItem, findAll) {
+define(['convertToTable', 'convertToSelected', 'findRightItem', 'findAll', 'htmlspecialchars'], function(convertToTable, convertToSelected, findRightItem, findAll, htmlspecialchars) {
     // 修改新闻的id
     var editNewsID;
 
@@ -65,11 +65,11 @@ define(['convertToTable', 'convertToSelected', 'findRightItem', 'findAll'], func
                 /* Act on the event */
                 var tablename = convertToTable();
                 var id = editNewsID;
-                var title = $('#editTitle').val();
-                var img_url = $("#editImg_url").val();
-                var content = $("#editContent").val();
-                var time = $("#editTime").val();
-                var from = $("#editFrom").val();
+                var title = htmlspecialchars($('#editTitle').val());
+                var img_url = htmlspecialchars($("#editImg_url").val());
+                var content = htmlspecialchars($("#editContent").val());
+                var time = htmlspecialchars($("#editTime").val());
+                var from = htmlspecialchars($("#editFrom").val());
 
                 if (title === "" || title === "undefined" ||
                     img_url === "" || img_url === "undefined" ||
@@ -86,7 +86,7 @@ define(['convertToTable', 'convertToSelected', 'findRightItem', 'findAll'], func
 
                 // 开ajax
                 $.ajax({
-                        url: './' + tablename + '/edit',
+                        url: './news_list/edit',
                         type: 'post',
                         data: {
                             "table": tablename,

@@ -1,4 +1,4 @@
-define(['jquery', 'findAll', 'convertToTable'], function($, findAll, convertToTable) {
+define(['jquery', 'findAll', 'convertToTable', 'htmlspecialchars'], function($, findAll, convertToTable, htmlspecialchars) {
     // TODO:
     return {
         showBox: (
@@ -37,11 +37,11 @@ define(['jquery', 'findAll', 'convertToTable'], function($, findAll, convertToTa
                 /* Act on the event */
                 // 拿到表名，比如 news_recommend
                 var tablename = convertToTable();
-                var title = $('#title').val();
-                var img_url = $('#img_url').val();
-                var content = $('#content').val();
-                var time = $('#time').val();
-                var from = $('#from').val();
+                var title = htmlspecialchars($('#title').val());
+                var img_url = htmlspecialchars($('#img_url').val());
+                var content = htmlspecialchars($('#content').val());
+                var time = htmlspecialchars($('#time').val());
+                var from = htmlspecialchars($('#from').val());
 
                 if (title === "" || title === "undefined" ||
                     img_url === "" || img_url === "undefined" ||
@@ -56,7 +56,8 @@ define(['jquery', 'findAll', 'convertToTable'], function($, findAll, convertToTa
                     return;
                 }
                 $.ajax({
-                        url: './' + tablename + '/add',
+                        // url: './' + tablename + '/add',
+                        url:'./news_list/add',
                         type: 'post',
                         data: {
                             "table": tablename,
@@ -64,7 +65,8 @@ define(['jquery', 'findAll', 'convertToTable'], function($, findAll, convertToTa
                             'img_url': img_url,
                             'content': content,
                             'time': time,
-                            'from': from
+                            'from': from,
+                            // "news_type": tablename
                         },
                         success: function() {
                             // 刷新右边栏目
