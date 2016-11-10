@@ -1,0 +1,1 @@
+require.config({paths:{jquery:"../lib/jquery.min",backTop:"backTop",searchBoxEvent:"searchBoxEvent"}}),require(["jquery","backTop","searchBoxEvent"],function(e,r,c){});

@@ -1,0 +1,1 @@
+define(["jquery"],function(o){o(document).ready(function(){o("#gototop").click(function(n){o("body").animate({scrollTop:0},800)})}),o(window).scroll(function(){var n=o(window).scrollTop();n>0&&o(".back-arrow").show("fast"),0===n&&o(".back-arrow").hide("fast")})});

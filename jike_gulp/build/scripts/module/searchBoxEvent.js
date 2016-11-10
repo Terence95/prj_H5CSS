@@ -1,0 +1,1 @@
+define(["jquery"],function(c){c("#search-btn").click(function(e){c("#searchbox").addClass("scale")}),c("#close-btn").click(function(e){c("#searchbox").removeClass("scale")})});
