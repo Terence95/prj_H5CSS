@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/login.css">
+	<title>Index</title>
+</head>
+<body>
+	<div class="container">
+		<div class="login-con">
+			<form role="form" class="login-form" action="/login" method="post">
+			  <div class="form-group title">登录</div>
+			  <div class="form-group">
+			    <input type="text" class="form-control" placeholder="Enter username" autofocus="autofocus" autocomplete="off" name="username" />
+			  </div>
+			  <div class="form-group">
+			    <input type="password" class="form-control" placeholder="Password" autocomplete="off" name="password"/>
+			  </div>
+			  <button type="submit" class="btn btn-success">Submit</button>
+			</form>
+			<a href="/" class="btn btn-warning">返回首页</a>
+			<a href="/reg">没有账号？</a>
+			<a href="/forget">忘记密码？</a>
+		</div>
+	</div>
+</body>
+</html>

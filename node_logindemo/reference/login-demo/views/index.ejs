@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
+	<title>Index</title>
+</head>
+<body>
+	<div class="container">
+		<%if(!user){%>
+		<div class="login-con">
+			<a href="/reg" class="btn btn-danger pull-right">Register</a>
+			<a href="/login" class="btn btn-warning pull-right">Login</a>
+		</div>
+		<%}%>
+		<%if(user){%>
+		<div class="login-con">
+			<a href="/logout" class="btn btn-danger pull-right">Logout</a>
+		</div>
+		<%}%>
+		<div class="display">
+			<%if(user){%>
+				Welcome home~ <%=user.username%>
+			<%}%>
+			<div><%=display%></div>
+		</div>
+	</div>
+</body>
+</html>
