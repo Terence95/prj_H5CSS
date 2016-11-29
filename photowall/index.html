@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>photowall</title>
+	<style media="screen">
+		img {
+			width: 80px;
+			height: 80px;
+		}
+
+		#imgWrap {
+			width: 800px;
+			height: 400px;
+			margin: 80px auto;
+			perspective: 800px;
+		}
+
+		#imgWrap img {
+			float: left;
+		}
+
+		#btn {
+			clear: both;
+			width: 100px;
+			text-align: center;
+			font: 16px/40px "微软雅黑";
+			color: #fff;
+			padding: 0 20px;
+			background: #c4efa7;
+			margin: 0 auto;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+		/**
+		 *  运动的步骤
+		 *  1. 闪动效果（瞬间宽高变为0, 如何变为0, css3中有个scale，以中心点缩放,随机缩放）
+		 *  2. 缩小到一定程度然后恢复，透明度变0,必须是上一步的效果执行完了，才执行
+		 *  3. 旋转效果，随机过程, 所有图片透明度变为0的时候，走此步骤
+		 */
+		window.onload = function() {
+			var btn = document.getElementById("btn");
+			var imgs = document.querySelectorAll("img");
+			var on = true; // 这个变量决定用户是否可以再次点击, true 代表可以点，false代表不可以点
+
+			// 给btn添加点击事件
+			btn.onclick = function() {
+				if (!on) {
+					return;
+				}
+				on = false;
+				var endNum = 0; //运动完成的图片数量
+				var allend = 0; //用来判断所有的图片是否都运动完了
+
+				// 效果使用css3 transition
+				for (var i = 0; i < imgs.length; i++) {
+					// imgs[i].style.transition = '1s';
+
+					// 函数自执行
+					(function(i) {
+						// 使用定时器来做一个随机的效果
+						setTimeout(function() {
+							motion(imgs[i], '10ms', function() {
+								this.style.transform = 'scale(0)';
+								// this.style.opacity = 0;
+							}, function() {
+								// 第二个运动在此写
+								motion(this, '1s', function() {
+									this.style.transform = 'scale(1)';
+									this.style.opacity = 0;
+								}, function() {
+									endNum++; // 有一张图走完效果就让它加1
+									if (endNum == imgs.length) {
+										toBig();
+									}
+
+								});
+							});
+						}, Math.random() * 1000);
+					})(i);
+				}
+
+				//  第三个效果
+				function toBig() {
+					/*
+					 * 坐标轴
+					 * x轴 平行地面
+					 * y轴 垂直地面
+					 * z轴 垂直屏幕
+					 * 位移，translate
+					 */
+
+					for (var i = 0; i < imgs.length; i++) {
+						// imgs[i].style.opacity = 1;
+						imgs[i].style.transition = '';
+						// 物体有css3的变化，就需要给它一个初始值
+						imgs[i].style.transform = 'rotateY(0deg) translateZ(' + Math.random() * 500 + 'px)';
+						// 函数自执行，是为了想要在循环里面找到i的值
+						(function(i) {
+							setTimeout(function() {
+								motion(imgs[i], '1.5s', function() {
+									this.style.opacity = 1;
+									this.style.transform = 'rotateY(-360deg) translateZ(0px)'
+								}, function() {
+									allend++;
+									if (allend == imgs.length) {
+
+									}
+								});
+							}, Math.random() * 1000);
+						})(i);
+					}
+				}
+
+
+			};
+
+
+			// 封装运动 (1、考虑参数 运动对象，运动的时间, 运动的属性函数, 运动完成后要做的事回调函数)
+			function motion(obj, time, doFn, callback) {
+				obj.style.transition = time;
+				// doFn传多条代码, 想把doFn的this指向obj
+				doFn.call(obj); // call调用函数并且把this的指向给obj
+
+				var called = false; // 解决transitionend 调用多次的bug
+				// callback是一个回调函数
+				// transitionend事件，来确定是否结束了transition
+				obj.addEventListener('transitionend', function() {
+					if (!called) {
+						// 不加callback && 就报错， &&特性，如果左边为真返回右侧，如果没有传callback，那么就是false
+						callback && callback.call(obj);
+						called = true;
+					}
+
+				}, false); // false决定是在冒泡阶段
+			}
+
+		}
+	</script>
+</head>
+
+<body>
+	<div id="imgWrap">
+		<img src="img/1.jpg" alt="">
+		<img src="img/2.jpg" alt="">
+		<img src="img/3.jpg" alt="">
+		<img src="img/4.jpg" alt="">
+		<img src="img/5.jpg" alt="">
+		<img src="img/6.jpg" alt="">
+		<img src="img/7.jpg" alt="">
+		<img src="img/8.jpg" alt="">
+		<img src="img/9.jpg" alt="">
+		<img src="img/10.jpg" alt="">
+		<img src="img/11.jpg" alt="">
+		<img src="img/12.jpg" alt="">
+		<img src="img/13.jpg" alt="">
+		<img src="img/14.jpg" alt="">
+		<img src="img/15.jpg" alt="">
+		<img src="img/16.jpg" alt="">
+		<img src="img/17.jpg" alt="">
+		<img src="img/18.jpg" alt="">
+		<img src="img/19.jpg" alt="">
+		<img src="img/20.jpg" alt="">
+		<img src="img/21.jpg" alt="">
+		<img src="img/22.jpg" alt="">
+		<img src="img/23.jpg" alt="">
+		<img src="img/24.jpg" alt="">
+		<img src="img/25.jpg" alt="">
+		<img src="img/26.jpg" alt="">
+		<img src="img/27.jpg" alt="">
+		<img src="img/28.jpg" alt="">
+		<img src="img/29.jpg" alt="">
+		<img src="img/30.jpg" alt="">
+		<img src="img/31.jpg" alt="">
+		<img src="img/32.jpg" alt="">
+		<img src="img/33.jpg" alt="">
+		<img src="img/34.jpg" alt="">
+		<img src="img/35.jpg" alt="">
+		<img src="img/36.jpg" alt="">
+		<img src="img/37.jpg" alt="">
+		<img src="img/38.jpg" alt="">
+		<img src="img/39.jpg" alt="">
+		<img src="img/40.jpg" alt="">
+		<img src="img/41.jpg" alt="">
+		<img src="img/42.jpg" alt="">
+		<img src="img/43.jpg" alt="">
+		<img src="img/44.jpg" alt="">
+		<img src="img/45.jpg" alt="">
+		<img src="img/46.jpg" alt="">
+		<img src="img/47.jpg" alt="">
+		<img src="img/48.jpg" alt="">
+		<img src="img/49.jpg" alt="">
+		<img src="img/50.jpg" alt="">
+	</div>
+	<div id="btn">click it</div>
+
+</body>
+
+</html>

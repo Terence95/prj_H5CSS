@@ -11,7 +11,9 @@ var bodyParser = require('body-parser');
 var crypto = require('crypto');
 
 var router = express.Router();
-router.use(bodyParser.urlencoded({ extended: true }));
+router.use(bodyParser.urlencoded({
+    extended: true
+}));
 router.use(bodyParser.json());
 /*设置mysql的链接参数，请在这里填上你相应的数据库信息*/
 var connection = mysql.createConnection({
@@ -31,11 +33,17 @@ connection.connect();
 
 /*进入首页*/
 router.get('/', function(req, res, next) {
-    if (!req.session.user){
-        res.render('index', {user:req.session.user,display: "你还木有登录啊骚年，登陆完唱首歌给你听😙" });
-    }else{
-    	var text="听我唱~老司机带带我，我是中学生😄";
-    	res.render('index',{user:req.session.user,display:text});
+    if (!req.session.user) {
+        res.render('index', {
+            user: req.session.user,
+            display: "你还木有登录啊骚年，登陆完唱首歌给你听😙"
+        });
+    } else {
+        var text = "听我唱~老司机带带我，我是中学生😄";
+        res.render('index', {
+            user: req.session.user,
+            display: text
+        });
     }
 });
 
@@ -59,7 +67,7 @@ router.post('/reg', function(req, res, next) {
     } else {
         /*设置sql语句*/
         var sql = "SELECT * FROM users WHERE username='" + username + "'";
-       /* 链接数据库进行检索，返回err(错误),rows(结果行-是个集合)，field(没去了解是什么鸟)*/
+        /* 链接数据库进行检索，返回err(错误),rows(结果行-是个集合)，field(没去了解是什么鸟)*/
         connection.query(sql, function(err, rows, field) {
             if (err) throw err;
             /*判断是否有记录*/
@@ -73,11 +81,11 @@ router.post('/reg', function(req, res, next) {
                 /*插入新的用户数据*/
                 var createAccount = "INSERT INTO users (username,password) VALUES ('" + username + "','" + md5password + "')";
                 connection.query(createAccount, function(err, rows, filed) {
-                    var user={
-                    	username:username,
-                    }
-                    /*这里是有争议的，其实应该再查询数据库，将得到的新rows赋值给req.session.user*/
-                    req.session.user=user;
+                    var user = {
+                            username: username,
+                        }
+                        /*这里是有争议的，其实应该再查询数据库，将得到的新rows赋值给req.session.user*/
+                    req.session.user = user;
                     res.redirect('/');
                 });
             };
@@ -87,49 +95,49 @@ router.post('/reg', function(req, res, next) {
 
 /*登录*/
 router.get('/login', function(req, res, next) {
-	if (req.session.user) {
-		res.redirect('/');
-	}else{
-		res.render('login');
-	}
+    if (req.session.user) {
+        res.redirect('/');
+    } else {
+        res.render('login');
+    }
 });
-router.post('/login',function(req,res,next){
-	if (req.session.user) {
-		res.redirect('/');
-	}else{
+router.post('/login', function(req, res, next) {
+    if (req.session.user) {
+        res.redirect('/');
+    } else {
         /*通过body-parser获取表单传递来的数据*/
-		var username = req.body.username,
-			password = req.body.password;
-		if (username==''||password=='') {
-			return res.redirect('/login');
-		}else{
+        var username = req.body.username,
+            password = req.body.password;
+        if (username == '' || password == '') {
+            return res.redirect('/login');
+        } else {
             /*将登陆的密码同样用md5转化，一并给数据库做检索*/
-			var md5 = crypto.createHash('md5'),
+            var md5 = crypto.createHash('md5'),
                 md5password = md5.update(password).digest('hex');
-			var sql = "SELECT * FROM users WHERE username='" + username + "' AND password='"+md5password+"'";
-			connection.query(sql,function(err,rows,filed){
-				if (rows.length=='') {
+            var sql = "SELECT * FROM users WHERE username='" + username + "' AND password='" + md5password + "'";
+            connection.query(sql, function(err, rows, filed) {
+                if (rows.length == '') {
                     /*没有用户记录*/
-					console.log('用户名或密码错误');
-					res.redirect('/login');
-				}else{
+                    console.log('用户名或密码错误');
+                    res.redirect('/login');
+                } else {
                     /*有用户记录，则先将用户记录中的密码部分删除，再将整体给session*/
-					rows[0].password=null;
-					req.session.user=rows[0];
+                    rows[0].password = null;
+                    req.session.user = rows[0];
                     console.log('登录成功');
                     /*重定向回首页*/
-					res.redirect('/');
-				}
-			});
-		}
-	}
+                    res.redirect('/');
+                }
+            });
+        }
+    }
 });
 
 /*退出登录*/
-router.get('/logout',function(req,res,next){
+router.get('/logout', function(req, res, next) {
     /*只要把req.session.user清空,就可以算是退出登陆了*/
-	req.session.user = null;
-	res.redirect('/');
+    req.session.user = null;
+    res.redirect('/');
 });
 
 /*忘记密码*/
