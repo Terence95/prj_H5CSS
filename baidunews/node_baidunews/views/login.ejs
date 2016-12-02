@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Login
+    </title>
+    <link rel='stylesheet' href='/Login/css/normalize.css' />
+    <link rel="stylesheet" href="/Login/css/login-default.css" media="screen" title="no title">
+    <link rel="stylesheet" href="/Login/css/login-styles.css" media="screen" title="no title">
+    <style media="screen">
+         ::-webkit-input-placeholder {
+            /* WebKit browsers */
+            color: #fff;
+        }
+
+         :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #fff;
+        }
+
+         ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #fff;
+        }
+
+         :-ms-input-placeholder {
+            /* Internet Explorer 10+ */
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 提示错误信息：如密码不能为空等等 -->
+    <div id="login-Tips" class="errTips"></div>
+    <div class="htmleaf-container">
+        <div class="wrapper">
+            <div class="container">
+                <h1>Welcome</h1>
+                <form class="form" method="post" action="/login">
+                    <input type="text" id="username" placeholder="Username" name="username">
+                    <input type="password" id="password" placeholder="Password" name="password">
+                  
+                    <button type="submit" id="login-btn">Login</button>
+                </form>
+            </div>
+
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" data-main="Login/js/login_main" src="Login/js/require.js"></script>
+</body>
+
+</html>
