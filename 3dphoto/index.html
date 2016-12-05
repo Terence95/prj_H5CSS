@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" onselectstart="return false">
+
+<head>
+	<meta charset="utf-8">
+	<title>photo</title>
+
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body {
+			background: black;
+			overflow: hidden;
+		}
+
+		#perspective {
+			perspective: 800px;
+			/*场景景深*/
+		}
+
+		#wrap {
+			width: 150px;
+			height: 150px;
+			margin: 150px auto;
+			/*border: 1px solid #fff;*/
+			position: relative;
+			transform-style: preserve-3d;
+			/*3d场景*/
+			transform: rotateX(-20deg) rotateY(0deg);
+		}
+
+		#wrap img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			border-radius: 1px;
+			box-shadow: 0 0 8 #f9f;
+			border: 1px solid #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="perspective">
+		<div id="wrap">
+			<img src="images/1.jpg" alt="">
+			<img src="images/2.jpg" alt="">
+			<img src="images/3.jpg" alt="">
+			<img src="images/4.jpg" alt="">
+			<img src="images/5.jpg" alt="">
+			<img src="images/6.jpg" alt="">
+			<img src="images/7.jpg" alt="">
+			<img src="images/8.jpg" alt="">
+			<img src="images/9.jpg" alt="">
+			<img src="images/10.jpg" alt="">
+			<img src="images/11.jpg" alt="">
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	window.onload = function() {
+		// 获取所有img
+		var oImg = document.getElementsByTagName("img"); // 在文档中通过标签获取元素
+		var Deg = 360 / oImg.length; //获取旋转平均值
+		var oWrap = document.getElementById('wrap');
+		var nowX, nowY, lastX, lastY, minuX = 0,
+			minuY = 0;
+		var roY = 0,
+			roX = 0;
+		for (var i = 0; i < oImg.length; i++) {
+			oImg[i].style.transform = 'rotateY(' + Deg * i + 'deg) translateZ(350px)'
+		}
+		// 拖拽的步骤1、点击 2、移动 3、松开 三个步骤
+		document.onmousedown = function(e) {
+			// 对象e， 有鼠标位置，鼠标状态等信息，但是有兼容问题
+
+			e = e || window.event; // 火狐与ie的兼容方法
+			lastX = e.clientX;
+			lastY = e.clientY;
+			// alert(e.clientX,e.clientY);
+			console.log(e.clientX + ' ' + e.clientY);
+			// 鼠标按下
+			console.log('down');
+			// 鼠标滑动
+			this.onmousemove = function(e) {
+				// e = e || window.event;
+				nowX = e.clientX;
+				nowY = e.clientY;
+				minuX = nowX - lastX; // 坐标轴的差
+				minuY = nowY - lastY;
+				e = e || window.event;
+				roY-=minuY*0.2;
+				roX+=minuX*0.1;
+				oWrap.style.transform = 'rotateY(' + roX + 'deg) rotateX(' + roY + 'deg)';
+				console.log(minuX + ' ' + minuY);
+				lastX = nowX;
+				lastY = nowY;
+			}
+
+			// 鼠标点击松开
+			this.onmouseup = function() {
+				this.onmousemove = null; // 清除鼠标滑动事件
+				console.log('up');
+			}
+		}
+
+
+	}
+</script>
+
+</html>
