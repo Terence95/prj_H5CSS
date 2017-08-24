@@ -6,6 +6,9 @@ html {
 body {
     margin: 0;
 }
+body div {
+    border: 1px solid red;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block;
 }
@@ -296,7 +299,7 @@ body {
     font-size: 68px;
 }
 
-/*当屏幕最大为786px时用这套样式*/
+/*当屏幕最大为768px时用这套样式*/
 
 @media screen and (max-width: 768px) {
     /*hero 的字体改变，slogantitle 字体改变*/
