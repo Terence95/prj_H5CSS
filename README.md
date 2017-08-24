@@ -8,3 +8,5 @@ html5 + css 布局的练手项目
  [neu](http://htmlpreview.github.io/?https://github.com/Terence95/prj_H5CSS/blob/master/NEU2014/index.html)
 -  
  [baymax](http://htmlpreview.github.io/?https://github.com/Terence95/prj_H5CSS/blob/master/demo/baymax.html)
+
+-[test](http://htmlpreview.github.io/?https://github.com/Terence95/prj_H5CSS/blob/master/3dphoto/index.html)
